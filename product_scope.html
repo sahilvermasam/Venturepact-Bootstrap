@@ -29,6 +29,7 @@ CONTACT : pampersdry@gmail.com
         <!-- Library stylesheet : mandatory -->
         <link rel="stylesheet" href="library/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="library/jquery/css/jquery-ui.min.css">
+        <link rel="stylesheet" href="stylesheet/custom_sa.css">
         <!--/ Library stylesheet -->
 
         <!-- Application stylesheet : mandatory -->
@@ -39,6 +40,7 @@ CONTACT : pampersdry@gmail.com
 
         <!-- START JAVASCRIPT SECTION - Load only modernizr script here -->
         <script src="library/modernizr/js/modernizr.min.js"></script>
+        <script src="javascript/custom_sa.js"></script>
         <!--/ END JAVASCRIPT SECTION -->
     </head>
     <!--/ END Head -->
@@ -519,39 +521,39 @@ CONTACT : pampersdry@gmail.com
                             <span class="arrow"></span>
                         </a>
                         <!-- START 2nd Level Menu -->
-                        <ul id="Scope2" class="submenu collapse">
-                            <li class="active">
+                        <ul id="Scope" class="submenu collapse in">
+                            <li>
                                 <a href="basic.html" data-toggle="submenu" data-target="#scope" data-parent="#project1">
                                     <span class="text">Basic</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="basic.html">
+                                <a href="progress.html">
                                     <span class="text">Progress</span>
                                 </a>
                             </li>
-                            <li>
-                                <a href="basic.html">
+                            <li class="active">
+                                <a href="product_scope.html">
                                     <span class="text">Product Scope</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="basic.html">
+                                <a href="budget.html">
                                     <span class="text">Budget</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="basic.html">
+                                <a href="preference.html">
                                     <span class="text">Preferences</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="basic.html">
+                                <a href="company.html">
                                     <span class="text">Company</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="basic.html">
+                                <a href="custom_questions.html">
                                     <span class="text">Custom Questions</span>
                                 </a>
                             </li>
@@ -625,14 +627,14 @@ CONTACT : pampersdry@gmail.com
                 <!-- Page Header -->
                 <div class="page-header page-header-block">
                     <div class="page-header-section">
-                        <h4 class="title semibold">Scope Basic</h4>
+                        <h4 class="title semibold">Scope Product scope</h4>
                     </div>
                 </div>
                 <!--/ Page Header -->
                 <!-- START row -->
                 <div class="row">
                     <div class="col-md-12">
-                      <form data-parsley-validate="" action="" class="panel panel-default" novalidate>
+                      <form data-parsley-validate="" action="" class="panel panel-default input-append" novalidate>
                         <div class="panel-heading">
                           <h3 class="panel-title"><i class="ico-tshirt mr5"></i>Basic</h3>
                         </div>
@@ -663,12 +665,25 @@ CONTACT : pampersdry@gmail.com
                             <div class="row">
                               <div class="col-sm-12">
                                 <label class="control-label">Q. Talk about how your product is different? What are the different functionalities that you are trying to build.<span class="text-danger">*</span></label>
-                                <div class="col-sm-11">
+                                <div class="col-sm-11" id="add_new">
                                 	<input type="text" required class="form-control" name="name" data-trigger="focus" data-toggle="popover" data-placement="top"  data-content="Try to keep this short. We will get into the details later.">
                                 </div>
                                 <div class="col-sm-1">
-                                	<button class="btn btn-teal" type="button">Add</button>
+                                	<button class="btn btn-teal" type="button" onClick="jqueryStuff(#add_new)">Add</button>
                               	</div>
+                                <div class="col-sm-12">
+                                	<div class="control-group" id="fields">
+                                        <div class="controls" id="profs"> 
+                                            <div id="field">
+                                            	<input id="field1" name="prof1" type="text" placeholder="Type something" data-items="8"/>
+                                                <button id="b1" class="btn add-more" type="button">+</button>
+                                            </div>
+                                        <br>
+                                        <small>Press + to add another form field :)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                
                               </div>
                             </div>
                           </div>
@@ -883,6 +898,37 @@ CONTACT : pampersdry@gmail.com
             (function($){
                 $("html").Core({ "console": false });
             })(jQuery);
+			
+			/*sahil js for new field add*/
+			$(document).ready(function(){
+				var next = 1;
+				$(".add-more").click(function(e){
+					e.preventDefault();
+					var addto = "#field" + next;
+					var addRemove = "#field" + (next);
+					next = next + 1;
+					var newIn = '<input autocomplete="off" class="input form-control" id="field' + next + '" name="field' + next + '" type="text">';
+					var newInput = $(newIn);
+					var removeBtn = '<button id="remove' + (next - 1) + '" class="btn btn-danger remove-me" >-</button></div><div id="field">';
+					var removeButton = $(removeBtn);
+					$(addto).after(newInput);
+					$(addRemove).after(removeButton);
+					$("#field" + next).attr('data-source',$(addto).attr('data-source'));
+					$("#count").val(next);  
+					
+						$('.remove-me').click(function(e){
+							e.preventDefault();
+							var fieldNum = this.id.charAt(this.id.length-1);
+							var fieldID = "#field" + fieldNum;
+							$(this).remove();
+							$(fieldID).remove();
+						});
+				});
+				
+			});
+			/*sahil js for new field add*/
+			
+			
         </script>
         <!--/ app init script -->
 
