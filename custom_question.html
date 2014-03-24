@@ -433,28 +433,28 @@ CONTACT : pampersdry@gmail.com
                                     <span class="text">Progress</span>
                                 </a>
                             </li>
-                            <li class="active">
+                            <li>
                                 <a href="product_scope.html">
                                     <span class="text">Product Scope</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="basic.html">
+                                <a href="budget.html">
                                     <span class="text">Budget</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="basic.html">
+                                <a href="preference.html">
                                     <span class="text">Preferences</span>
                                 </a>
                             </li>
-                            <li>
-                                <a href="basic.html">
+                            <li class="active">
+                                <a href="company.html">
                                     <span class="text">Company</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="basic.html">
+                                <a href="custom_question.html">
                                     <span class="text">Custom Questions</span>
                                 </a>
                             </li>
@@ -627,14 +627,14 @@ CONTACT : pampersdry@gmail.com
                 <!-- Page Header -->
                 <div class="page-header page-header-block">
                     <div class="page-header-section">
-                        <h4 class="title semibold">Scope Product scope</h4>
+                        <h4 class="title semibold">Scope Company</h4>
                     </div>
                 </div>
                 <!--/ Page Header -->
                 <!-- START row -->
                 <div class="row">
                     <div class="col-md-12">
-                      <form data-parsley-validate="" action="" class="panel panel-default input-append" novalidate>
+                      <form novalidate class="panel panel-default" action="" data-parsley-validate="">
                         <div class="panel-heading">
                           <h3 class="panel-title"><i class="ico-tshirt mr5"></i>Basic</h3>
                         </div>
@@ -642,44 +642,23 @@ CONTACT : pampersdry@gmail.com
                           <div class="form-group">
                             <div class="row">
                               <div class="col-sm-12">
-                                <label class="control-label">Q. Think about the main functionalities/use cases from the customer's & admin's perspective? Can you walk us through the app.<span class="text-danger">*</span></label>
-                                <div class="col-sm-11" id="add_new_outr">
-                                	<input id="add_new" type="text" style="margin-bottom:15px;" required class="form-control" name="name" data-trigger="focus" data-toggle="popover" data-placement="top"  data-content="Try to keep this short. We will get into the details later.">
+                                <label class="control-label">Q. Are there any questions that you want to ask the companies who would bid for your project?<span class="text-danger">*</span></label>
+                                <div class="form-group" id="add_outr">
+                                    <label class="col-sm-3 control-label">Input Text</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control">
+                                    </div>
                                 </div>
                                 <div class="col-sm-11">
                                 	<button class="btn btn-teal" type="button" id="addother">Add Another</button>
                               	</div>
-                                <ul class="parsley-errors-list" id="parsley-id-0264">
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="form-group">
-                            <div class="row">
-                              <div class="col-sm-12">
-                                <label class="control-label">Q. Name a few apps, websites, or services that come the closest to what you have in mind. <span class="text-danger">*</span></label>
-                                <div class="col-sm-11" id="add_new_outr2">
-                                	<input type="text" id="add_new2" style="margin-bottom:15px;" required class="form-control" name="name" data-trigger="focus" data-toggle="popover" data-placement="top"  data-content="Try to keep this short. We will get into the details later.">
-                                </div>
-                                <div class="col-sm-11">
-                                	<button class="btn btn-teal" type="button" id="addother2">Add Another</button>
-                              	</div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="form-group">
-                            <div class="row">
-                              <div class="col-sm-12">
-                                <label class="control-label">Q. Talk about how your product is different? What are the different functionalities that you are trying to build.<span class="text-danger">*</span></label>
-                                <div class="col-sm-11" id="add_new_outr">
-                                	<textarea class="form-control" rows="3" placeholder="Max: 100 words" required data-trigger="focus" data-toggle="popover" data-placement="top"  data-content=""></textarea>
-                                </div>
+                                
                               </div>
                             </div>
                           </div>
                         </div>
                         <div class="panel-footer">
-                          <button class="btn btn-primary" type="submit">Next</button>
+                          <button type="submit" class="btn btn-primary">Next</button>
                         </div>
                       </form>
                     </div>
@@ -894,12 +873,6 @@ CONTACT : pampersdry@gmail.com
 				$("#addother").click(function(){
 					
 					$("#add_new").clone().appendTo("#add_new_outr");
-					
-				  });
-				  
-				  $("#addother2").click(function(){
-					
-					$("#add_new2").clone().appendTo("#add_new_outr2");
 					
 				  });
 				

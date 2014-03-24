@@ -433,28 +433,28 @@ CONTACT : pampersdry@gmail.com
                                     <span class="text">Progress</span>
                                 </a>
                             </li>
-                            <li class="active">
+                            <li>
                                 <a href="product_scope.html">
                                     <span class="text">Product Scope</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="basic.html">
+                                <a href="budget.html">
                                     <span class="text">Budget</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="basic.html">
+                                <a href="preference.html">
                                     <span class="text">Preferences</span>
                                 </a>
                             </li>
-                            <li>
-                                <a href="basic.html">
+                            <li class="active">
+                                <a href="company.html">
                                     <span class="text">Company</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="basic.html">
+                                <a href="custom_question.html">
                                     <span class="text">Custom Questions</span>
                                 </a>
                             </li>
@@ -627,14 +627,14 @@ CONTACT : pampersdry@gmail.com
                 <!-- Page Header -->
                 <div class="page-header page-header-block">
                     <div class="page-header-section">
-                        <h4 class="title semibold">Scope Product scope</h4>
+                        <h4 class="title semibold">Scope Company</h4>
                     </div>
                 </div>
                 <!--/ Page Header -->
                 <!-- START row -->
                 <div class="row">
                     <div class="col-md-12">
-                      <form data-parsley-validate="" action="" class="panel panel-default input-append" novalidate>
+                      <form novalidate class="panel panel-default" action="" data-parsley-validate="">
                         <div class="panel-heading">
                           <h3 class="panel-title"><i class="ico-tshirt mr5"></i>Basic</h3>
                         </div>
@@ -642,14 +642,9 @@ CONTACT : pampersdry@gmail.com
                           <div class="form-group">
                             <div class="row">
                               <div class="col-sm-12">
-                                <label class="control-label">Q. Think about the main functionalities/use cases from the customer's & admin's perspective? Can you walk us through the app.<span class="text-danger">*</span></label>
-                                <div class="col-sm-11" id="add_new_outr">
-                                	<input id="add_new" type="text" style="margin-bottom:15px;" required class="form-control" name="name" data-trigger="focus" data-toggle="popover" data-placement="top"  data-content="Try to keep this short. We will get into the details later.">
-                                </div>
-                                <div class="col-sm-11">
-                                	<button class="btn btn-teal" type="button" id="addother">Add Another</button>
-                              	</div>
-                                <ul class="parsley-errors-list" id="parsley-id-0264">
+                                <label class="control-label">Q. Tell us a little bit about your company.<span class="text-danger">*</span></label>
+                                <textarea data-content="If your business problem is clearly defined, the service providers are able to get  a much better sense of your requirements and provide better estimates and quotes." data-placement="top" data-toggle="popover" data-trigger="focus" required placeholder="Max: 100 words" rows="3" class="form-control" data-parsley-id="1568" data-original-title="" title=""></textarea>
+                                <ul class="parsley-errors-list" id="parsley-id-1568">
                                 </ul>
                               </div>
                             </div>
@@ -657,29 +652,56 @@ CONTACT : pampersdry@gmail.com
                           <div class="form-group">
                             <div class="row">
                               <div class="col-sm-12">
-                                <label class="control-label">Q. Name a few apps, websites, or services that come the closest to what you have in mind. <span class="text-danger">*</span></label>
-                                <div class="col-sm-11" id="add_new_outr2">
-                                	<input type="text" id="add_new2" style="margin-bottom:15px;" required class="form-control" name="name" data-trigger="focus" data-toggle="popover" data-placement="top"  data-content="Try to keep this short. We will get into the details later.">
-                                </div>
-                                <div class="col-sm-11">
-                                	<button class="btn btn-teal" type="button" id="addother2">Add Another</button>
-                              	</div>
+                                <label class="control-label">Q. How big is your company?<span class="text-danger">*</span></label>
                               </div>
-                            </div>
-                          </div>
-                          <div class="form-group">
-                            <div class="row">
-                              <div class="col-sm-12">
-                                <label class="control-label">Q. Talk about how your product is different? What are the different functionalities that you are trying to build.<span class="text-danger">*</span></label>
-                                <div class="col-sm-11" id="add_new_outr">
-                                	<textarea class="form-control" rows="3" placeholder="Max: 100 words" required data-trigger="focus" data-toggle="popover" data-placement="top"  data-content=""></textarea>
-                                </div>
+                              <div class="col-sm-12"><span class="radio-inline custom-radio custom-radio-primary">
+                                <input type="radio" value="option1" id="customradio1" name="a" data-parsley-multiple="a" data-parsley-id="2060">
+                                <label for="customradio1">&nbsp;&nbsp;1-2</label>
+                                </span>
+                                <ul class="parsley-errors-list" id="parsley-id-multiple-a">
+                                </ul>
+                                <span class="radio-inline custom-radio custom-radio-primary">
+                                <input type="radio" value="option1" id="customradio2" name="a" data-parsley-multiple="a" data-parsley-id="5093">
+                                <label for="customradio2">&nbsp;&nbsp;3-5</label>
+                                </span>
+                                <ul class="parsley-errors-list" id="parsley-id-multiple-a">
+                                </ul>
+                                <span class="radio-inline custom-radio custom-radio-primary">
+                                <input type="radio" value="option1" id="customradio3" name="a" data-parsley-multiple="a" data-parsley-id="7921">
+                                <label for="customradio3">&nbsp;&nbsp;6-10</label>
+                                </span>
+                                <ul class="parsley-errors-list" id="parsley-id-multiple-a">
+                                </ul>
+                                <span class="radio-inline custom-radio custom-radio-primary">
+                                <input type="radio" value="option1" id="customradio4" name="a" data-parsley-multiple="a" data-parsley-id="1698">
+                                <label for="customradio4">&nbsp;&nbsp;11-50</label>
+                                </span>
+                                <ul class="parsley-errors-list" id="parsley-id-multiple-a">
+                                </ul>
+                                <span class="radio-inline custom-radio custom-radio-primary">
+                                <input type="radio" value="option1" id="customradio5" name="a" data-parsley-multiple="a" data-parsley-id="7281">
+                                <label for="customradio5">&nbsp;&nbsp;51-100</label>
+                                </span>
+                                <ul class="parsley-errors-list" id="parsley-id-multiple-a">
+                                </ul>
+                                <span class="radio-inline custom-radio custom-radio-primary">
+                                <input type="radio" value="option1" id="customradio6" name="a" data-parsley-multiple="a" data-parsley-id="0819">
+                                <label for="customradio6">&nbsp;&nbsp;101-500</label>
+                                </span>
+                                <ul class="parsley-errors-list" id="parsley-id-multiple-a">
+                                </ul>
+                                <span class="radio-inline custom-radio custom-radio-primary">
+                                <input type="radio" value="option1" id="customradio7" name="a" data-parsley-multiple="a" data-parsley-id="0947">
+                                <label for="customradio7">&nbsp;&nbsp;500 or more</label>
+                                </span>
+                                <ul class="parsley-errors-list" id="parsley-id-multiple-a">
+                                </ul>
                               </div>
                             </div>
                           </div>
                         </div>
                         <div class="panel-footer">
-                          <button class="btn btn-primary" type="submit">Next</button>
+                          <button type="submit" class="btn btn-primary">Next</button>
                         </div>
                       </form>
                     </div>
@@ -894,12 +916,6 @@ CONTACT : pampersdry@gmail.com
 				$("#addother").click(function(){
 					
 					$("#add_new").clone().appendTo("#add_new_outr");
-					
-				  });
-				  
-				  $("#addother2").click(function(){
-					
-					$("#add_new2").clone().appendTo("#add_new_outr2");
 					
 				  });
 				
