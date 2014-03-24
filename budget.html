@@ -29,7 +29,6 @@ CONTACT : pampersdry@gmail.com
         <!-- Library stylesheet : mandatory -->
         <link rel="stylesheet" href="library/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="library/jquery/css/jquery-ui.min.css">
-        <link rel="stylesheet" href="stylesheet/custom_sa.css">
         <!--/ Library stylesheet -->
 
         <!-- Application stylesheet : mandatory -->
@@ -40,7 +39,6 @@ CONTACT : pampersdry@gmail.com
 
         <!-- START JAVASCRIPT SECTION - Load only modernizr script here -->
         <script src="library/modernizr/js/modernizr.min.js"></script>
-        <script src="javascript/custom_sa.js"></script>
         <!--/ END JAVASCRIPT SECTION -->
     </head>
     <!--/ END Head -->
@@ -423,7 +421,7 @@ CONTACT : pampersdry@gmail.com
                         </a>
                         <!-- START 2nd Level Menu -->
                         <ul id="Scope" class="submenu collapse in">
-                            <li>
+                            <li >
                                 <a href="basic.html" data-toggle="submenu" data-target="#scope" data-parent="#project1">
                                     <span class="text">Basic</span>
                                 </a>
@@ -433,13 +431,13 @@ CONTACT : pampersdry@gmail.com
                                     <span class="text">Progress</span>
                                 </a>
                             </li>
-                            <li class="active">
+                            <li>
                                 <a href="product_scope.html">
                                     <span class="text">Product Scope</span>
                                 </a>
                             </li>
-                            <li>
-                                <a href="budget.html">
+                            <li class="active">
+                                <a href="basic.html">
                                     <span class="text">Budget</span>
                                 </a>
                             </li>
@@ -521,8 +519,8 @@ CONTACT : pampersdry@gmail.com
                             <span class="arrow"></span>
                         </a>
                         <!-- START 2nd Level Menu -->
-                        <ul id="Scope" class="submenu collapse in">
-                            <li>
+                        <ul id="Scope2" class="submenu collapse">
+                            <li >
                                 <a href="basic.html" data-toggle="submenu" data-target="#scope" data-parent="#project1">
                                     <span class="text">Basic</span>
                                 </a>
@@ -532,28 +530,28 @@ CONTACT : pampersdry@gmail.com
                                     <span class="text">Progress</span>
                                 </a>
                             </li>
-                            <li class="active">
+                            <li>
                                 <a href="product_scope.html">
                                     <span class="text">Product Scope</span>
                                 </a>
                             </li>
-                            <li>
+                            <li class="active">
                                 <a href="budget.html">
                                     <span class="text">Budget</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="preference.html">
+                                <a href="preferences.html">
                                     <span class="text">Preferences</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="company.html">
+                                <a href="basic.html">
                                     <span class="text">Company</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="custom_questions.html">
+                                <a href="basic.html">
                                     <span class="text">Custom Questions</span>
                                 </a>
                             </li>
@@ -606,7 +604,7 @@ CONTACT : pampersdry@gmail.com
                             </li>
                             <li>
                                 <a href="basic.html">
-                                    <span class="text">Help</span>
+                                    <span class="text">Help</span> 
                                 </a>
                             </li>
                         </ul>
@@ -627,28 +625,23 @@ CONTACT : pampersdry@gmail.com
                 <!-- Page Header -->
                 <div class="page-header page-header-block">
                     <div class="page-header-section">
-                        <h4 class="title semibold">Scope Product scope</h4>
+                        <h4 class="title semibold">Scope Budget <!--sandeep--></h4>
                     </div>
                 </div>
                 <!--/ Page Header -->
                 <!-- START row -->
                 <div class="row">
                     <div class="col-md-12">
-                      <form data-parsley-validate="" action="" class="panel panel-default input-append" novalidate>
+                      <form data-parsley-validate="" action="" class="panel panel-default" novalidate>
                         <div class="panel-heading">
-                          <h3 class="panel-title"><i class="ico-tshirt mr5"></i>Basic</h3>
+                          <h3 class="panel-title"><i class="ico-tshirt mr5"></i>Budget</h3>
                         </div>
                         <div class="panel-body">
                           <div class="form-group">
                             <div class="row">
                               <div class="col-sm-12">
-                                <label class="control-label">Q. Think about the main functionalities/use cases from the customer's & admin's perspective? Can you walk us through the app.<span class="text-danger">*</span></label>
-                                <div class="col-sm-11" id="add_new_outr">
-                                	<input id="add_new" type="text" style="margin-bottom:15px;" required class="form-control" name="name" data-trigger="focus" data-toggle="popover" data-placement="top"  data-content="Try to keep this short. We will get into the details later.">
-                                </div>
-                                <div class="col-sm-11">
-                                	<button class="btn btn-teal" type="button" id="addother">Add Another</button>
-                              	</div>
+                                <label class="control-label">Project name?<span class="text-danger">*</span></label>
+                                <input type="text" required class="form-control" name="name" data-trigger="focus" data-toggle="popover" data-placement="top"  data-content="Try to keep this short. We will get into the details later.">
                                 <ul class="parsley-errors-list" id="parsley-id-0264">
                                 </ul>
                               </div>
@@ -657,23 +650,51 @@ CONTACT : pampersdry@gmail.com
                           <div class="form-group">
                             <div class="row">
                               <div class="col-sm-12">
-                                <label class="control-label">Q. Name a few apps, websites, or services that come the closest to what you have in mind. <span class="text-danger">*</span></label>
-                                <div class="col-sm-11" id="add_new_outr2">
-                                	<input type="text" id="add_new2" style="margin-bottom:15px;" required class="form-control" name="name" data-trigger="focus" data-toggle="popover" data-placement="top"  data-content="Try to keep this short. We will get into the details later.">
-                                </div>
-                                <div class="col-sm-11">
-                                	<button class="btn btn-teal" type="button" id="addother2">Add Another</button>
-                              	</div>
+                                <label class="control-label">Please summarize your need briefly<span class="text-danger">*</span></label>
+                                <textarea class="form-control" rows="3" placeholder="Max: 100 words" required data-trigger="focus" data-toggle="popover" data-placement="top"  data-content="If your business problem is clearly defined, the service providers are able to get  a much better sense of your requirements and provide better estimates and quotes."></textarea>
                               </div>
                             </div>
                           </div>
                           <div class="form-group">
                             <div class="row">
                               <div class="col-sm-12">
-                                <label class="control-label">Q. Talk about how your product is different? What are the different functionalities that you are trying to build.<span class="text-danger">*</span></label>
-                                <div class="col-sm-11" id="add_new_outr">
-                                	<textarea class="form-control" rows="3" placeholder="Max: 100 words" required data-trigger="focus" data-toggle="popover" data-placement="top"  data-content=""></textarea>
+                                <label class="control-label">Q. What is the business problem that you are trying to solve?<span class="text-danger">*</span></label>
+                                <textarea class="form-control" rows="3" placeholder="Max: 100 words" required data-trigger="focus" data-toggle="popover" data-placement="top"  data-content="We will try to match you with service providers who have experience in your industry."></textarea>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <div class="row">
+                              <div class="col-sm-12">
+                                <label class="control-label">Q. What industry does your company fall under?</label>
+                                <div class="checkbox custom-checkbox pt10">
+                                  <input type="checkbox" name="checkbox1" id="checkbox1" value="2">
+                                  <label for="checkbox1">&nbsp;&nbsp;Ecommercer.</label>
                                 </div>
+                                <div class="checkbox custom-checkbox pt10">
+                                  <input type="checkbox" name="checkbox2" id="checkbox2" value="2">
+                                  <label for="checkbox2">&nbsp;&nbsp;Healthcare.</label>
+                                </div>
+                                <div class="checkbox custom-checkbox pt10">
+                                  <input type="checkbox" name="checkbox7" id="checkbox7" value="2">
+                                  <label for="checkbox7">&nbsp;&nbsp;Other.</label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <div class="row">
+                              <div class="col-sm-12">
+                                <label class="control-label">Q. How certain are you of the requirements? How much do you see your requirements changing or evolving over the course of development?</label>
+                                <div class="checkbox custom-checkbox pt10">
+                                  <input type="checkbox" name="checkbox3" id="checkbox3" value="2">
+                                  <label for="checkbox3">&nbsp;&nbsp;Fairly certain (10-20% changes).</label>
+                                </div>
+                                <div class="checkbox custom-checkbox pt10">
+                                  <input type="checkbox" name="checkbox4" id="checkbox4" value="2">
+                                  <label for="checkbox4">&nbsp;&nbsp;Not certain at all (60-70% changes).</label>
+                                </div>
+                                
                               </div>
                             </div>
                           </div>
@@ -888,25 +909,6 @@ CONTACT : pampersdry@gmail.com
             (function($){
                 $("html").Core({ "console": false });
             })(jQuery);
-			
-			/*sahil js for new field add*/
-			$(document).ready(function(){
-				$("#addother").click(function(){
-					
-					$("#add_new").clone().appendTo("#add_new_outr");
-					
-				  });
-				  
-				  $("#addother2").click(function(){
-					
-					$("#add_new2").clone().appendTo("#add_new_outr2");
-					
-				  });
-				
-			});
-			/*sahil js for new field add*/
-			
-			
         </script>
         <!--/ app init script -->
 
