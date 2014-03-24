@@ -644,12 +644,12 @@ CONTACT : pampersdry@gmail.com
                               <div class="col-sm-12">
                                 <label class="control-label">Q. Are there any questions that you want to ask the companies who would bid for your project?<span class="text-danger">*</span></label>
                                 <div class="form-group" id="add_outr">
-                                    <label class="col-sm-3 control-label">Input Text</label>
-                                    <div class="col-sm-9">
-                                        <input type="text" class="form-control">
+                                    <label class="col-sm-1 control-label add_new" style="padding-top:8px;">Question:</label>
+                                    <div class="col-sm-6">
+                                        <input type="text" class="form-control add_new">
                                     </div>
                                 </div>
-                                <div class="col-sm-11">
+                                <div class="col-sm-11" style="margin-top:15px;">
                                 	<button class="btn btn-teal" type="button" id="addother">Add Another</button>
                               	</div>
                                 
@@ -870,11 +870,11 @@ CONTACT : pampersdry@gmail.com
 			
 			/*sahil js for new field add*/
 			$(document).ready(function(){
-				$("#addother").click(function(){
+				//$("#addother").click(function(){
 					
-					$("#add_new").clone().appendTo("#add_new_outr");
+					//$(".add_new").clone().appendTo("#add_outr");
 					
-				  });
+				  //});
 				
 			});
 			/*sahil js for new field add*/
