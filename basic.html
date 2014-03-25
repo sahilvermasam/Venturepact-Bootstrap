@@ -632,84 +632,84 @@ CONTACT : pampersdry@gmail.com
                 <!-- START row -->
                 <div class="row">
                     <div class="col-md-12">
-                      <form data-parsley-validate="" action="" class="panel panel-default" novalidate>
-                        <div class="panel-heading">
-                          <h3 class="panel-title"><i class="ico-tshirt mr5"></i>Basic</h3>
+                      <div class="panel panel-default">
+                            <!-- panel heading/header -->
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Basic</h3>
+                            </div>
+                            <!--/ panel heading/header -->
+                            <!-- panel body -->
+                            <div class="panel-body">
+                                <form class=" panel-default form-horizontal form-bordered " action="" data-parsley-validate>
+                                    
+                                    <div class="form-group">
+                                        <label class="col-sm-3 control-label">Project name? <span class="text-danger">*</span></label>
+                                        <div class="col-sm-9">
+                                            <input type="text"  class="form-control " name="required" required >
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-3 control-label">Please summarize your need briefly <span class="text-danger">*</span></label>
+                                        <div class="col-sm-9">
+                                           <textarea class="form-control" rows="3" required></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-3 control-label">Q. What is the business problem that you are trying to solve? <span class="text-danger">*</span></label>
+                                        <div class="col-sm-9">
+                                            <textarea class="form-control" rows="3" required></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-3 control-label">Q. What industry does your company fall under?</label>
+                                        <div class="col-sm-9">
+                                            <span class="checkbox custom-checkbox ">
+                                                <input type="checkbox" name="customcheckbox1" id="customcheckbox1" />
+                                                <label for="customcheckbox1">&nbsp;&nbsp;Ecommercer.</label>
+                                            </span>
+                                            <span class="checkbox custom-checkbox">
+                                                <input type="checkbox" name="customcheckbox2" id="customcheckbox2" />
+                                                <label for="customcheckbox2">&nbsp;&nbsp;Healthcare.</label>
+                                            </span>
+                                            <span class="checkbox custom-checkbox">
+                                                <input type="checkbox" name="customcheckbox3" id="customcheckbox3" />
+                                                <label for="customcheckbox3">&nbsp;&nbsp;Other.</label>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label class="col-sm-3 control-label">Q. What all do you need done? (Check all that apply)</label>
+                                        <div class="col-sm-9">
+                                            <span class="checkbox custom-checkbox ">
+                                                <input type="checkbox" name="customcheckbox4" id="customcheckbox4" />
+                                                <label for="customcheckbox4">&nbsp;&nbsp;Ecommercer.</label>
+                                            </span>
+                                            <span class="checkbox custom-checkbox">
+                                                <input type="checkbox" name="customcheckbox5" id="customcheckbox5" />
+                                                <label for="customcheckbox5">&nbsp;&nbsp;Healthcare.</label>
+                                            </span>
+                                            <span class="checkbox custom-checkbox">
+                                                <input type="checkbox" name="customcheckbox6" id="customcheckbox6" />
+                                                <label for="customcheckbox6">&nbsp;&nbsp;Other.</label>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    
+                                 
+                                   <div class="panel-footer">
+                                        <div class="form-group no-border">
+                                            <label class="col-sm-3 control-label"></label>
+                                            <div class="col-sm-9">
+                                                <button type="submit" class="btn btn-primary">Save & Next</button>
+                                                <button type="reset" class="btn btn-danger">Reset button</button>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                </form>
+                            </div>
+                            <!-- panel body -->
                         </div>
-                        <div class="panel-body">
-                          <div class="form-group">
-                            <div class="row">
-                              <div class="col-sm-12">
-                                <label class="control-label">Project name?<span class="text-danger">*</span></label>
-                                <input type="text" required class="form-control" name="name" data-trigger="focus" data-toggle="popover" data-placement="top"  data-content="Try to keep this short. We will get into the details later.">
-                                <ul class="parsley-errors-list" id="parsley-id-0264">
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="form-group">
-                            <div class="row">
-                              <div class="col-sm-12">
-                                <label class="control-label">Please summarize your need briefly<span class="text-danger">*</span></label>
-                                <textarea class="form-control" rows="3" placeholder="Max: 100 words" required data-trigger="focus" data-toggle="popover" data-placement="top"  data-content="If your business problem is clearly defined, the service providers are able to get  a much better sense of your requirements and provide better estimates and quotes."></textarea>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="form-group">
-                            <div class="row">
-                              <div class="col-sm-12">
-                                <label class="control-label">Q. What is the business problem that you are trying to solve?<span class="text-danger">*</span></label>
-                                <textarea class="form-control" rows="3" placeholder="Max: 100 words" required data-trigger="focus" data-toggle="popover" data-placement="top"  data-content="We will try to match you with service providers who have experience in your industry."></textarea>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="form-group">
-                            <div class="row">
-                              <div class="col-sm-12">
-                                <label class="control-label">Q. What industry does your company fall under?</label>
-                                <div class="checkbox custom-checkbox pt10">
-                                  <input type="checkbox" name="checkbox1" id="checkbox1" value="2">
-                                  <label for="checkbox1">&nbsp;&nbsp;Ecommercer.</label>
-                                </div>
-                                <div class="checkbox custom-checkbox pt10">
-                                  <input type="checkbox" name="checkbox2" id="checkbox2" value="2">
-                                  <label for="checkbox2">&nbsp;&nbsp;Healthcare.</label>
-                                </div>
-                                <div class="checkbox custom-checkbox pt10">
-                                  <input type="checkbox" name="checkbox7" id="checkbox7" value="2">
-                                  <label for="checkbox7">&nbsp;&nbsp;Other.</label>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="form-group">
-                            <div class="row">
-                              <div class="col-sm-12">
-                                <label class="control-label">Q. What all do you need done? (Check all that apply)</label>
-                                <div class="checkbox custom-checkbox pt10">
-                                  <input type="checkbox" name="checkbox3" id="checkbox3" value="2">
-                                  <label for="checkbox3">&nbsp;&nbsp;Design.</label>
-                                </div>
-                                <div class="checkbox custom-checkbox pt10">
-                                  <input type="checkbox" name="checkbox4" id="checkbox4" value="2">
-                                  <label for="checkbox4">&nbsp;&nbsp;Frontend.</label>
-                                </div>
-                                <div class="checkbox custom-checkbox pt10">
-                                  <input type="checkbox" name="checkbox5" id="checkbox5" value="2">
-                                  <label for="checkbox5">&nbsp;&nbsp;Backend.</label>
-                                </div>
-                                <div class="checkbox custom-checkbox pt10">
-                                  <input type="checkbox" name="checkbox6" id="checkbox6" value="2">
-                                  <label for="checkbox6">&nbsp;&nbsp;Other.</label>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="panel-footer">
-                          <button class="btn btn-primary" type="submit">Next</button>
-                        </div>
-                      </form>
                     </div>
                 </div>
                 <!--/ END row -->
