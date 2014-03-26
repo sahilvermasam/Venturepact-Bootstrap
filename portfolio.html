@@ -26,40 +26,27 @@ CONTACT : pampersdry@gmail.com
         <!--/ END META SECTION -->
 
         <!-- START STYLESHEETS -->
+        <!-- 3rd party plugin stylesheet : optional(per use) -->
+        <link rel="stylesheet" href="plugins/magnific/css/magnific-popup.min.css">
+        <!--/ 3rd party plugin stylesheet -->
+
         <!-- Library stylesheet : mandatory -->
         <link rel="stylesheet" href="library/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="library/jquery/css/jquery-ui.min.css">
-        
         <!--/ Library stylesheet -->
 
         <!-- Application stylesheet : mandatory -->
         <link rel="stylesheet" href="stylesheet/layout.css">
         <link rel="stylesheet" href="stylesheet/uielement.css">
-       
         <!--/ Application stylesheet -->
         <!-- END STYLESHEETS -->
 
         <!-- START JAVASCRIPT SECTION - Load only modernizr script here -->
         <script src="library/modernizr/js/modernizr.min.js"></script>
-        <script>
-   /* $(function ($) {
-        $("#example_1").ionRangeSlider({
-            min: 0,
-            max: 5000,
-            type: 'double',
-            prefix: "$",
-            maxPostfix: "+",
-            prettify: false,
-            hasGrid: true
-        });
-
-     
-    });*/
-</script>
         <!--/ END JAVASCRIPT SECTION -->
     </head>
     <!--/ END Head -->
-    <body data-page="form-wizard">
+    <body data-page="page-media">
         <!-- START Template Header -->
         <header id="header" class="navbar navbar-fixed-top">
             <!-- START navbar header -->
@@ -421,7 +408,7 @@ CONTACT : pampersdry@gmail.com
             <section class="content slimscroll">
                 <!-- START Template Navigation/Menu -->
                 <ul id="nav" class="topmenu">
-                   <!-- <li class="menuheader">MAIN MENU</li>-->
+                    <li class="menuheader">MAIN MENU</li>
                     <li >
                         <a href="index.html">
                             <span class="figure"><i class="ico-home2"></i></span>
@@ -429,16 +416,15 @@ CONTACT : pampersdry@gmail.com
                             <span class="number"><span class="label label-danger">5</span></span>
                         </a>
                     </li>
-                    <li class="menuheader">Project 1</li>
-                    <li class="active open">
+                    <li>
                         <a href="javascript:void(0);" data-toggle="submenu" data-target="#Scope" data-parent="#nav">
                             <span class="figure"><i class="ico-lightbulb"></i></span>
                             <span class="text">Scope</span>
                             <span class="arrow"></span>
                         </a>
                         <!-- START 2nd Level Menu -->
-                        <ul id="Scope" class="submenu collapse in">
-                            <li >
+                        <ul id="Scope" class="submenu collapse">
+                            <li>
                                 <a href="basic.html" data-toggle="submenu" data-target="#scope" data-parent="#project1">
                                     <span class="text">Basic</span>
                                 </a>
@@ -453,8 +439,8 @@ CONTACT : pampersdry@gmail.com
                                     <span class="text">Product Scope</span>
                                 </a>
                             </li>
-                            <li class="active">
-                                <a href="basic.html">
+                            <li>
+                                <a href="budget.html">
                                     <span class="text">Budget</span>
                                 </a>
                             </li>
@@ -464,46 +450,63 @@ CONTACT : pampersdry@gmail.com
                                 </a>
                             </li>
                             <li>
-                                <a href="basic.html">
+                                <a href="company.html">
                                     <span class="text">Company</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="basic.html">
+                                <a href="custom_questions.html">
                                     <span class="text">Custom Questions</span>
                                 </a>
                             </li>
                         </ul>
                         <!--/ END 2nd Level Menu -->
                     </li>
-                    <li>
-                        <a href="javascript:void(0);" data-toggle="submenu" data-target="#Proposal" data-parent="#nav">
+                    <li class="active open">
+                        <a href="javascript:void(0);" data-toggle="submenu" data-target="#pages" data-parent="#nav">
                             <span class="figure"><i class="ico-file6"></i></span>
                             <span class="text">Proposal</span>
                             <span class="arrow"></span>
                         </a>
                         <!-- START 2nd Level Menu -->
-                        <ul id="Proposal" class="submenu collapse">
+                        <ul id="pages" class="submenu collapse in">
                             <li class="active">
-                                <a href="basic.html" data-toggle="submenu" data-target="#scope" data-parent="#project1">
-                                    <span class="text">Company 1</span>
+                                <a href="javascript:void(0);" data-toggle="submenu" data-target="#compare" data-parent="#pages">
+                                    <span class="text">Compare</span>
+                                    <span class="arrow"></span>
                                 </a>
+                                <!-- START 2nd Level Menu -->
+                                <ul id="compare" class="submenu collapse in">
+                                    <li>
+                                        <a href="javascript:void(0);" data-toggle="submenu" data-target="#subsubmenu" data-parent="#3rdlvl2">
+                                            <span class="text">Nehrus</span>
+                                            <span class="arrow"></span>
+                                        </a>
+                                        <!-- START 4th Level Menu -->
+                                        <ul id="subsubmenu" class="submenu collapse in">
+                                            <li class="active">
+                                                <a href="portfolio.html"><span class="text">Portfolio</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0);"><span class="text">Sub Menu 8</span></a>
+                                            </li>
+                                        </ul>
+                                        <!--/ END 4th Level Menu -->
+                                    </li>
+                                    <li >
+                                        <a href="javascript:void(0);"><span class="text">Company 2</span></a>
+                                    </li>
+                                    <li >
+                                        <a href="javascript:void(0);"><span class="text">Company 3</span></a>
+                                    </li>
+                                </ul>
+                                <!--/ END 2nd Level Menu -->
                             </li>
-                            <li>
-                                <a href="basic.html">
-                                    <span class="text">Company 2</span>
+                            <!--<li >
+                                <a href="page-invoice.html">
+                                    <span class="text">Invoice</span>
                                 </a>
-                            </li>
-                            <li>
-                                <a href="basic.html">
-                                    <span class="text">Company 3</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="basic.html">
-                                    <span class="text">Company 4</span>
-                                </a>
-                            </li>
+                            </li>-->
                         </ul>
                         <!--/ END 2nd Level Menu -->
                     </li>
@@ -528,105 +531,6 @@ CONTACT : pampersdry@gmail.com
                         </ul>
                         <!--/ END 2nd Level Menu -->
                     </li>
-                    <li class="menuheader">Project 2</li>
-                    <li>
-                        <a href="javascript:void(0);" data-toggle="submenu" data-target="#Scope2" data-parent="#nav">
-                            <span class="figure"><i class="ico-lightbulb"></i></span>
-                            <span class="text">Scope</span>
-                            <span class="arrow"></span>
-                        </a>
-                        <!-- START 2nd Level Menu -->
-                        <ul id="Scope2" class="submenu collapse">
-                            <li >
-                                <a href="basic.html" data-toggle="submenu" data-target="#scope" data-parent="#project1">
-                                    <span class="text">Basic</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="progress.html">
-                                    <span class="text">Progress</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="product_scope.html">
-                                    <span class="text">Product Scope</span>
-                                </a>
-                            </li>
-                            <li class="active">
-                                <a href="budget.html">
-                                    <span class="text">Budget</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="preferences.html">
-                                    <span class="text">Preferences</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="basic.html">
-                                    <span class="text">Company</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="basic.html">
-                                    <span class="text">Custom Questions</span>
-                                </a>
-                            </li>
-                        </ul>
-                        <!--/ END 2nd Level Menu -->
-                    </li>
-                    <li>
-                        <a href="javascript:void(0);" data-toggle="submenu" data-target="#Proposal2" data-parent="#nav">
-                            <span class="figure"><i class="ico-file6"></i></span>
-                            <span class="text">Proposal</span>
-                            <span class="arrow"></span>
-                        </a>
-                        <!-- START 2nd Level Menu -->
-                        <ul id="Proposal2" class="submenu collapse">
-                            <li class="active">
-                                <a href="basic.html" data-toggle="submenu" data-target="#scope" data-parent="#project1">
-                                    <span class="text">Company 1</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="basic.html">
-                                    <span class="text">Company 2</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="basic.html">
-                                    <span class="text">Company 3</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="basic.html">
-                                    <span class="text">Company 4</span>
-                                </a>
-                            </li>
-                        </ul>
-                        <!--/ END 2nd Level Menu -->
-                    </li>
-                    <li>
-                        <a href="javascript:void(0);" data-toggle="submenu" data-target="#payment2" data-parent="#nav">
-                            <span class="figure"><i class="ico-dollar"></i></span>
-                            <span class="text">Payment</span>
-                            <span class="arrow"></span>
-                        </a>
-                        <!-- START 2nd Level Menu -->
-                        <ul id="payment2" class="submenu collapse">
-                            <li class="active">
-                                <a href="basic.html" data-toggle="submenu" data-target="#scope" data-parent="#project1">
-                                    <span class="text">Legal</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="basic.html">
-                                    <span class="text">Help</span> 
-                                </a>
-                            </li>
-                        </ul>
-                        <!--/ END 2nd Level Menu -->
-                    </li>
                     
                 </ul>
                 <!--/ END Template Navigation/Menu -->
@@ -639,236 +543,258 @@ CONTACT : pampersdry@gmail.com
         <section id="main" role="main">
             <!-- START Template Container -->
             <section class="container-fluid">
-                <!-- Page Header -->
+                <!-- Page header -->
                 <div class="page-header page-header-block">
                     <div class="page-header-section">
-                        <h4 class="title semibold">Scope Budget <!--sandeep--></h4>
+                        <h4 class="title semibold">Media gallery</h4>
+                    </div>
+                    <div class="page-header-section">
+                        <!-- Toolbar -->
+                        <div class="toolbar">
+                            <span class="toolbar-label semibold mr5">Filters : </span>
+                            <div class="btn-group">
+                                <button class="btn btn-default filter active" data-filter="all">All</button>
+                                <button class="btn btn-default filter" data-filter="filter_creative">Creative</button>
+                                <button class="btn btn-default filter" data-filter="filter_business">Business</button>
+                                <button class="btn btn-default filter" data-filter="filter_nature">Nature</button>
+                            </div>
+                        </div>
+                        <!--/ Toolbar -->
+                    </div>
+                    <div class="page-header-section">
+                        <!-- Toolbar -->
+                        <div class="toolbar">
+                            <span class="toolbar-label semibold mr5">Sort : </span>
+                            <div class="btn-group">
+                                <button class="btn btn-default active sort" data-sort="data-cat" data-order="desc"><i class="ico-sort-by-alphabet"></i></button>
+                                <button class="btn btn-default sort" data-sort="data-cat" data-order="asc"><i class="ico-sort-by-alphabet-alt"></i></button>
+                            </div>
+                        </div>
+                        <!--/ Toolbar -->
                     </div>
                 </div>
-                <!--/ Page Header -->
+                <!--/ Page header -->
+
                 <!-- START row -->
-                <div class="row">
-                    <div class="col-md-12">
-                      <form data-parsley-validate="" action="" class="panel panel-default" novalidate>
-                        <div class="panel-heading">
-                          <h3 class="panel-title"><i class="ico-tshirt mr5"></i>Budget</h3>
-                        </div>
-                        <div class="panel-body">
-                        
-                          
-                          <div class="form-group">
-                            <div class="row">
-                              <div class="col-sm-6">
-                        <!-- section header -->
-                        <div class="section-header mb15">
-                             <label class="control-label">Q. We have noted your requirements. Please choose the functionalities from the menus that your app will require.</label>
-                        </div>
-                        <!--/ section header -->
-                        <!-- panel group -->
-                        <div class="panel-group" id="accordion1">
-                            <div class="">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#accordion1" href="#collapseOne" class="collapsed">
-                                            <span class="arrow mr5"></span> Group 1
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="collapseOne" class="panel-collapse collapse">
-                                    <div class="panel-body">
-                                       
-                                       <div data-toggle="buttons" class="btn-group "> 
-                                       <label class="btn btn-sm btn-default active">
-                                        <input type="checkbox" id="option1" name="options"> option1 </label>
-                                        </div>
-                                        <div data-toggle="buttons" class="btn-group">
-                                         <label class="btn btn-sm btn-default active">
-                                          <input type="checkbox" id="option2" name="options"> option2 </label> </div>
-                                          
-                                          <div data-toggle="buttons" class="btn-group">
-                                         <label class="btn btn-sm btn-default active">
-                                          <input type="checkbox" id="option3" name="options"> option3 </label> </div>
-                                          <div data-toggle="buttons" class="btn-group">
-                                         <label class="btn btn-sm btn-default active">
-                                          <input type="checkbox" id="option4" name="options"> option4 </label> </div>
-                                          <div data-toggle="buttons" class="btn-group">
-                                         <label class="btn btn-sm btn-default active">
-                                          <input type="checkbox" id="option5" name="options"> option5 </label> </div> 
-                                          <div data-toggle="buttons" class="btn-group">
-                                         <label class="btn btn-sm btn-default active">
-                                          <input type="checkbox" id="option6" name="options"> option6 </label> </div>
-                                          
-
+                <div class="row" id="mixitup-grid">
+                    <div class="col-md-4 mix filter_creative filter_nature dis-none" data-cat="background1.jpg">
+                        <!-- thumbnail -->
+                        <div class="thumbnail thumbnail-album animation animating delay fadeInLeft">
+                            <!-- media -->
+                            <div class="media">
+                                <!-- indicator -->
+                                <div class="indicator"><span class="spinner"></span></div>
+                                <!--/ indicator -->
+                                <!-- toolbar overlay -->
+                                <div class="overlay">
+                                    <div class="toolbar">
+                                        <a href="image/background/400x250/portfolio1/background14.jpg" class="btn btn-default magnific" title="view picture"><i class="ico-expand"></i></a>
+                                        <a title="add images" class="btn btn-success" href="#" data-toggle="modal" data-target="#bs-modal"><i class="ico-plus"></i></a>
+                                        <!--<a href="#" class="btn btn-default" title="love this picture"><i class="ico-heart6"></i></a>-->
                                     </div>
                                 </div>
+                                <!--/ toolbar overlay -->
+                                <img width="100%" alt="Cover" data-src="image/background/400x250/background14.jpg" src="image/background/400x250/background14.jpg" data-toggle="unveil" class="unveiled">
                             </div>
-                            <div class="">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#accordion1" href="#collapseTwo" class="collapsed">
-                                            <span class="arrow mr5"></span> Group 2
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="collapseTwo" class="panel-collapse collapse">
-                                    <div class="panel-body">
-                                       
-                                       <div data-toggle="buttons" class="btn-group "> 
-                                       <label class="btn btn-sm btn-default active">
-                                        <input type="checkbox" id="option1" name="options"> option1 </label>
-                                        </div>
-                                        <div data-toggle="buttons" class="btn-group">
-                                         <label class="btn btn-sm btn-default active">
-                                          <input type="checkbox" id="option2" name="options"> option2 </label> </div>
-                                          
-                                          <div data-toggle="buttons" class="btn-group">
-                                         <label class="btn btn-sm btn-default active">
-                                          <input type="checkbox" id="option3" name="options"> option3 </label> </div>
-                                          <div data-toggle="buttons" class="btn-group">
-                                         <label class="btn btn-sm btn-default active">
-                                          <input type="checkbox" id="option4" name="options"> option4 </label> </div>
-                                          <div data-toggle="buttons" class="btn-group">
-                                         <label class="btn btn-sm btn-default active">
-                                          <input type="checkbox" id="option5" name="options"> option5 </label> </div> 
-                                          <div data-toggle="buttons" class="btn-group">
-                                         <label class="btn btn-sm btn-default active">
-                                          <input type="checkbox" id="option6" name="options"> option6 </label> </div>
-                                          
-
+                            <!--/ media -->
+                            <div class="caption">
+                                <h5 class="semibold mt0 mb5">Rail station</h5>
+                                <p class="text-muted mb5 ellipsis">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                                <p class="tag ellipsis">
+                                    <a href="#">#Railstation</a>&nbsp;
+                                    <a href="#">#Rail</a>&nbsp;
+                                    <a href="#">#Train</a>
+                                </p>
+                            </div>
+                            <hr class="mt5 mb5">
+                            <ul class="meta">
+                                <li>
+                                    <div class="img-group img-group-stack">
+                                        <img alt="" class="img-circle" src="image/avatar/avatar7.jpg">
+                                        <img alt="" class="img-circle" src="image/avatar/avatar2.jpg">
+                                        <span class="more img-circle">2+</span>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#accordion1" href="#collapseThree" class="collapsed">
-                                            <span class="arrow mr5"></span> Group 3
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="collapseThree" class="panel-collapse collapse">
-                                    <div class="panel-body">
-                                       
-                                       <div data-toggle="buttons" class="btn-group "> 
-                                       <label class="btn btn-sm btn-default active">
-                                        <input type="checkbox" id="option1" name="options"> option1 </label>
-                                        </div>
-                                        <div data-toggle="buttons" class="btn-group">
-                                         <label class="btn btn-sm btn-default active">
-                                          <input type="checkbox" id="option2" name="options"> option2 </label> </div>
-                                          
-                                          <div data-toggle="buttons" class="btn-group">
-                                         <label class="btn btn-sm btn-default active">
-                                          <input type="checkbox" id="option3" name="options"> option3 </label> </div>
-                                          <div data-toggle="buttons" class="btn-group">
-                                         <label class="btn btn-sm btn-default active">
-                                          <input type="checkbox" id="option4" name="options"> option4 </label> </div>
-                                          <div data-toggle="buttons" class="btn-group">
-                                         <label class="btn btn-sm btn-default active">
-                                          <input type="checkbox" id="option5" name="options"> option5 </label> </div> 
-                                          <div data-toggle="buttons" class="btn-group">
-                                         <label class="btn btn-sm btn-default active">
-                                          <input type="checkbox" id="option6" name="options"> option6 </label> </div>
-                                          
-
-                                    </div>
-                                </div>
-                            </div>
+                                </li>
+                                <li>
+                                    <p class="nm"><a class="semibold" href="#">4 people</a> love this</p>
+                                </li>
+                            </ul>
                         </div>
-                        <!--/ panel group -->
+                        <!--/ thumbnail -->
                     </div>
-                    			<div class="col-sm-5 pull-right">
-                        <!-- section header -->
-                        <div class="section-header mb15">
-                             <label class="control-label">Q.  You can see an approximate budget on the side. Choose at least one zone that matches your budget.</label>
-                        </div>
-                        <!--/ section header -->
-                        <!-- panel group -->
-                        <div class="col-sm-9">
-                         <div class="section-header mb15">
-                                            <span class="radio custom-radio custom-radio-primary">  
-                                                <input type="radio" id="customradio1" value="option1" name="asd" >  
-                                                <label for="customradio1">&nbsp;&nbsp;Zone 1 <span style="color:#09C; font-size:14px; margin-left:15px;">500$ - 1500$</span></label>  
-                                                <div style="float:left; width:95%; margin-top:5px; padding-left:25px; margin-bottom:10px; font-size:11px; "> ( Country 1, Country 2, Country 3 )</div>
-                                                
-                                                
-                                                
-                                                
-                                                
-                                            </span>
-                                            
-                              </div>              
-                                        <div class="section-header mb15">
-                                            <span class="radio custom-radio custom-radio-primary">  
-                                                <input type="radio" id="customradio2" value="option2"  name="asd">  
-                                                <label for="customradio2">&nbsp;&nbsp;Zone 2 <span style="color:#09C; font-size:14px; margin-left:15px;">300$ - 1000$</span></label>   
-                                                <div style="float:left; width:95%; margin-top:5px; padding-left:25px; margin-bottom:10px; font-size:11px; "> ( Country 1, Country 2, Country 3 )</div>
-                                            </span>
-                                        </div>    
-                                            <div class="section-header mb15">
-                                            <span class="radio custom-radio custom-radio-primary">  
-                                                <input type="radio" id="customradio3" value="option3" name="asd" >  
-                                                <label for="customradio3">&nbsp;&nbsp;Zone 3 <span style="color:#09C; font-size:14px; margin-left:15px;">100$ - 800$</span></label> 
-                                                <div style="float:left; width:95%; margin-top:5px; padding-left:25px; font-size:11px; "> ( Country 1, Country 2, Country 3 )</div>
-                                                  
-                                            </span>
-                              </div> 
-                                        </div>
-                        <!--/ panel group -->
-                    </div>
-                            </div>
-                          </div>
-                          
-                          
-                          <div class="form-group">
-                            <div class="row">
-                              <div class="col-sm-7">
-                                <label class="control-label">Q. How certain are you of the requirements? How much do you see your requirements changing or evolving over the course of development?</label>
-                                <div class="checkbox custom-checkbox pt10">
-                                  <input type="checkbox" name="checkbox3" id="checkbox3" value="2">
-                                  <label for="checkbox3">&nbsp;&nbsp;Fairly certain (10-20% changes).</label>
+                    <div class="col-md-4 mix filter_creative dis-none" data-cat="background2.jpg">
+                        <!-- thumbnail -->
+                        <div class="thumbnail thumbnail-album animation animating delay fadeInLeft">
+                            <!-- media -->
+                            <div class="media">
+                                <!-- indicator -->
+                                <div class="indicator"><span class="spinner"></span></div>
+                                <!--/ indicator -->
+                                <!-- toolbar overlay -->
+                                <div class="overlay">
+                                    <div class="toolbar">
+                                        <a href="image/background/400x250/portfolio2/background13.jpg" class="btn btn-default magnific" title="view picture"><i class="ico-expand"></i></a>
+                                        <a title="add images" class="btn btn-success" href="#"><i class="ico-plus"></i></a>
+                                        <!--<a href="#" class="btn btn-default" title="love this picture"><i class="ico-heart6"></i></a>-->
+                                    </div>
                                 </div>
-                                <div class="checkbox custom-checkbox pt10">
-                                  <input type="checkbox" name="checkbox4" id="checkbox4" value="2">
-                                  <label for="checkbox4">&nbsp;&nbsp;Not certain at all (60-70% changes).</label>
-                                </div>
+                                <!--/ toolbar overlay -->
                                 
-                              </div>
+                                <img width="100%" alt="Cover" data-src="image/background/400x250/background13.jpg" src="image/background/400x250/background13.jpg" data-toggle="unveil" class="unveiled">
                             </div>
-                          </div>
-                          
-                          <div class="form-group">
-                            <div class="row">
-                              <div class="col-sm-12">
-                                <label class="control-label">Q.  If your budget does not fall in any of the above categories, tell us and we can perhaps figure out a way to accommodate your budget.</label>
-                                
-                              </div>
-                              <div class="col-sm-12">
-                              	<div class="col-sm-2">
-                               		<input type="text" required class="form-control" name="name" data-trigger="focus" >
-                                </div>
-                                <div style="width:2%; text-align:center;  float:left;">
-                                    <label  style="font-size:22px; font-weight:bold; color:#ccc; "> - </label>
-                                </div>
-                                <div class="col-sm-2">
-                                   
-                                    <input type="text" required class="form-control" name="name" data-trigger="focus" >
-                               </div> 
-                              </div>
-                              
+                            <!--/ media -->
+                            <div class="caption">
+                                <h5 class="semibold mt0 mb5">Bird collection</h5>
+                                <p class="text-muted mb5 ellipsis">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                                <p class="tag ellipsis">
+                                    <a href="#">#Animal</a>&nbsp;
+                                    <a href="#">#Bird</a>
+                                </p>
                             </div>
-                          </div>
-                          
-                          
+                            <hr class="mt5 mb5">
+                            <ul class="meta">
+                                <li>
+                                    <div class="img-group img-group-stack">
+                                        <img alt="" class="img-circle" src="image/avatar/avatar2.jpg">
+                                        <img alt="" class="img-circle" src="image/avatar/avatar7.jpg">
+                                        <span class="more img-circle">6+</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p class="nm"><a class="semibold" href="#">8 people</a> love this</p>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="panel-footer">
-                          <button class="btn btn-primary" type="submit">Next</button>
-                        </div>
-                      </form>
+                        <!--/ thumbnail -->
                     </div>
+                    <div class="col-md-4 mix filter_business dis-none" data-cat="background3.jpg">
+                        <!-- thumbnail -->
+                        <div class="thumbnail thumbnail-album animation animating delay fadeInRight">
+                            <!-- media -->
+                            <div class="media">
+                                <!-- indicator -->
+                                <div class="indicator"><span class="spinner"></span></div>
+                                <!--/ indicator -->
+                                <!-- toolbar overlay -->
+                                <div class="overlay">
+                                    <div class="toolbar">
+                                        <a href="image/background/400x250/portfolio3/background15.jpg" class="btn btn-default magnific" title="view picture"><i class="ico-expand"></i></a>
+                                        <a title="add images" class="btn btn-success" href="#"><i class="ico-plus"></i></a>
+                                        <!--<a href="#" class="btn btn-default" title="love this picture"><i class="ico-heart6"></i></a>-->
+                                    </div>
+                                </div>
+                                <!--/ toolbar overlay -->
+                                <img width="100%" alt="Cover" data-src="image/background/400x250/background15.jpg" src="image/background/400x250/background15.jpg" data-toggle="unveil" class="unveiled">
+                            </div>
+                            <!--/ media -->
+                            <div class="caption">
+                                <h5 class="semibold mt0 mb5">Cute pet</h5>
+                                <p class="text-muted mb5 ellipsis">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                                <p class="tag ellipsis">
+                                    <a href="#">#Pet</a>&nbsp;
+                                    <a href="#">#Cute</a>
+                                </p>
+                            </div>
+                            <hr class="mt5 mb5">
+                            <ul class="meta">
+                                <li>
+                                    <div class="img-group img-group-stack">
+                                        <img alt="" class="img-circle" src="image/avatar/avatar8.jpg">
+                                    </div>
+                                </li>
+                                <li>
+                                    <p class="nm"><a class="semibold" href="#">Samuel Jackson</a> love this</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--/ thumbnail -->
+                    </div>
+                    
                 </div>
                 <!--/ END row -->
-                
+                <div id="bs-modal" class="modal fade">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header text-center">
+                                <button type="button" class="close" data-dismiss="modal">×</button>
+                                <div class=" ico-user-plus2 mb15 mt15" style="font-size:36px;"></div>
+                                <h3 class="semibold modal-title text-danger">Add your portfolio</h3>
+                            </div>
+                            <form class="panel-default form-horizontal" data-parsley-validate="" action="" novalidate>
+                                <br/>
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                    <label class="col-sm-4 control-label">Upload screenshots: <span class="text-danger">*</span></label>
+                                    <div class="col-sm-7">
+                                        <div class="input-group">
+                                            <input type="text" readonly class="form-control" data-parsley-id="4011"><ul class="parsley-errors-list" id="parsley-id-4011"></ul>
+                                            <span class="input-group-btn">
+                                            <div class="btn btn-primary btn-file">
+                                                <span class="icon iconmoon-file-3"></span> Browse 
+                                                <input type="file" data-parsley-id="6400"><ul class="parsley-errors-list" id="parsley-id-6400"></ul>
+                                            </div>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                            <label class="col-sm-4 control-label">Name of the project<span class="text-danger">*</span></label>
+                            <div class="col-sm-7">
+                                <input type="text" required name="required" class="form-control " data-parsley-id="9793"><ul class="parsley-errors-list" id="parsley-id-9793"></ul>
+                            </div>
+                        </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <label class="col-sm-4 control-label">Link to the project<span class="text-danger">*</span></label>
+                                        <div class="col-sm-7">
+                                            <input type="text" required name="required" class="form-control " data-parsley-id="9793"><ul class="parsley-errors-list" id="parsley-id-9793"></ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <label class="col-sm-4 control-label">Description<span class="text-danger">*</span></label>
+                                        <div class="col-sm-7">
+                                            <textarea required rows="3" class="form-control" data-parsley-id="9568"></textarea>
+                                            <ul class="parsley-errors-list" id="parsley-id-9793"></ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <label class="col-sm-4 control-label">Industry<span class="text-danger">*</span></label>
+                                        <div class="col-sm-7">
+                                            <input type="text" required name="required" class="form-control " data-parsley-id="9793"><ul class="parsley-errors-list" id="parsley-id-9793"></ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <label class="col-sm-4 control-label">Client name<span class="text-danger">*</span></label>
+                                        <div class="col-sm-7">
+                                            <input type="text" required name="required" class="form-control " data-parsley-id="9793"><ul class="parsley-errors-list" id="parsley-id-9793"></ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <label class="col-sm-4 control-label">Year done<span class="text-danger">*</span></label>
+                                        <div class="col-sm-7">
+                                            <input type="text" required name="required" class="form-control " data-parsley-id="9793" data-mask="99/99/9999"><ul class="parsley-errors-list" id="parsley-id-9793"></ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div><!-- /.modal-content -->
+                    </div><!-- /.modal-dialog -->
+                </div>
             </section>
             <!--/ END Template Container -->
 
@@ -975,6 +901,7 @@ CONTACT : pampersdry@gmail.com
                             <img src="image/avatar/avatar3.jpg" class="img-circle" alt="">
                         </span>
                         <span class="media-body">
+
                             <span class="media-heading"><span class="hasnotification hasnotification-success mr5"></span> Nash Evans</span>
                             <span class="media-meta ellipsis">Honduras</span>
                         </span>
@@ -1075,13 +1002,12 @@ CONTACT : pampersdry@gmail.com
         <!--/ app init script -->
 
         <!-- 3rd party plugin script : optional(per use) -->
-        <script type="text/javascript" src="plugins/parsley/js/parsley.min.js"></script>
-        <script type="text/javascript" src="plugins/steps/js/jquery.steps.min.js"></script>
+        <script type="text/javascript" src="plugins/magnific/js/jquery.magnific-popup.min.js"></script>
+        <script type="text/javascript" src="plugins/mixitup/js/jquery.mixitup.min.js"></script>
         <script type="text/javascript" src="plugins/inputmask/js/inputmask.min.js"></script>
+        <script type="text/javascript" src="plugins/selectize/js/selectize.min.js"></script>
         <script type="text/javascript" src="javascript/page.js"></script>
         <!--/ 3rd party plugin script -->
-        
-		
         <!--/ END JAVASCRIPT SECTION -->
     </body>
 </html>

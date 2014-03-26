@@ -219,9 +219,9 @@
 .template-logo {
   display: block;
   text-decoration: none;
-  width: 110px;
-  background-size: 110px 50px;
-  height: 50px;
+  width: 171px;
+  background-size: 171px 23px;
+  height: 23px;
   margin: 0px auto;
   background-image: url("../image/logo.png");
 }
@@ -231,7 +231,7 @@
 @media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5) {
   .template-logo {
     background-image: url("../image/logo@2x.png");
-    background-size: 110px 50px;
+    background-size: 171px 23px;
     background-repeat: no-repeat;
   }
   .template-logo.template-logo-inverse {
