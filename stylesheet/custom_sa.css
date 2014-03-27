@@ -81,4 +81,10 @@
 .icon-top{top: 8px!important;}
 .showdiv{ display:none;}
 /*new css for page-login*/ 
+.border_design{}
+@media (max-width: 600px) 
+{
+.border_design{ display:none}	
+	}
+
 
