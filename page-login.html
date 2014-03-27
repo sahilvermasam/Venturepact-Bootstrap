@@ -38,200 +38,240 @@ CONTACT : pampersdry@gmail.com
         <!-- Application stylesheet : mandatory -->
         <link rel="stylesheet" href="stylesheet/layout.css">
         <link rel="stylesheet" href="stylesheet/uielement.css">
+        <link rel="stylesheet" href="stylesheet/custom_sa.css">
         <!--/ Application stylesheet -->
         <!-- END STYLESHEETS -->
 
         <!-- START JAVASCRIPT SECTION - Load only modernizr script here -->
         <script src="library/modernizr/js/modernizr.min.js"></script>
+        
+         <script type="text/javascript" src="library/jquery/js/jquery.min.js"></script>
+          <script>
+			
+			$(document).ready(function(){
+			    $("#show").click(function(){
+				$(".showdiv").slideDown(700);
+			  });
+			});
+		</script> 
+
+        
         <!--/ END JAVASCRIPT SECTION -->
     </head>
     <!--/ END Head -->
-    <body data-page="page-login">
-        <!-- START Template Main -->
-        <section id="main" role="main">
-            <!-- START Template Container -->
-           	<section class="col-lg-12 logo-header">
-                <!-- START row -->
-                <div class="row">
-                    <div class="col-lg-4 col-lg-offset-4">
-                        <!-- Brand -->
-                        <div class="text-center" style="margin-bottom:15px;  margin-top:15px;">
-                            <span class="template-logo template-logo-inverse"></span>
-                            <!--<h5 class="semibold text-muted mt-10">Login to your account.</h5>-->
-                        </div>
+    <body data-page="form-element">
+          
+        <!-- START Template Container -->
+        <section class="col-lg-12 logo-header">
+            <!-- START row -->
+            <div class="row">
+                <div class="col-lg-4 col-lg-offset-4">
+                    <!-- Brand -->
+                    <div class="text-center" style="margin-bottom:15px;  margin-top:15px;">
+                        <span class="template-logo template-logo-inverse"></span>
                     </div>
                 </div>
-                <!--/ END row -->
-            </section>
-            <section class="col-lg-12 bg-teal">
-                <!-- START row -->
-                <div class="row">
-                    <div class="col-lg-4 col-lg-offset-4 text-center">
-                        <h3 class="title light text-white mtb10">What do you need work on ?</h3>
-                        <div class="col-md-12">
-                        	<form action="" class="form-horizontal form-bordered">
-                            	<div class="form-group">
+            </div>
+            <!--/ END row -->
+        </section>
+        <section class="col-lg-12 bg-teal">
+            <!-- START row -->
+            <div class="row">
+                <div class="col-lg-6 col-lg-offset-3">
+                    <h3 class="title light text-white mtb10 text-center">What do you need work on ?</h3>
+                    <div class="col-md-12">
+                        <form action="" class="form-horizontal form-bordered">
+                            <div class="form-group">
                                 <div class="col-sm-6">
-                                    <select class="form-control" id="selectize-customselect">
-                                        <option value="1">Option 1</option>
-                                        <option value="2">Option 2</option>
-                                        <option value="3">Option 3</option>
-                                        <option value="4">Option 4</option>
-                                        <option value="5">Option 5</option>
-                                    </select>
+                                    <div class="selectize-control form-control single mb5">
+                                        <select class="form-control" id="selectize-customselect">
+                                            <option value="1">Build a new</option>
+                                            <option value="2">Add features to</option>
+                                            <option value="3">Rebuild/repair an existing</option>
+                                            <option value="4">Add security to</option>
+                                            <option value="5">Design a new</option>
+                                            <option value="6">Other work on</option>
+                                    	</select>
+                                    </div>
                                 </div>
-                                 <div class="col-sm-6">
-                                    <select class="form-control" id="selectize-customselect">
-                                        <option value="1">Option 1</option>
-                                        <option value="2">Option 2</option>
-                                        <option value="3">Option 3</option>
-                                        <option value="4">Option 4</option>
-                                        <option value="5">Option 5</option>
-                                    </select>
+                                <div class="col-sm-6">
+                                	<div class="selectize-control form-control single mb5">
+                                        <select class="form-control" id="satnma">
+                                            <option value="1">iPhone/iPad app</option>
+                                            <option value="2">Android app</option>
+                                            <option value="3">Web app</option>
+                                            <option value="4">Static website</option>
+                                            <option value="5">Business application (Sharepoint, Oracle etc)</option>
+                                            <option value="1">Other software</option>
+                                            <option value="1">Google Glass app</option>
+                                        </select>
+                                	</div>
                                 </div>
                             </div>
-                            </form>
-                            <!--<ul class="nav nav-pills">
-                            	<li class="dropdown border-radius-left">
-                                    <a href="javascript:void(0);" data-toggle="dropdown" class="dropdown-toggle dropdown-list-white">
-                                        Dropdown <span class="caret arrow-down"></span>
-                                    </a>
-                                    <ul role="menu" class="dropdown-menu dropdown-sub-list">
-                                        <li><a href="javascript:void(0);">Action</a></li>
-                                        <li><a href="javascript:void(0);">Another action</a></li>
-                                        <li><a href="javascript:void(0);">Something else here</a></li>
-                                        
-                                    </ul>
-                                </li>
-                                <li class="dropdown border-radius-right">
-                                    <a href="javascript:void(0);" data-toggle="dropdown" class="dropdown-toggle dropdown-list-white">
-                                        Dropdown <span class="caret arrow-down"></span>
-                                    </a>
-                                    <ul role="menu" class="dropdown-menu dropdown-sub-list">
-                                        <li><a href="javascript:void(0);">Action</a></li>
-                                        <li><a href="javascript:void(0);">Another action</a></li>
-                                        <li><a href="javascript:void(0);">Something else here</a></li>
-                                        
-                                    </ul>
-                                </li>
-                            </ul>-->
-                    	</div>
+                        </form>
                     </div>
                 </div>
-                <!--/ END row -->
-            </section>
-            <section class="col-lg-12 bg-white ">
-                <!-- START row -->
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h3 class="title light text-grey5 mtb28">To connect you with the right service providers, we will need some more detail.</h3>
-                    </div>
+            </div>
+            <!--/ END row -->
+        </section>
+        <section class="col-lg-12">
+            <!-- START row -->
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h3 class="title light text-grey5 mtb22">To connect you with the right service providers, we will need some more detail.</h3>
                 </div>
-                <!--/ END row -->
-            </section>
-            <section class="col-lg-12 bg-white">
-                <!-- START row -->
-                <div class="row">
-                    <div class="col-lg-4 col-lg-offset-2 text-center">
-						<h4 class="title light text-grey9 text-size16 text-margin-bottom">If you prefer to write out the requirements, access our self service platfrom. It will take 5-10 minutes.</h4>
-                        <!-- Social button -->
-                        <ul class="list-table">
-                            <li><button type="button" class="btn btn-social btn-block btn-linkedin"><i class="ico-facebook2 mr5"></i>Sign in with LinkedIn</button></li>			
-                        </ul>
-                        <!-- Social button -->
-                        
-                        <h6 class="title light text-grey9 text-size13 text-margin-bottom">Don’t have a LinkedIn Account, <a href="#" class="text-teal-new"> Click here</a></h6>
-                        <div class="col-sm-12">
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <div class="has-icon pull-right">
-                                        <input type="text" placeholder="Username / email" name="username" class="form-control">
-                                        <i class="ico-user2  form-control-icon"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                            	<div class="form-group">
-                                    <div class="has-icon pull-right">
-                                        <input type="password" placeholder="Password" name="password" class="form-control">
-                                        <i class="ico-lock2 form-control-icon"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="row">
-                                    <div class="col-xs-6">
-                                        <div class="checkbox custom-checkbox">  
-                                            <input type="checkbox" id="customcheckbox" value="1">  
-                                            <label for="customcheckbox">&nbsp;&nbsp;Remember me</label>   
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-6 text-right">
-                                        <a href="javascript:void(0);">Lost password?</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <button type="submit" class="btn btn-block btn-success btn-social btn-signin col-lg-offset-4">Sign In</button>
-                            </div>
-                            <p class="clearfix">
-                                <span class="text-muted">Don't have any account? <a class="semibold" href="javascript:void(0);">Sign up to get started</a></span>
-                            </p>
-                        </div>
-                        <!-- Login form -->
-                        <!--<form class="" action="index.html">
-                            <div class="form-group">
-                                <div class="form-stack has-icon clearfix">
-                                    <input name="username" type="text" class="form-control input-lg" placeholder="Username / email">
-                                    <i class="ico-user2 form-control-icon"></i>
-                                </div>
-                                <div class="form-stack has-icon clearfix">
-                                    <input name="password" type="password" class="form-control input-lg" placeholder="Password">
-                                    <i class="ico-lock2 form-control-icon"></i>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="row">
-                                    <div class="col-xs-6">
-                                        <div class="checkbox custom-checkbox">  
-                                            <input type="checkbox" id="customcheckbox" value="1">  
-                                            <label for="customcheckbox">&nbsp;&nbsp;Remember me</label>   
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-6 text-right">
-                                        <a href="javascript:void(0);">Lost password?</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group nm">
-                                <button type="submit" class="btn btn-block btn-success btn-social">Sign In</button>
-                            </div>
-                        </form>-->
-                        <!--/ Login form -->
-
-                        
+            </div>
+            <!--/ END row -->
+        </section>
+        <section class="col-lg-12">
+            <!-- START row -->
+            <div class="row">
+                <div class="col-lg-4 col-lg-offset-2 text-center">
+                    <div class="col-sm-12">
+                        <h4 class="title light text-grey9 text-size16 mb20">If you prefer to write out the requirements, access our self service platfrom. It will take 5-10 minutes.</h4>
                     </div>
                     
-                    <div class="col-lg-1 col-lg-offset-0 text-center">
-                    	<div class="center_border"></div>
-                        <div class="center_text">Or</div>
-                        <div class="center_border"></div>
+                    <!-- Social button -->
+                    <div class="col-sm-12">
+                        <button class="btn btn-social btn-block btn-linkedin" type="button"><i class="ico-linkedin2 mr15"></i>Sign in with LinkedIn</button>
                     </div>
-                    <div class="col-lg-2 col-lg-offset-1 text-center">
-                    	<button class="btn btn-social btn-block btn-call btn-mt80" type="button">Schedule a call</button>
+                    <!-- Social button -->
+                    
+                    <div class="col-sm-12">
+                        <h6 class="title light text-grey9 text-size13 mb20">Don’t have a LinkedIn Account, <a href="javascript:void(0);" id="show" class="text-teal-new"> Click here</a></h6>
                     </div>
+                   
+                    
+                    <!-- Login form -->
+                    <div class="col-sm-12 showdiv">
+                        <form class="" action="">
+                            <div class="form-group mb10">
+                                <div class="row">
+                                    <div class="col-sm-6 mb5">
+                                    <div class="has-icon pull-right">
+                                        <input type="text" placeholder="Username / email" name="username" class="form-control input-white">
+                                        <i class="ico-user2  form-control-icon icon-top"></i>
+                                    </div>
+                                </div>
+                                    <div class="col-sm-6 mb5">
+                                        <div class="has-icon pull-right">
+                                            <input type="password" placeholder="Password" name="password" class="form-control input-white ">
+                                            <i class="ico-lock2 form-control-icon icon-top"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group mb10">
+                                <div class="row">
+                                    <div class="col-xs-6 text-left">
+                                        <div class="checkbox custom-checkbox">  
+                                            <input type="checkbox" value="1" id="customcheckbox">  
+                                            <label for="customcheckbox" class="text-grey9">&nbsp;&nbsp;Remember me</label>   
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 text-right">
+                                        <a href="javascript:void(0);">Lost password?</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group mb10">
+                                <button class="btn btn-block btn-success btn-social btn-signin col-lg-offset-4" type="submit">Sign In</button>
+                            </div>
+                            <p class="clearfix">
+                                <span class="text-muted">Don't have any account? <a href="javascript:void(0);" data-target="#bs-modal" data-toggle="modal" class="semibold">Sign up to get started</a></span>
+                                
+                            </p>
+                            
+                        </form>
+                    </div>
+                    <!--/ Login form -->
                 </div>
-                <!--/ END row -->
-            </section>
-           
-            <!--/ END Template Container -->
-            
+                
+                <div class="col-lg-1 col-lg-offset-0 text-center border_design">
+                    <div class="center_border"></div>
+                    <div class="center_text">Or</div>
+                    <div class="center_border"></div>
+                </div>
+                <div class="col-lg-2 col-lg-offset-1 text-center">
+                    <button class="btn btn-social btn-block btn-call btn-mt80 ml15" type="button">Schedule a call</button>
+                </div>
+            </div>
+            <!--/ END row -->
+               
+            <!-- START modal -->
+            <div id="bs-modal" class="modal fade">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header text-center">
+                            <button type="button" class="close" data-dismiss="modal">×</button>
+                            <!--<div class=" ico-gun-ban mb15 mt15" style="font-size:36px;"></div>-->
+                            <h3 class="semibold modal-title text-danger">Sign Up Form</h3>
+                            <!--<p class="text-muted">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>-->
+                        </div>
+                        <div class="modal-body">
+                            <form class="" action="">
+                            	<div class="form-group mb10">
+                                    <div class="row">
+                                        <div class="col-sm-6 mb5">
+                                            <div class="has-icon pull-right">
+                                                <input type="text" class="form-control input-white" name="fname" placeholder="First Name">
+                                                <!--<i class="ico-user2  form-control-icon icon-top"></i>-->
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 mb5">
+                                            <div class="has-icon pull-right">
+                                                <input type="text" class="form-control input-white " name="lname" placeholder="Last Name">
+                                                <!--<i class="ico-lock2 form-control-icon icon-top"></i>-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group mb10">
+                                    <div class="row">
+                                        <div class="col-sm-6 mb5">
+                                            <div class="has-icon pull-right">
+                                                <input type="text" placeholder="Username / email" name="username" class="form-control input-white">
+                                                <i class="ico-user2  form-control-icon icon-top"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 mb5">
+                                            <div class="has-icon pull-right">
+                                                <input type="password" placeholder="Password" name="password" class="form-control input-white ">
+                                                <i class="ico-lock2 form-control-icon icon-top"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--<div class="form-group mb10">
+                                    <div class="row">
+                                        <div class="col-xs-6 text-left">
+                                            <div class="checkbox custom-checkbox">  
+                                                <input type="checkbox" value="1" id="customcheckbox">  
+                                                <label for="customcheckbox" class="text-grey9">&nbsp;&nbsp;I Agree the terms and policy.</label>   
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>-->
+                                <div class="form-group mb10">
+                                    <button class="btn btn-block btn-info btn-social btn-signin col-lg-offset-4" type="submit">Sign Up</button>
+                                </div>
+                            </form>
+                        
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+                        </div>
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+            </div>
+            <!--/ END modal -->
         </section>
-        <!--/ END Template Main -->
+        <!--/ END Template Container -->
 
         <!-- START JAVASCRIPT SECTION (Load javascripts at bottom to reduce load time) -->
         <!-- Library script : mandatory -->
-        <script type="text/javascript" src="library/jquery/js/jquery.min.js"></script>
+       
         <script type="text/javascript" src="library/jquery/js/jquery-ui.min.js"></script>
         <script type="text/javascript" src="library/jquery/js/jquery-ui-touch.min.js"></script>
         <script type="text/javascript" src="library/jquery/js/jquery-migrate.min.js"></script>
@@ -251,6 +291,15 @@ CONTACT : pampersdry@gmail.com
         <script type="text/javascript" src="plugins/inputmask/js/inputmask.min.js"></script>
         <script type="text/javascript" src="plugins/selectize/js/selectize.min.js"></script>
         <script type="text/javascript" src="javascript/page.js"></script>
+        <script type="text/javascript" src="plugins/flot/jquery.flot.min.js"></script>
+        <script type="text/javascript" src="plugins/flot/jquery.flot.spline.min.js"></script>
+        <script type="text/javascript" src="plugins/flot/jquery.flot.categories.min.js"></script>
+        <script type="text/javascript" src="plugins/flot/jquery.flot.tooltip.min.js"></script>
+        <script type="text/javascript" src="plugins/flot/jquery.flot.resize.min.js"></script>
+        <script type="text/javascript" src="plugins/gritter/js/jquery.gritter.min.js"></script>
+        <script type="text/javascript" src="plugins/bootbox/js/bootbox.min.js"></script>
+        
+
         <!--/ 3rd party plugin script -->
         <!--/ END JAVASCRIPT SECTION -->
     </body>

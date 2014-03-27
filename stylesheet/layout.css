@@ -20,7 +20,7 @@ html {
 body {
   font-size: 13px;
   min-height: 100%;
-  background-color: #ecf0f1;
+  background-color: #F8F8F8;
 }
 /*
  * Template Header
@@ -1056,69 +1056,3 @@ body {
 /*
  * Template Footer
 ----------------------------------------------------------------------------- */
-
-/*new css for page-login*/
-.logo-header {
-    background-color: rgba(255, 255, 255, 0.97);
-    border-bottom: 1px solid #00978F;
-    min-height: 50px;
-}
-.bg-teal{
-	background:#00b6ad;
-}
-.bg-white {
-    background: none repeat scroll 0 0 #F8F8F8;
-}
-.text-margin-bottom{
-	margin-bottom: 20px;
-}
-.border-radius-left{
-	border-radius: 4px 0 0 4px !important;
-}
-.border-radius-right{
-	border-radius: 0px 4px 4px 0px !important;
-}
-.dropdown-list-white{
-	color: #5E5E5E;
-	padding: 12px 15px !important;
-	font-size: 14px;
-}
-.arrow-down{margin-left: 70px;}
-.nav-pills > li{ background:#fff;}
-.nav-pills > li > a.dropdown-list-white:hover,
-.nav-pills > li > a.dropdown-list-white:focus {
-   color: #5E5E5E; background:#fff;
-}
-.dropdown-sub-list{min-width: 182px;}
-.text-grey5{color: #5e5e5e;}
-.text-grey9{color: #999;}
-.text-size16{font-size: 16px; line-height: 24px;}
-.text-size13{font-size: 13px !important;}
-.light{font-weight: 200;}
-.mtb10{margin: 10px 0px;}
-.mtb28{margin: 28px 0px;}
-.btn-linkedin{
-	background-color: #007ab9;
-    border-color: #006fa8;
-    color: #FFFFFF;
-    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.1);
-}
-.btn-social {
-    font-size: 18px !important;
-    line-height: 18px;
-    padding: 15px 12px !important;
-}
-.btn-signin{width: 40%;}
-.text-teal-new{color: #00b6ad;}
-.text-teal-new:hover{color: #00b6ad; text-decoration: underline;}
-.center_border{ border-right: 5px solid #e5e5e5; min-height: 80px;}
-.center_text{font-size:18px; color: #5e5e5e; margin: 15% 85%;}
-.btn-call{
-	background-color: #5e5e5e;
-    border-color: #535353;
-    color: #FFFFFF;
-    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.1);
-}
-.btn-call:hover, .btn-call:focus{color: #fff;}
-.btn-mt80{margin-top: 80px;}
-/*new css for page-login*/
