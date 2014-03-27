@@ -1095,7 +1095,8 @@ body {
 .text-size16{font-size: 16px; line-height: 24px;}
 .text-size13{font-size: 13px !important;}
 .light{font-weight: 200;}
-.mtb50{margin: 50px 0px;}
+.mtb10{margin: 10px 0px;}
+.mtb28{margin: 28px 0px;}
 .btn-linkedin{
 	background-color: #007ab9;
     border-color: #006fa8;
@@ -1107,6 +1108,17 @@ body {
     line-height: 18px;
     padding: 15px 12px !important;
 }
+.btn-signin{width: 40%;}
 .text-teal-new{color: #00b6ad;}
 .text-teal-new:hover{color: #00b6ad; text-decoration: underline;}
+.center_border{ border-right: 5px solid #e5e5e5; min-height: 80px;}
+.center_text{font-size:18px; color: #5e5e5e; margin: 15% 85%;}
+.btn-call{
+	background-color: #5e5e5e;
+    border-color: #535353;
+    color: #FFFFFF;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.1);
+}
+.btn-call:hover, .btn-call:focus{color: #fff;}
+.btn-mt80{margin-top: 80px;}
 /*new css for page-login*/
