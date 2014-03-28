@@ -667,7 +667,7 @@ SummerNote = function () {
         (function () {
             // custom select
             $("#selectize-customselect").selectize();
-			$("#satnma").selectize();
+			$("#satnam").selectize();
 
 
             // tagging

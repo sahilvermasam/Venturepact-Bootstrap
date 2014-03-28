@@ -34,6 +34,7 @@ CONTACT : pampersdry@gmail.com
         <!-- Application stylesheet : mandatory -->
         <link rel="stylesheet" href="stylesheet/layout.css">
         <link rel="stylesheet" href="stylesheet/uielement.css">
+        <link rel="stylesheet" href="stylesheet/custom_sa.css">
         <!--/ Application stylesheet -->
         <!-- END STYLESHEETS -->
 
@@ -653,7 +654,7 @@ CONTACT : pampersdry@gmail.com
                     <div class="col-xs-12 col-md-6 col-lg-4">
                     	<div class="widget panel">
                             <!-- panel body -->
-                            <div class="table-layout mb15">
+                            <div class="table-layout mb0">
                                 <div class="col-xs-12 widget">
                                 	<div class="panel-body bgcolor-success">
                                         <ul class="list-unstyled">
@@ -665,12 +666,16 @@ CONTACT : pampersdry@gmail.com
                                                 <p class="nm text-white">Build in iOS</p>
                                             </li>
                                         </ul>
-                                        <!-- blockquote -->
-                                        <blockquote class="mt10 text-white text-center">
-                                            <p>Proposals received. Awaiting your response</p>
-                                            <small class="text-white">Status</small>
-                                        </blockquote>
-                                        <!--/ blockquote -->
+                                        <hr style="border-color:#fff;">
+                                        <div class="panel-body text-center">
+                                            <ul class="list-unstyled">
+                                                <li class="text-center">
+                                                    <i style="font-size:14px;" class="ico-warning-sign"></i>
+                                                    <p class="nm">Status</p>
+                                                    <a href="" class="semibold custom_white">Proposals received. Awaiting your response</a>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-xs-12 widget">
@@ -689,6 +694,10 @@ CONTACT : pampersdry@gmail.com
                                         </li>
                                     </ul>
                                 </div>
+                                <div class="clearfix panel-footer"> 
+                                	<a class="pull-left text-grey9" href="#" title="Edit Project"><i class="ico-edit"></i></a> 
+                                    <a class="pull-right text-grey9" href="#" title="Delete Project"><i class="ico-trash"></i></a> 
+                                </div>
                             </div>
                             <!--/ panel body -->
                         </div>
@@ -702,10 +711,10 @@ CONTACT : pampersdry@gmail.com
                                 <div class="panel-body" style="min-height:355px;">
                                     <ul class="list-unstyled mt15 mb15" style="margin-top:38% !important;">
                                         <li class="text-center">
-                                            <a href="" data-toggle="modal" data-target="#bs-modal-sm" style="color:#333;"><i style="font-size:46px;" class="ico-plus"></i></a>
+                                            <a href="" data-toggle="modal" data-target="#bs-modal-sm"><i style="font-size:46px;" class="ico-plus"></i></a>
                                         </li>
                                         <li class="text-center">
-                                            <h5 class="semibold mb0 text-grey9">Add new project</h5>
+                                            <h5 class="semibold mb0 text-grey9"><a href="">Add new project</a></h5>
                                         </li>
                                     </ul>
                                 </div>
