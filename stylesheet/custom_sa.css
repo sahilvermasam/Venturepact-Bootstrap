@@ -40,7 +40,8 @@
 .text-size13{font-size: 13px !important;}
 .light{font-weight: 200;}
 .mtb10{margin: 10px 0px;}
-.mtb28{margin: 28px 0px;}
+.mtb22{margin: 22px 0px;}
+
 .btn-linkedin{
 	background-color: #007ab9;
     border-color: #006fa8;
@@ -63,7 +64,8 @@
     border-color: #535353;
     color: #FFFFFF;
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.1);
-	 width: 90%;
+	 width: 93%;
+
 }
 .btn-call:hover, .btn-call:focus{color: #fff;}
 .btn-mt80{margin-top:77px;}

@@ -1,0 +1,1806 @@
+<!DOCTYPE html>
+<!-- 
+TEMPLATE NAME : Adminre - Responsive Admin Template build with Twitter Bootstrap 3.1.1
+CURRENT VERSION : 1.0.0
+AUTHOR : pampersdry
+CONTACT : pampersdry@gmail.com
+
+** A license must be purchased in order to legally use this template for your project **
+** PLEASE SUPPORT ME. YOUR SUPPORT ENSURE CONTINUITY OF THIS PROJECT **
+-->
+<html>
+    <!-- START Head -->
+    <head>
+        <!-- START META SECTION -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Venturepact</title>
+        <meta name="description" content="Adminre admin dashboard">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="image/touch/apple-touch-icon-144x144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="image/touch/apple-touch-icon-114x114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="image/touch/apple-touch-icon-72x72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="image/touch/apple-touch-icon-57x57-precomposed.png">
+        <link rel="shortcut icon" href="image/touch/apple-touch-icon.png">
+        <!--/ END META SECTION -->
+
+        <!-- START STYLESHEETS -->
+        <!-- Library stylesheet : mandatory -->
+        <link rel="stylesheet" href="library/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="library/jquery/css/jquery-ui.min.css">
+        <!--/ Library stylesheet -->
+
+        <!-- Application stylesheet : mandatory -->
+        <link rel="stylesheet" href="stylesheet/layout.css">
+        <link rel="stylesheet" href="stylesheet/uielement.css">
+        <!--/ Application stylesheet -->
+        <!-- END STYLESHEETS -->
+
+        <!-- START JAVASCRIPT SECTION - Load only modernizr script here -->
+        <script src="library/modernizr/js/modernizr.min.js"></script>
+        <!--/ END JAVASCRIPT SECTION -->
+    </head>
+    <!--/ END Head -->
+    <body data-page="component-custom-widget">
+        <!-- START Template Header -->
+        <header id="header" class="navbar navbar-fixed-top">
+            <!-- START navbar header -->
+            <div class="navbar-header">
+                <!-- Brand -->
+                <a class="navbar-brand" href="index.html">
+                    <span class="template-logo"></span>
+                </a>
+                <!--/ Brand -->
+            </div>
+            <!--/ END navbar header -->
+
+            <!-- START Toolbar -->
+            <div class="navbar-toolbar clearfix">
+                <!-- START Left nav -->
+                <ul class="nav navbar-nav navbar-left">
+                    <!-- Offcanvas left: This menu will take position at the top of template header (mobile only). Make sure that only #header have the `position: relative`, or it may cause unwanted behavior -->
+                    <li class="navbar-main hidden-lg hidden-md">
+                        <a href="javascript:void(0);" data-toggle="offcanvas" data-direction="ltr" rel="tooltip" title="Menu sidebar">
+                            <span class="meta">
+                                <span class="icon"><i class="ico-paragraph-left3"></i></span>
+                            </span>
+                        </a>
+                    </li>
+                    <!--/ Offcanvas left -->
+
+                    <!-- Message dropdown -->
+                    <li class="dropdown custom">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+                            <span class="meta">
+                                <span class="icon"><i class="ico-bubbles2"></i></span>
+                            </span>
+                        </a>
+                        <!-- Dropdown menu -->
+                        <div class="dropdown-menu" role="menu">
+                            <div class="dropdown-header">
+                                <span class="title">Messages</span>
+                                <span class="option text-right"><a href="javascript:void(0);">New message</a></span>
+                            </div>
+                            <div class="dropdown-body slimscroll">
+                                <!-- Search form -->
+                                <form class="form-horizontal" action="">
+                                    <div class="has-icon">
+                                        <input type="text" class="form-control" placeholder="Search message...">
+                                        <i class="ico-search form-control-icon"></i>
+                                    </div>
+                                </form>
+                                <!--/ Search form -->
+
+                                <!-- Message list -->
+                                <div class="media-list">
+                                    <a href="page-message-rich.html" class="media border-dotted">
+                                        <span class="pull-left">
+                                            <img src="image/avatar/avatar6.jpg" class="media-object img-circle" alt="">
+                                        </span>
+                                        <span class="media-body">
+                                            <span class="media-heading">Arthur Abbott</span>
+                                            <span class="media-text ellipsis nm">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</span>
+                                            <!-- meta icon -->
+                                            <span class="media-meta"><i class="ico-star6"></i></span>
+                                            <span class="media-meta"><i class="ico-attachment"></i></span>
+                                            <span class="media-meta pull-right">2m</span>
+                                            <!--/ meta icon -->
+                                        </span>
+                                    </a>
+
+                                    <a href="page-message-rich.html" class="media border-dotted read">
+                                        <span class="pull-left">
+                                            <img src="image/avatar/avatar1.jpg" class="media-object img-circle" alt="">
+                                        </span>
+                                        <span class="media-body">
+                                            <span class="media-heading">Martina Poole</span>
+                                            <span class="media-text ellipsis nm">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</span>
+                                            <!-- meta icon -->
+                                            <span class="media-meta"><i class="ico-reply"></i></span>
+                                            <span class="media-meta"><i class="ico-attachment"></i></span>
+                                            <span class="media-meta pull-right">20m</span>
+                                            <!--/ meta icon -->
+                                        </span>
+                                    </a>
+
+                                    <a href="page-message-rich.html" class="media border-dotted">
+                                        <span class="pull-left">
+                                            <img src="image/avatar/avatar2.jpg" class="media-object img-circle" alt="">
+                                        </span>
+                                        <span class="media-body">
+                                            <span class="media-heading">Elvis Christensen</span>
+                                            <span class="media-text ellipsis nm">Duis aute irure dolor in reprehenderit in voluptate velit esse.</span>
+                                            <!-- meta icon -->
+                                            <span class="media-meta"><i class="ico-attachment"></i></span>
+                                            <span class="media-meta pull-right">5h</span>
+                                            <!--/ meta icon -->
+                                        </span>
+                                    </a>
+
+                                    <a href="page-message-rich.html" class="media border-dotted read">
+                                        <span class="pull-left">
+                                            <img src="image/avatar/avatar3.jpg" class="media-object img-circle" alt="">
+                                        </span>
+                                        <span class="media-body">
+                                            <span class="media-heading">Walter Foster</span>
+                                            <span class="media-text ellipsis nm">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</span>
+                                            <!-- meta icon -->
+                                            <span class="media-meta"><i class="ico-attachment"></i></span>
+                                            <span class="media-meta pull-right">21h</span>
+                                            <!--/ meta icon -->
+                                        </span>
+                                    </a>
+
+                                    <a href="page-message-rich.html" class="media border-dotted read">
+                                        <span class="pull-left">
+                                            <img src="image/avatar/avatar4.jpg" class="media-object img-circle" alt="">
+                                        </span>
+                                        <span class="media-body">
+                                            <span class="media-heading">Callum Santosr</span>
+                                            <span class="media-text ellipsis nm">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</span>
+                                            <!-- meta icon -->
+                                            <span class="media-meta pull-right">1d</span>
+                                            <!--/ meta icon -->
+                                        </span>
+                                    </a>
+
+                                    <a href="page-message-rich.html" class="media border-dotted read">
+                                        <span class="pull-left">
+                                            <img src="image/avatar/avatar5.jpg" class="media-object img-circle" alt="">
+                                        </span>
+                                        <span class="media-body">
+                                            <span class="media-heading">Noelani Blevins</span>
+                                            <span class="media-text ellipsis nm">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis.</span>
+                                            <!-- meta icon -->
+                                            <span class="media-meta pull-right">2d</span>
+                                            <!--/ meta icon -->
+                                        </span>
+                                    </a>
+
+                                    <a href="page-message-rich.html" class="media border-dotted read">
+                                        <span class="pull-left">
+                                            <img src="image/avatar/avatar8.jpg" class="media-object img-circle" alt="">
+                                        </span>
+                                        <span class="media-body">
+                                            <span class="media-heading">Carl Johnson</span>
+                                            <span class="media-text ellipsis nm">Curabitur consequat, lectus sit amet luctus vulputate, nisi sem</span>
+                                            <!-- meta icon -->
+                                            <span class="media-meta"><i class="ico-attachment"></i></span>
+                                            <span class="media-meta pull-right">2w</span>
+                                            <!--/ meta icon -->
+                                        </span>
+                                    </a>
+
+                                    <a href="page-message-rich.html" class="media border-dotted read">
+                                        <span class="pull-left">
+                                            <img src="image/avatar/avatar9.jpg" class="media-object img-circle" alt="">
+                                        </span>
+                                        <span class="media-body">
+                                            <span class="media-heading">Tamara Moon</span>
+                                            <span class="media-text ellipsis nm">Aliquam ultrices iaculis odio. Nam interdum enim non nisi. Aenean eget metus.</span>
+                                            <!-- meta icon -->
+                                            <span class="media-meta"><i class="ico-attachment"></i></span>
+                                            <span class="media-meta pull-right">2w</span>
+                                            <!--/ meta icon -->
+                                        </span>
+                                    </a>
+                                </div>
+                                <!--/ Message list -->
+                            </div>
+                        </div>
+                        <!--/ Dropdown menu -->
+                    </li>
+                    <!--/ Message dropdown -->
+
+                    <!-- Notification dropdown -->
+                    <li class="dropdown custom">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+                            <span class="meta">
+                                <span class="icon"><i class="ico-bell"></i></span>
+                                <span class="hasnotification hasnotification-danger"></span>
+                            </span>
+                        </a>
+                        <!-- Dropdown menu -->
+                        <div class="dropdown-menu" role="menu">
+                            <div class="dropdown-header">
+                                <span class="title">Notification (5)</span>
+                                <span class="option text-right"><a href="javascript:void(0);">Clear all</a></span>
+                            </div>
+                            <div class="dropdown-body slimscroll">
+                                <!-- Message list -->
+                                <div class="media-list">
+                                    <a href="javascript:void(0);" class="media border-dotted">
+                                        <span class="media-object pull-left">
+                                            <i class="ico-instagram2 bgcolor-teal"></i>
+                                        </span>
+                                        <span class="media-body">
+                                            <span class="media-text">Lorem ipsum <span class="text-primary semibold">dolor sit</span> amet, consectetur adipisicing elit.</span>
+                                            <!-- meta icon -->
+                                            <span class="media-meta pull-right">2m</span>
+                                            <!--/ meta icon -->
+                                        </span>
+                                    </a>
+
+                                    <a href="javascript:void(0);" class="media border-dotted">
+                                        <span class="media-object pull-left">
+                                            <i class="ico-queen"></i>
+                                        </span>
+                                        <span class="media-body">
+                                            <span class="media-text">Ut <span class="text-primary semibold">enim</span> ad minim veniam, aliquip ex ea commodo.</span>
+                                            <!-- meta icon -->
+                                            <span class="media-meta pull-right">10m</span>
+                                            <!--/ meta icon -->
+                                        </span>
+                                    </a>
+
+                                    <a href="javascript:void(0);" class="media read border-dotted">
+                                        <span class="media-object pull-left">
+                                            <i class="ico-file-check bgcolor-success"></i>
+                                        </span>
+                                        <span class="media-body">
+                                            <span class="media-text">Excepteur sint <span class="text-primary semibold">occaecat cupidatat</span> non laborum.</span>
+                                            <!-- meta icon -->
+                                            <span class="media-meta pull-right">1d</span>
+                                            <!--/ meta icon -->
+                                        </span>
+                                    </a>
+
+                                    <a href="javascript:void(0);" class="media read border-dotted">
+                                        <span class="media-object pull-left">
+                                            <i class="ico-basket2 bgcolor-info"></i>
+                                        </span>
+                                        <span class="media-body">
+                                            <span class="media-text">Duis aute irure dolor in <span class="text-primary semibold">reprehenderit</span> in voluptate.</span>
+                                            <!-- meta icon -->
+                                            <span class="media-meta pull-right">2d</span>
+                                            <!--/ meta icon -->
+                                        </span>
+                                    </a>
+
+                                    <a href="javascript:void(0);" class="media read border-dotted">
+                                        <span class="media-object pull-left">
+                                            <i class="ico-call-incoming"></i>
+                                        </span>
+                                        <span class="media-body">
+                                            <span class="media-text">Aliquip ex ea commodo consequat.</span>
+                                            <!-- meta icon -->
+                                            <span class="media-meta pull-right">1w</span>
+                                            <!--/ meta icon -->
+                                        </span>
+                                    </a>
+
+                                    <a href="javascript:void(0);" class="media read border-dotted">
+                                        <span class="media-object pull-left">
+                                            <i class="ico-alarm2"></i>
+                                        </span>
+                                        <span class="media-body">
+                                            <span class="media-text">Excepteur sint <span class="text-primary semibold">occaecat</span> cupidatat non.</span>
+                                            <!-- meta icon -->
+                                            <span class="media-meta pull-right">12w</span>
+                                            <!--/ meta icon -->
+                                        </span>
+                                    </a>
+
+                                    <a href="javascript:void(0);" class="media read border-dotted">
+                                        <span class="media-object pull-left">
+                                            <i class="ico-checkmark3 bgcolor-success"></i>
+                                        </span>
+                                        <span class="media-body">
+                                            <span class="media-text">Lorem ipsum dolor sit amet, <span class="text-primary semibold">consectetur</span> adipisicing elit.</span>
+                                            <!-- meta icon -->
+                                            <span class="media-meta pull-right">14w</span>
+                                            <!--/ meta icon -->
+                                        </span>
+                                    </a>
+                                </div>
+                                <!--/ Message list -->
+                            </div>
+                        </div>
+                        <!--/ Dropdown menu -->
+                    </li>
+                    <!--/ Notification dropdown -->
+
+                    <!-- Search form toggler  -->
+                    <li>
+                        <a href="javascript:void(0);" data-toggle="dropdown" data-target="#dropdown-form">
+                            <span class="meta">
+                                <span class="icon"><i class="ico-search"></i></span>
+                            </span>
+                        </a>
+                    </li>
+                    <!--/ Search form toggler -->
+                </ul>
+                <!--/ END Left nav -->
+
+                <!-- START navbar form -->
+                <div class="navbar-form navbar-left dropdown" id="dropdown-form">
+                    <form action="" role="search">
+                        <div class="has-icon">
+                            <input type="text" class="form-control" placeholder="Search application...">
+                            <i class="ico-search form-control-icon"></i>
+                        </div>
+                    </form>
+                </div>
+                <!-- START navbar form -->
+
+                <!-- START Right nav -->
+                <ul class="nav navbar-nav navbar-right">
+                    <!-- Profile dropdown -->
+                    <li class="dropdown profile">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+                            <span class="meta">
+                                <span class="avatar"><img src="image/avatar/avatar7.jpg" class="img-circle" alt="" /></span>
+                                <span class="text hidden-xs hidden-sm">Erich Reyes</span>
+                                <span class="arrow"></span>
+                            </span>
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li class="pa15">
+                                <h5 class="semibold hidden-xs hidden-sm">
+                                    60% <br/>
+                                    <small class="text-muted">Profile complete</small>
+                                </h5>
+                                <h5 class="semibold hidden-md hidden-lg">
+                                    Erich Reyes<br/>
+                                    <small class="text-muted">60% Profile complete</small>
+                                </h5>
+                                <div class="progress progress-xs nm mt10">
+                                    <div class="progress-bar progress-bar-warning" style="width: 60%">
+                                        <span class="sr-only">60% Complete</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="divider"></li>
+                            <li><a href="javascript:void(0);"><span class="icon"><i class="ico-user-plus2"></i></span> My Accounts</a></li>
+                            <li><a href="javascript:void(0);"><span class="icon"><i class="ico-cog4"></i></span> Profile Setting</a></li>
+                            <li><a href="javascript:void(0);"><span class="icon"><i class="ico-question"></i></span> Help</a></li>
+                            <li class="divider"></li>
+                            <li><a href="javascript:void(0);"><span class="icon"><i class="ico-exit"></i></span> Sign Out</a></li>
+                        </ul>
+                    </li>
+                    <!--/ Profile dropdown -->
+
+                    <!-- Offcanvas right This menu will take position at the top of template header (mobile only). Make sure that only #header have the `position: relative`, or it may cause unwanted behavior -->
+                    <li class="navbar-main">
+                        <a href="javascript:void(0);" data-toggle="offcanvas" data-direction="rtl" rel="tooltip" title="Feed / contact sidebar">
+                            <span class="meta">
+                                <span class="icon"><i class="ico-users3"></i></span>
+                                <span class="hasnotification hasnotification-danger"></span>
+                            </span>
+                        </a>
+                    </li>
+                    <!--/ Offcanvas right -->
+                </ul>
+                <!--/ END Right nav -->
+            </div>
+            <!--/ END Toolbar / link -->
+        </header>
+        <!--/ END Template Header -->
+
+        <!-- START Template Sidebar (Left) -->
+        <aside class="sidebar sidebar-left sidebar-menu">
+            <!-- START Sidebar Content -->
+            <section class="content slimscroll">
+                <!-- START Template Navigation/Menu -->
+                <ul id="nav" class="topmenu">
+                   <!-- <li class="menuheader">MAIN MENU</li>-->
+                    <li class="active open">
+                        <a href="dashboard.html">
+                            <span class="figure"><i class="ico-home2"></i></span>
+                            <span class="text">Dashboard</span>
+                            <span class="number"><span class="label label-danger">2</span></span>
+                        </a>
+                    </li>
+                    <li class="menuheader">Project 1</li>
+                    <li>
+                        <a href="javascript:void(0);" data-toggle="submenu" data-target="#Scope" data-parent="#nav">
+                            <span class="figure"><i class="ico-lightbulb"></i></span>
+                            <span class="text">Scope</span>
+                            <span class="arrow"></span>
+                        </a>
+                        <!-- START 2nd Level Menu -->
+                        <ul id="Scope" class="submenu collapse">
+                            <li>
+                                <a href="basic.html">
+                                    <span class="text">Basic</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="progress.html">
+                                    <span class="text">Progress</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="product_scope.html">
+                                    <span class="text">Product Scope</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="budget.html">
+                                    <span class="text">Budget</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="preferences.html">
+                                    <span class="text">Preferences</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="company.html">
+                                    <span class="text">Company</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="custom_question.html">
+                                    <span class="text">Custom Questions</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <!--/ END 2nd Level Menu -->
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" data-toggle="submenu" data-target="#pages" data-parent="#nav">
+                            <span class="figure"><i class="ico-file6"></i></span>
+                            <span class="text">Proposal</span>
+                            <span class="arrow"></span>
+                        </a>
+                        <!-- START 2nd Level Menu -->
+                        <ul id="pages" class="submenu collapse">
+                            <li>
+                                <a href="javascript:void(0);" data-toggle="submenu" data-target="#compare" data-parent="#pages">
+                                    <span class="text">Compare</span>
+                                    <span class="arrow"></span>
+                                </a>
+                                <!-- START 2nd Level Menu -->
+                                <ul id="compare" class="submenu collapse">
+                                    <li>
+                                        <a href="javascript:void(0);" data-toggle="submenu" data-target="#subsubmenu" data-parent="#3rdlvl2">
+                                            <span class="text">Nehrus</span>
+                                            <span class="arrow"></span>
+                                        </a>
+                                        <!-- START 4th Level Menu -->
+                                        <ul id="subsubmenu" class="submenu collapse">
+                                            <li>
+                                                <a href="proposal.html"><span class="text">Profile</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="portfolio.html"><span class="text">Portfolio</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0);"><span class="text">Sub Menu 8</span></a>
+                                            </li>
+                                        </ul>
+                                        <!--/ END 4th Level Menu -->
+                                    </li>
+                                    <li >
+                                        <a href="javascript:void(0);"><span class="text">Company 2</span></a>
+                                    </li>
+                                    <li >
+                                        <a href="javascript:void(0);"><span class="text">Company 3</span></a>
+                                    </li>
+                                </ul>
+                                <!--/ END 2nd Level Menu -->
+                            </li>
+                            <!--<li >
+                                <a href="page-invoice.html">
+                                    <span class="text">Invoice</span>
+                                </a>
+                            </li>-->
+                        </ul>
+                        <!--/ END 2nd Level Menu -->
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" data-toggle="submenu" data-target="#payment" data-parent="#nav">
+                            <span class="figure"><i class="ico-dollar"></i></span>
+                            <span class="text">Payment</span>
+                            <span class="arrow"></span>
+                        </a>
+                        <!-- START 2nd Level Menu -->
+                        <ul id="payment" class="submenu collapse">
+                            <li class="active">
+                                <a href="basic.html" data-toggle="submenu" data-target="#scope" data-parent="#project1">
+                                    <span class="text">Legal</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="basic.html">
+                                    <span class="text">Help</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <!--/ END 2nd Level Menu -->
+                    </li>
+                    <li class="menuheader">Project 2</li>
+                    <li>
+                        <a href="javascript:void(0);" data-toggle="submenu" data-target="#Scope2" data-parent="#nav">
+                            <span class="figure"><i class="ico-lightbulb"></i></span>
+                            <span class="text">Scope</span>
+                            <span class="arrow"></span>
+                        </a>
+                        <!-- START 2nd Level Menu -->
+                        <ul id="Scope2" class="submenu collapse">
+                            <li class="active">
+                                <a href="basic.html" data-toggle="submenu" data-target="#scope" data-parent="#project1">
+                                    <span class="text">Basic</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="progress.html">
+                                    <span class="text">Progress</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="product_scope.html">
+                                    <span class="text">Product Scope</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="basic.html">
+                                    <span class="text">Budget</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="basic.html">
+                                    <span class="text">Preferences</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="basic.html">
+                                    <span class="text">Company</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="basic.html">
+                                    <span class="text">Custom Questions</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <!--/ END 2nd Level Menu -->
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" data-toggle="submenu" data-target="#Proposal2" data-parent="#nav">
+                            <span class="figure"><i class="ico-file6"></i></span>
+                            <span class="text">Proposal</span>
+                            <span class="arrow"></span>
+                        </a>
+                        <!-- START 2nd Level Menu -->
+                        <ul id="Proposal2" class="submenu collapse">
+                            <li class="active">
+                                <a href="basic.html" data-toggle="submenu" data-target="#scope" data-parent="#project1">
+                                    <span class="text">Company 1</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="basic.html">
+                                    <span class="text">Company 2</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="basic.html">
+                                    <span class="text">Company 3</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="basic.html">
+                                    <span class="text">Company 4</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <!--/ END 2nd Level Menu -->
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" data-toggle="submenu" data-target="#payment2" data-parent="#nav">
+                            <span class="figure"><i class="ico-dollar"></i></span>
+                            <span class="text">Payment</span>
+                            <span class="arrow"></span>
+                        </a>
+                        <!-- START 2nd Level Menu -->
+                        <ul id="payment2" class="submenu collapse">
+                            <li class="active">
+                                <a href="basic.html" data-toggle="submenu" data-target="#scope" data-parent="#project1">
+                                    <span class="text">Legal</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="basic.html">
+                                    <span class="text">Help</span> 
+                                </a>
+                            </li>
+                        </ul>
+                        <!--/ END 2nd Level Menu -->
+                    </li>
+                    
+                </ul>
+                <!--/ END Template Navigation/Menu -->
+            </section>
+            <!--/ END Sidebar Container -->
+        </aside>
+        <!--/ END Template Sidebar (Left) -->
+
+        <!-- START Template Main -->
+        <section id="main" role="main">
+            <!-- START Template Container -->
+            <section class="container-fluid">
+                <!-- section header -->
+                <div class="section-header">
+                    <h5 class="semibold title mb15">Wheater Widget</h5>
+                </div>
+                <!--/ section header -->
+
+                <!-- START row -->
+                <div class="row">
+                    <div class="col-xs-12 col-md-6 col-lg-4">
+                    	<div class="panel">
+                            <hr class="nm"><!-- horizontal line -->
+                            <!-- Panel body -->
+                            <div class="panel-body">
+                            	<form data-parsley-validate="" action="" class=" panel-default form-horizontal form-bordered " novalidate>
+                                	<div class="panel-default">
+                                    	<h4 class="semibold title mb10 text-success">Are you accepting project?</h4>
+                                        <div class="panel-group">
+                                        	<label class="control-label">Apps</label>
+                                            <span class="checkbox custom-checkbox ">
+                                                <input type="checkbox" id="customcheckbox1" name="customcheckbox1" data-parsley-multiple="customcheckbox1" data-parsley-id="9118">
+                                                <label for="customcheckbox1">&nbsp;&nbsp;iOS.</label>
+                                            </span>
+                                            <ul class="parsley-errors-list" id="parsley-id-multiple-customcheckbox1"></ul>
+                                            <span class="checkbox custom-checkbox">
+                                                <input type="checkbox" id="customcheckbox2" name="customcheckbox2" data-parsley-multiple="customcheckbox2" data-parsley-id="0591">
+                                                <label for="customcheckbox2">&nbsp;&nbsp;Android.</label>
+                                            </span>
+                                            <ul class="parsley-errors-list" id="parsley-id-multiple-customcheckbox2"></ul>
+                                            <span class="checkbox custom-checkbox">
+                                                <input type="checkbox" id="customcheckbox3" name="customcheckbox3" data-parsley-multiple="customcheckbox3" data-parsley-id="2794">
+                                                <label for="customcheckbox3">&nbsp;&nbsp;iOS and Android.</label>
+                                            </span>
+                                            <ul class="parsley-errors-list" id="parsley-id-multiple-customcheckbox3"></ul>
+                                		</div>
+                                	</div>
+                                	<hr class="nm"><!-- horizontal line -->
+                                    <div class="panel-default">
+                                        <div class="panel-group">
+                                        	<label class="control-label">Websites</label>
+                                            <span class="checkbox custom-checkbox ">
+                                                <input type="checkbox" id="customcheckbox4" name="customcheckbox1" data-parsley-multiple="customcheckbox1" data-parsley-id="9118">
+                                                <label for="customcheckbox4">&nbsp;&nbsp;Basic Website</label>
+                                            </span>
+                                            <ul class="parsley-errors-list" id="parsley-id-multiple-customcheckbox1"></ul>
+                                            <span class="checkbox custom-checkbox">
+                                                <input type="checkbox" id="customcheckbox5" name="customcheckbox2" data-parsley-multiple="customcheckbox2" data-parsley-id="0591">
+                                                <label for="customcheckbox5">&nbsp;&nbsp;Dynamic Website</label>
+                                            </span>
+                                            <ul class="parsley-errors-list" id="parsley-id-multiple-customcheckbox2"></ul>
+                                            <span class="checkbox custom-checkbox">
+                                                <input type="checkbox" id="customcheckbox6" name="customcheckbox3" data-parsley-multiple="customcheckbox3" data-parsley-id="2794">
+                                                <label for="customcheckbox6">&nbsp;&nbsp;eCommerce Website</label>
+                                            </span>
+                                            <ul class="parsley-errors-list" id="parsley-id-multiple-customcheckbox3"></ul>
+                                		</div>
+                                	</div>
+                            	</form>
+                            </div>
+                            <!--/ Panel body -->
+                            <hr class="nm"><!-- horizontal line -->
+                            
+                            <hr class="nm"><!-- horizontal line -->
+                            
+                        </div>
+                        <!-- START Table layout -->
+                        <div class="table-layout">
+                            <div class="col-xs-7 widget panel">
+                                <!-- Thumbnail -->
+                                <div class="thumbnail">
+                                    <!-- media -->
+                                    <div class="media">
+                                        <!-- indicator -->
+                                        <div class="indicator"><span class="spinner"></span></div>
+                                        <!--/ indicator -->
+                                        <img data-toggle="unveil" src="image/background/400x250/placeholder.jpg" data-src="image/background/400x250/background5.jpg" alt="Photo" height="100%">
+                                    </div>
+                                    <!--/ media -->
+                                </div>
+                                <!--/ Thumbnail -->
+                            </div>
+                            <div class="col-xs-5 widget panel">
+                                <div class="panel-body text-center">
+                                    <h4>Brisbane <br><small>Australia</small></h4>
+                                    <h1 class="bold text-success">21°</h1>
+                                    <h5 class="semibold text-muted">Hello Windy!</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/ END Table layout -->
+                    </div>
+
+                    <div class="col-xs-12 col-md-6 col-lg-4">
+                    	<div class="col-xs-12 col-md-6 col-lg-12">
+                            <!-- START Widget Panel -->
+                            <div class="widget panel">
+                                <!-- panel body -->
+                                <div class="panel-body bgcolor-success">
+                                    <ul class="list-unstyled mt15 mb15">
+                                        <li class="text-center">
+                                            <img class="img-circle img-bordered" src="image/avatar/nehru_logo.jpg" alt="" width="65px" height="65px">
+                                        </li>
+                                        <li class="text-center">
+                                            <h5 class="semibold mb0">Nehrus</h5>
+                                            <span>Cake PHP</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!--/ panel body -->
+                                <!-- panel body -->
+                                <div class="panel-body">
+                                    <!-- Nav section -->
+                                    <ul class="nav nav-section nav-justified">
+                                        <li>
+                                            <div class="section">
+                                                <h4 class="nm">Yes<!--<i class="ico-earth"></i>--></h4>
+                                                <p class="nm"><a href="">Status</a></p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="section">
+                                                <h4 class="nm">4<!--<i class="ico-brain"></i>--></h4>
+                                                <p class="nm"><a href="">Proposal</a></p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="section">
+                                                <h4 class="nm">2<!--<i class="ico-vcard"></i>--></h4>
+                                                <p class="nm"><a href="">Message</a></p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <!--/ Nav section -->
+                                </div>
+                                <!--/ panel body -->
+                            </div>
+                            <!--/ END Widget Panel -->
+                        </div>
+                        <!-- START Widget Panel -->
+                        <div class="widget panel">
+                            <!-- Thumbnail -->
+                            <div class="thumbnail">
+                                <!-- media -->
+                                <div class="media">
+                                    <!-- indicator -->
+                                    <div class="indicator"><span class="spinner"></span></div>
+                                    <!--/ indicator -->
+                                    <!-- meta -->
+                                    <span class="meta top">
+                                        <h3 class="semibold nm text-center">Rainy</h3>
+                                        <p class="nm text-center">California</p>
+                                        <h4 class="semibold nm text-center"><i class="ico-location6"></i> San Franscisco</h4>
+                                    </span>
+                                    <!--/ meta -->
+                                    <img data-toggle="unveil" src="image/background/400x250/placeholder.jpg" data-src="image/background/400x250/background9.jpg" alt="Photo" height="100%">
+                                </div>
+                                <!--/ media -->
+                            </div>
+                            <!--/ Thumbnail -->
+                            <!-- panel body -->
+                            <div class="panel-body">
+                                <!-- Nav section -->
+                                <ul class="nav nav-section nav-justified">
+                                    <li><a href="javascript:void(0);" class="text-default"><i class="ico-weather-lightning"></i><br/>Mon</a></li>
+                                    <li><a href="javascript:void(0);" class="text-default"><i class="ico-windy"></i><br/>Tue</a></li>
+                                    <li><a href="javascript:void(0);" class="text-default"><i class="ico-sun"></i><br/>Wed</a></li>
+                                    <li><a href="javascript:void(0);" class="text-default"><i class="ico-weather-snow"></i><br/>Thu</a></li>
+                                </ul>
+                                <!--/ Nav section -->
+                            </div>
+                            <!--/ panel body -->
+                        </div>
+                        <!--/ END Widget Panel -->
+                    </div>
+
+                    <div class="col-xs-12 col-md-6 col-lg-4">
+                    	<div class="widget panel">
+                        	<div class="panel-body">
+                            <ul class="list-table">
+                                <li style="width:70px;">
+                                    <img class="img-circle img-bordered" src="image/avatar/nehru_logo.jpg" alt="" width="65px" height="65px">
+                                </li>
+                                <li class="text-left">
+                                    <h5 class="semibold ellipsis">
+                                        Nehrus<br/>
+                                        <small class="text-muted">Cake PHP</small>
+                                    </h5>
+                                </li>
+                                <li class="text-right"><button class="btn btn-info"><span class="ico-twitter"></span> Follow</button></li>
+                            </ul>
+                            <!-- Nav section -->
+                            <ul class="nav nav-section nav-justified mt15">
+                                <li>
+                                    <div class="section">
+                                        <h4 class="nm">Pending</h4>
+                                        <p class="nm text-muted">Status</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="section">
+                                        <h4 class="nm">5</h4>
+                                        <p class="nm text-muted">Proposal</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="section">
+                                        <h4 class="nm">10</h4>
+                                        <p class="nm text-muted">Message</p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <!--/ Nav section -->
+                        </div>
+                        </div>
+                        <!-- START Table layout -->
+                        <div class="table-layout mb15">
+                            <div class="col-xs-6 widget panel bgcolor-info">
+                                <div class="panel-body text-center">
+                                    <img class="img-circle img-bordered" src="image/avatar/nehru_logo.jpg" alt="" width="65px" height="65px">
+                                    <h4 class="semibold text-center nm pt10">Nehrus</h4>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 widget panel">
+                                <div class="panel-body text-center">
+                                    <i class="ico-snowflake" style="font-size:46px;"></i>
+                                    <ul class="list-table mt15">
+                                        <li class="text-center">
+                                            <p class="nm"><span class="number"><span class="label label-danger">3</span></span>Proposal</p>
+                                        </li>
+                                        <li class="text-center">
+                                            <p class="nm"><span class="number"><span class="label label-danger">10</span></span>Message</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/ END Table layout -->
+
+                        <!-- START Table layout -->
+                        <div class="table-layout">
+                            <div class="col-xs-6 widget panel panel-minimal bgcolor-inverse">
+                                <div class="panel-body">
+                                    <h1 class="semibold text-center mt0">18°</h1>
+                                    <h4 class="semibold text-center nm">California</h4>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 widget panel panel-minimal">
+                                <div class="panel-body text-center bgcolor-white">
+                                    <i class="ico-snowflake" style="font-size:46px;"></i>
+                                </div>
+                                <div class="panel-body text-center bgcolor-success">
+                                    <ul class="list-table">
+                                        <li class="text-center">
+                                            <i class="ico-droplet"></i>
+                                            <p class="nm">1.3MM</p>
+                                        </li>
+                                        <li class="text-center">
+                                            <i class="ico-flag5"></i>
+                                            <p class="nm">10MPH</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/ END Table layout -->
+                    </div>
+                </div>
+                <!--/ END row -->
+
+                <!-- START row -->
+                <div class="row">
+                    <div class="col-lg-3">
+                        <!-- START Widget Panel -->
+                        <div class="widget panel bgcolor-primary">
+                            <!-- panel body -->
+                            <div class="panel-body">
+                                <div class="clearfix">
+                                    <p class="pull-left semibold">Copenhagen, DK</p>
+                                    <p class="pull-right semibold">
+                                        <span class="mr5">&deg;F</span>
+                                        <span>&deg;C</span>
+                                    </p>
+                                </div>
+                                <div class="text-center mt15 mb15">
+                                    <h1 class="semibold">
+                                        <i class="ico-windy"></i>
+                                        <span class="">22&deg;</span>
+                                    </h1>
+                                </div>
+                                <div class="clearfix">
+                                    <p class="pull-left semibold nm">
+                                        <i class="ico-arrow-down5"></i> 21&deg;
+                                    </p>
+                                    <p class="pull-right semibold nm">
+                                        <i class="ico-arrow-up5"></i> 27&deg;
+                                    </p>
+                                </div>
+                            </div>
+                            <!--/ panel body -->
+                        </div>
+                        <!--/ END Widget Panel -->
+                    </div>
+
+                    <div class="col-lg-3">
+                        <!-- START Widget Panel -->
+                        <div class="widget panel bgcolor-warning">
+                            <!-- panel body -->
+                            <div class="panel-body">
+                                <div class="clearfix">
+                                    <p class="pull-left semibold">Perth, AU</p>
+                                    <p class="pull-right semibold">
+                                        <span class="mr5">&deg;F</span>
+                                        <span>&deg;C</span>
+                                    </p>
+                                </div>
+                                <div class="text-center mt15 mb15">
+                                    <h1 class="semibold">
+                                        <i class="ico-sun22"></i>
+                                        <span class="">32&deg;</span>
+                                    </h1>
+                                </div>
+                                <div class="clearfix">
+                                    <p class="pull-left semibold nm">
+                                        <i class="ico-arrow-down5"></i> 31&deg;
+                                    </p>
+                                    <p class="pull-right semibold nm">
+                                        <i class="ico-arrow-up5"></i> 37&deg;
+                                    </p>
+                                </div>
+                            </div>
+                            <!--/ panel body -->
+                        </div>
+                        <!--/ END Widget Panel -->
+                    </div>
+                </div>
+                <!--/ END row -->
+                <hr><!-- horizontal line -->
+
+                <!-- section header -->
+                <div class="section-header">
+                    <h5 class="semibold title mb15">Social Widget</h5>
+                </div>
+                <!--/ section header -->
+
+                <!-- START row -->
+                <div class="row">
+                    <div class="col-xs-12 col-md-6 col-lg-4">
+                        <!-- START Widget Panel -->
+                        <div class="widget panel">
+                            <!-- panel body -->
+                            <div class="panel-body bgcolor-success">
+                                <ul class="list-unstyled mt15 mb15">
+                                    <li class="text-center">
+                                        <img class="img-circle img-bordered" src="image/avatar/avatar2.jpg" alt="" width="65px" height="65px">
+                                    </li>
+                                    <li class="text-center">
+                                        <h5 class="semibold mb0">William Ross</h5>
+                                        <span>CEO of a Company</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--/ panel body -->
+                            <!-- panel body -->
+                            <div class="panel-body">
+                                <!-- Nav section -->
+                                <ul class="nav nav-section nav-justified">
+                                    <li>
+                                        <div class="section">
+                                            <h4 class="nm"><i class="ico-earth"></i></h4>
+                                            <p class="nm">Website</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="section">
+                                            <h4 class="nm"><i class="ico-brain"></i></h4>
+                                            <p class="nm">Skills</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="section">
+                                            <h4 class="nm"><i class="ico-vcard"></i></h4>
+                                            <p class="nm">Portfolio</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <!--/ Nav section -->
+                            </div>
+                            <!--/ panel body -->
+                        </div>
+                        <!--/ END Widget Panel -->
+                    </div>
+
+                    <div class="col-xs-12 col-md-6 col-lg-4">
+                        <!-- START Widget Panel -->
+                        <div class="widget panel">
+                            <!-- panel body -->
+                            <div class="panel-body">
+                                <ul class="list-table">
+                                    <li style="width:70px;">
+                                        <img class="img-circle img-bordered" src="image/avatar/avatar1.jpg" alt="" width="65px" height="65px">
+                                    </li>
+                                    <li class="text-left">
+                                        <h5 class="semibold ellipsis">
+                                            Quinlan Snow<br/>
+                                            <small class="text-muted">@QSnow</small>
+                                        </h5>
+                                    </li>
+                                    <li class="text-right"><button class="btn btn-info"><span class="ico-twitter"></span> Follow</button></li>
+                                </ul>
+                                <!-- Nav section -->
+                                <ul class="nav nav-section nav-justified mt15">
+                                    <li>
+                                        <div class="section">
+                                            <h4 class="nm">12.5k</h4>
+                                            <p class="nm text-muted">Followers</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="section">
+                                            <h4 class="nm">1853</h4>
+                                            <p class="nm text-muted">Following</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="section">
+                                            <h4 class="nm">3451</h4>
+                                            <p class="nm text-muted">Tweets</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <!--/ Nav section -->
+                            </div>
+                            <!--/ panel body -->
+                        </div>
+                        <!--/ END Widget Panel -->
+                    </div>
+
+                    <div class="col-xs-12 col-md-6 col-lg-4">
+                        <!-- START Widget Panel -->
+                        <div class="widget panel">
+                            <!-- thumbnail -->
+                            <div class="thumbnail">
+                                <!-- media -->
+                                <div class="media">
+                                    <!-- indicator -->
+                                    <div class="indicator"><span class="spinner"></span></div>
+                                    <!--/ indicator -->
+                                    <!-- meta -->
+                                    <div class="meta bottom text-center">
+                                        <img class="img-circle img-bordered-teal mb10" src="image/avatar/avatar8.jpg" alt="" width="75px" height="75px">
+                                        <p class="nm">California</p>
+                                        <h4 class="semibold nm"><span class="iconmoon-location-6"></span> San Franscisco</h4>
+                                    </div>
+                                    <!--/ meta -->
+                                    <img data-toggle="unveil" src="image/background/400x250/placeholder.jpg" data-src="image/background/400x250/background4.jpg" alt="Cover" width="100%" />
+                                </div>
+                                <!--/ media -->
+                            </div>
+                            <!--/ thumbnail -->
+                            <div class="panel-body">
+                                <!-- Nav section -->
+                                <ul class="nav nav-section nav-justified">
+                                    <li>
+                                        <div class="section">
+                                            <p class="nm text-muted">Followers</p>
+                                            <h4 class="nm">12.5k</h4>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="section">
+                                            <p class="nm text-muted">Following</p>
+                                            <h4 class="nm">1853</h4>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="section">
+                                            <p class="nm text-muted">Tweets</p>
+                                            <h4 class="nm">3451</h4>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <!--/ Nav section -->
+                            </div>
+                            <!--/ panel body -->
+                        </div>
+                        <!--/ END Widget Panel -->
+                    </div>
+                </div>
+                <!--/ END row -->
+
+                <!-- START row -->
+                <div class="row">
+                    <div class="col-xs-12 col-md-6 col-lg-4">
+                        <!-- START Widget Panel -->
+                        <div class="widget panel">
+                            <!-- panel body -->
+                            <div class="panel-body">
+                                <h4 class="mb0">Latest Tweet <i class="ico-twitter text-info pull-right"></i></h4>
+                                <hr/>
+                                <ul class="list-table">
+                                    <li style="width:70px;">
+                                        <img class="img-circle img-bordered-primary" src="image/avatar/avatar4.jpg" alt="" width="65px" height="65px" />
+                                    </li>
+                                    <li class="text-left">
+                                        <h5 class="semibold ellipsis nm">Colt Jenkins</h5>
+                                        <p class="text-muted nm">5k followers</p>
+                                    </li>
+                                    <li class="text-right"><button class="btn btn-sm btn-success">Follow</button></li>
+                                </ul>
+                            </div>
+                            <!--/ panel body -->
+                            <!-- List group -->
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <p class="nm">Lorem ipsum dolor sit amet, consectetur <a href="javascript:void(0);">#adipisicing</a> elit, sed do eiusmod.</p>
+                                    <small class="text-muted">1 day ago</small>
+                                </li>
+                                <li class="list-group-item">
+                                    <p class="nm">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui <a href="javascript:void(0);">@officia</a> deserunt mollit anim id est laborum.</p>
+                                    <small class="text-muted">2 day ago</small>
+                                </li>
+                                <li class="list-group-item">
+                                    <p class="nm">Duis aute irure dolor in <a href="javascript:void(0);">tweet.er</a> in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                    <small class="text-muted">3 day ago</small>
+                                </li>
+                            </ul>
+                            <!-- List group -->
+                        </div>
+                        <!--/ END Widget Panel -->
+                    </div>
+
+                    <div class="col-xs-12 col-md-6 col-lg-4">
+                        <!-- START Widget Panel -->
+                        <div class="widget panel">
+                            <!-- thumbnail -->
+                            <div class="thumbnail">
+                                <!-- media -->
+                                <div class="media">
+                                    <!-- indicator -->
+                                    <div class="indicator"><span class="spinner"></span></div>
+                                    <!--/ indicator -->
+                                    <img data-toggle="unveil" src="image/background/400x250/placeholder.jpg" data-src="http://maps.googleapis.com/maps/api/staticmap?center=-15.800513,-47.91378&zoom=11&size=400x250&sensor=false" alt="Cover" width="100%" />
+                                </div>
+                                <!--/ media -->
+                            </div>
+                            <!--/ thumbnail -->
+                            <!-- panel body -->
+                            <div class="panel-body" style="margin-top:-55px;z-index:2;">
+                                <ul class="list-unstyled">
+                                    <li class="text-center">
+                                        <img class="img-circle img-bordered" src="image/avatar/avatar5.jpg" alt="" width="75px" height="75px">
+                                        <br/>
+                                        <h5 class="semibold mb0">Orli Waller</h5>
+                                        <p class="nm text-muted">Front-end Developer</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--/ panel body -->
+                            <!-- panel ribbon -->
+                            <a href="javascript:void(0);" class="panel-ribbon panel-ribbon-primary"><i class="ico-info"></i></a>
+                            <!--/ panel ribbon -->
+                            <!-- table -->
+                            <table class="table">
+                                <thead></thead>
+                                <tbody>
+                                    <tr>
+                                        <td width="50%">Web development</td>
+                                        <td>
+                                            <div class="progress progress-xs nm">
+                                                <div class="progress-bar" style="width: 60%"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td width="50%">Server patching</td>
+                                        <td>
+                                            <div class="progress progress-xs nm">
+                                                <div class="progress-bar progress-bar-warning" style="width: 40%"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td width="50%">Mobile framework</td>
+                                        <td>
+                                            <div class="progress progress-xs nm">
+                                                <div class="progress-bar progress-bar-success" style="width: 90%"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!--/ table -->
+                        </div>
+                        <!--/ END Widget Panel -->
+                    </div>
+
+                    <div class="col-xs-12 col-md-6 col-lg-4">
+                        <!-- START Widget Panel -->
+                        <div class="widget panel">
+                            <!-- panel ribbon -->
+                            <a href="javascript:void(0);" class="panel-ribbon panel-ribbon-danger pull-right"><i class="ico-heart4"></i></a>
+                            <!--/ panel ribbon -->
+                            <!-- panel body -->
+                            <div class="panel-body">
+                                <ul class="list-unstyled">
+                                    <li class="text-center">
+                                        <img class="img-circle img-bordered-danger" src="image/avatar/avatar4.jpg" alt="" width="75px" height="75px">
+                                        <br/>
+                                        <h5 class="semibold mb0">Orli Waller</h5>
+                                        <p class="nm text-muted">Front-end Developer</p>
+                                    </li>
+                                </ul>
+                                <hr>
+                                <!-- blockquote -->
+                                <blockquote class="mt10 text-muted text-center">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                    <small>Someone famous in <cite title="Source Title">Source Title</cite></small>
+                                </blockquote>
+                                <!--/ blockquote -->
+                            </div>
+                            <!--/ panel body -->
+                        </div>
+                        <!--/ END Widget Panel -->
+                    </div>
+                </div>
+                <!--/ END row -->
+
+                <!-- START row -->
+                <div class="row">
+                    <div class="col-md-3">
+                        <!-- START Widget Panel -->
+                        <div class="widget panel">
+                            <!-- panel body -->
+                            <div class="panel-body">
+                                <ul class="list-unstyled">
+                                    <li class="text-center mb15">
+                                        <img class="img-rounded img-bordered-primary" src="image/avatar/avatar6.jpg" alt="" width="100px" height="100px" />
+                                    </li>
+                                    <li class="text-center mb10">
+                                        <h4 class="semibold ellipsis nm">Colt Jenkins</h4>
+                                        <p class="text-muted nm">Nullam Ut Nisi Corporation</p>
+                                    </li>
+                                    <li class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</li>
+                                </ul>
+                            </div>
+                            <!--/ panel body -->
+                        </div>
+                        <!--/ END Widget Panel -->
+                    </div>
+                    <div class="col-md-3">
+                        <!-- START Widget Panel -->
+                        <div class="widget panel">
+                            <!-- panel body -->
+                            <div class="panel-body">
+                                <ul class="list-unstyled">
+                                    <li class="text-center mb15">
+                                        <img class="img-circle img-bordered-primary" src="image/avatar/avatar1.jpg" alt="" width="100px" height="100px" />
+                                    </li>
+                                    <li class="text-center mb10">
+                                        <h4 class="semibold ellipsis nm text-primary">Deborah Workman</h4>
+                                        <p class="text-muted nm">Ultrices Industries</p>
+                                    </li>
+                                    <li class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</li>
+                                </ul>
+                            </div>
+                            <!--/ panel body -->
+                        </div>
+                        <!--/ END Widget Panel -->
+                    </div>
+                    <div class="col-md-3">
+                        <!-- START Widget Panel -->
+                        <div class="widget panel">
+                            <!-- panel body -->
+                            <div class="panel-body">
+                                <ul class="list-unstyled">
+                                    <li class="text-center mb15">
+                                        <img class="img-circle img-bordered-primary" src="image/avatar/avatar8.jpg" alt="" width="100px" height="100px" />
+                                    </li>
+                                    <li class="text-center mb10">
+                                        <h4 class="semibold ellipsis nm text-primary">Uriah Benjamin</h4>
+                                        <p class="text-muted nm">Elit Company</p>
+                                    </li>
+                                    <li class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</li>
+                                </ul>
+                            </div>
+                            <!--/ panel body -->
+                        </div>
+                        <!--/ END Widget Panel -->
+                    </div>
+                    <div class="col-md-3">
+                        <!-- START Widget Panel -->
+                        <div class="widget panel">
+                            <!-- panel body -->
+                            <div class="panel-body">
+                                <ul class="list-unstyled">
+                                    <li class="text-center mb15">
+                                        <img class="img-rounded img-bordered-primary" src="image/avatar/avatar9.jpg" alt="" width="100px" height="100px" />
+                                    </li>
+                                    <li class="text-center mb10">
+                                        <h4 class="semibold ellipsis nm">MacKenzie Huffman</h4>
+                                        <p class="text-muted nm">Sodales Company</p>
+                                    </li>
+                                    <li class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</li>
+                                </ul>
+                            </div>
+                            <!--/ panel body -->
+                        </div>
+                        <!--/ END Widget Panel -->
+                    </div>
+                </div>
+                <!--/ END row -->
+                <hr><!-- horizontal line -->
+
+                <!-- section header -->
+                <div class="section-header">
+                    <h5 class="semibold title mb15">Misc Widget</h5>
+                </div>
+                <!--/ section header -->
+
+                <!-- START row -->
+                <div class="row">
+                    <div class="col-md-4">
+                        <!-- START Widget Panel -->
+                        <div class="widget panel">
+                            <!-- panel body -->
+                            <div class="panel-body">
+                                <h5 class="semibold text-primary">Task Widget</h5>
+                            </div>
+                            <!--/ panel body -->
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <td width="5%">
+                                            <div class="checkbox custom-checkbox nm">  
+                                                <input type="checkbox" id="customcheckbox1" value="1" data-toggle="selectrow" data-target="tr" data-contextual="stroke">  
+                                                <label for="customcheckbox1"></label>   
+                                            </div>
+                                        </td>
+                                        <td width="5%"><i class="ico-food"></i></td>
+                                        <td>Dinner with someone</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="5%">
+                                            <div class="checkbox custom-checkbox nm">  
+                                                <input type="checkbox" id="customcheckbox2" value="1" data-toggle="selectrow" data-target="tr" data-contextual="stroke">  
+                                                <label for="customcheckbox2"></label>   
+                                            </div>
+                                        </td>
+                                        <td width="5%"><i class="ico-gun"></i></td>
+                                        <td>Kill some mobs</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="5%">
+                                            <div class="checkbox custom-checkbox nm">  
+                                                <input type="checkbox" id="customcheckbox3" value="1" data-toggle="selectrow" data-target="tr" data-contextual="stroke">  
+                                                <label for="customcheckbox3"></label>   
+                                            </div>
+                                        </td>
+                                        <td width="5%"><i class="ico-football"></i></td>
+                                        <td>Go out and play football</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="5%">
+                                            <div class="checkbox custom-checkbox nm">  
+                                                <input type="checkbox" id="customcheckbox4" value="1" data-toggle="selectrow" data-target="tr" data-contextual="stroke">  
+                                                <label for="customcheckbox4"></label>   
+                                            </div>
+                                        </td>
+                                        <td width="5%"><i class="ico-shield3"></i></td>
+                                        <td>Shield the house</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="5%">
+                                            <div class="checkbox custom-checkbox nm">  
+                                                <input type="checkbox" id="customcheckbox5" value="1" data-toggle="selectrow" data-target="tr" data-contextual="stroke">  
+                                                <label for="customcheckbox5"></label>   
+                                            </div>
+                                        </td>
+                                        <td width="5%"><i class="ico-power-cord"></i></td>
+                                        <td>Cut off power supply</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- panel footer -->
+                            <div class="panel-footer">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" name="task" placeholder="Add new task">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default" type="button">Add</button>
+                                    </span>
+                                </div>
+                            </div>
+                            <!--/ panel footer -->
+                        </div>
+                        <!--/ END Widget Panel -->
+                    </div>
+
+                    <div class="col-md-4">
+                        <!-- START Widget Panel -->
+                        <div class="widget panel">
+                            <!-- panel body -->
+                            <div class="panel-body">
+                                <ul class="list-table">
+                                    <li style="width:70px;">
+                                        <img class="img-rounded" src="image/background/400x400/background12.jpg" alt="" width="65px" height="65px">
+                                    </li>
+                                    <li class="text-left">
+                                        <h5 class="semibold ellipsis nm">Lamb Of Chop</h5>
+                                        <p class="text-muted nm">5 Song in playlist</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--/ panel body -->
+                            <table class="table table-hover">
+                                <tbody>
+                                    <tr>
+                                        <td width="5%">
+                                            <a href="javascript:void(0);" class="text-default"><i class="ico-play32"></i></a>
+                                        </td>
+                                        <td>Walk With Me to Hell</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="5%">
+                                            <a href="javascript:void(0);" class="text-default"><i class="ico-play32"></i></a>
+                                        </td>
+                                        <td>Laid To Death</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="5%">
+                                            <a href="javascript:void(0);" class="text-default"><i class="ico-play32"></i></a>
+                                        </td>
+                                        <td>Rain</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="5%">
+                                            <a href="javascript:void(0);" class="text-success"><i class="ico-stop2"></i></a>
+                                        </td>
+                                        <td class="text-success semibold">Blackneck</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="5%">
+                                            <a href="javascript:void(0);" class="text-default"><i class="ico-play32"></i></a>
+                                        </td>
+                                        <td>Pink Label</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- panel footer -->
+                            <div class="panel-footer">
+                                <ul class="nav nav-section nav-justified">
+                                    <li><a href="javascript:void(0);"><i class="ico-step-backward"></i></a></li>
+                                    <li><a href="javascript:void(0);"><i class="ico-play3"></i></a></li>
+                                    <li><a href="javascript:void(0);"><i class="ico-pause"></i></a></li>
+                                    <li><a href="javascript:void(0);"><i class="ico-spinner12"></i></a></li>
+                                    <li><a href="javascript:void(0);"><i class="ico-step-forward"></i></a></li>
+                                </ul>
+                            </div>
+                            <!--/ panel footer -->
+                        </div>
+                        <!--/ END Widget Panel -->
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="widget panel">
+                            <!-- panel body -->
+                            <div class="panel-body bgcolor-primary">
+                                <ul class="list-table">
+                                    <li><h3 class="semibold nm text-left">20.514</h3></li>
+                                    <li><p class="semibold nm text-right">Total visitor <i class="ico-male ml5"></i></p></li>
+                                </ul>
+                                <!-- chart -->
+                                <div class="chart mt15" id="visitor-wchart"></div>
+                                <!--/ chart -->
+                            </div>
+                            <!--/ panel body -->
+                            <!-- panel body -->
+                            <div class="panel-body">
+                                <ul class="nav nav-section nav-justified">
+                                    <li>
+                                        <div class="section">
+                                            <span class="text-muted">Visits</span>
+                                            <h4 class="nm">4792</h4>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="section">
+                                            <span class="text-muted">Recuring</span>
+                                            <h4 class="nm">1283</h4>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="section">
+                                            <span class="text-muted">Pageview</span>
+                                            <h4 class="nm">74558</h4>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--/ panel body -->
+                        </div>
+                    </div>
+                </div>
+                <!--/ END row -->
+
+                <!-- START row -->
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="widget panel">
+                            <!-- panel body -->
+                            <div class="panel-body">
+                                <ul class="list-table">
+                                    <li><h4 class="semibold nm text-left"><i class="ico-shield2 mr5"></i>Violations</h4></li>
+                                    <li><h4 class="semibold nm text-right text-muted">1063</h5></li>
+                                </ul>
+                                <!-- chart -->
+                                <div class="chart mt15" id="violations-wchart"></div>
+                                <!--/ chart -->
+                            </div>
+                            <!--/ panel body -->
+                            <!-- panel body -->
+                            <div class="panel-footer">
+                                <ul class="nav nav-section nav-justified">
+                                    <li>
+                                        <div class="section text-danger">
+                                            <h4 class="nm">2743</h4>
+                                            <span>High Risk</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="section">
+                                            <h4 class="nm">87</h4>
+                                            <span class="text-muted">Medium Risk</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="section">
+                                            <h4 class="nm">10</h4>
+                                            <span class="text-muted">Blocking</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--/ panel body -->
+                        </div>
+                    </div>
+                </div>
+                <!--/ END row -->
+            </section>
+            <!--/ END Template Container -->
+
+            <!-- START To Top Scroller -->
+            <a href="#" class="totop animation" data-toggle="waypoints totop" data-marker="#main" data-showanim="bounceIn" data-hideanim="bounceOut" data-offset="-50%"><i class="ico-angle-up"></i></a>
+            <!--/ END To Top Scroller -->
+        </section>
+        <!--/ END Template Main -->
+
+        <!-- START Template Sidebar (right) -->
+        <aside class="sidebar sidebar-right">
+            <!-- START Sidebar Content -->
+            <section class="content slimscroll">
+                <!-- START Sidebar Profile -->
+                <!-- START Panel -->
+                <div class="panel">
+                    <!-- thumbnail -->
+                    <div class="thumbnail">
+                        <!-- media -->
+                        <div class="media">
+                            <!-- meta -->
+                            <span class="meta text-center">
+                                <h5 class="semibold mb0">Erich Reyes</h5>
+                                <p class="nm"><i class="ico-user7 mr5"></i>Administrator</p>
+                            </span>
+                            <!-- meta -->
+                            <!-- indicator -->
+                            <div class="indicator"><span class="spinner"></span></div>
+                            <!--/ indicator -->
+                            <img data-toggle="unveil" src="image/background/400x250/placeholder.jpg" data-src="image/background/400x250/background3.jpg" alt="Cover" width="100%">
+                        </div>
+                        <!--/ media -->
+                    </div>
+                    <!--/ thumbnail -->
+                    <!-- panel body -->
+                    <div class="panel-body" style="margin-top:-55px;z-index:2;">
+                        <ul class="list-unstyled">
+                            <li class="text-center">
+                                <img class="img-circle" src="image/avatar/avatar7.jpg" alt="" width="75px" height="75px">
+                                <br>
+                                <!-- dropdown -->
+                                <div class="btn-group mt10">
+                                    <button type="button" class="btn btn-default"><span class="hasnotification hasnotification-success mr5"></span>Online</button>
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">Away</a></li>
+                                        <li><a href="#">Offline</a></li>
+                                        <li><a href="#">Busy</a></li>
+                                    </ul>
+                                </div>
+                                <!--/ dropdown -->
+                            </li>
+                        </ul>
+                    </div>
+                    <!--/ panel body -->
+                </div>
+                <!--/ END Panel -->
+                <!--/ END Sidebar Profile -->
+
+                <!-- START Sidebar contact -->
+                <div class="media-list media-list-contact">
+                    <a href="javascript:void(0);" class="media">
+                        <span class="media-object pull-left">
+                            <img src="image/avatar/avatar1.jpg" class="img-circle" alt="">
+                        </span>
+                        <span class="media-body">
+                            <span class="media-heading"><span class="hasnotification hasnotification-success mr5"></span> Autumn Barker</span>
+                            <span class="media-meta ellipsis">Malaysia</span>
+                        </span>
+                    </a>
+
+                    <a href="javascript:void(0);" class="media">
+                        <span class="media-object pull-left">
+                            <img src="image/avatar/avatar2.jpg" class="img-circle" alt="">
+                        </span>
+                        <span class="media-body">
+                            <span class="media-heading"><span class="hasnotification hasnotification-success mr5"></span> Giselle Horn</span>
+                            <span class="media-meta ellipsis">Bolivia</span>
+                        </span>
+                    </a>
+
+                    <a href="javascript:void(0);" class="media">
+                        <span class="media-object pull-left">
+                            <img src="image/avatar/avatar.png" class="img-circle" alt="">
+                        </span>
+                        <span class="media-body">
+                            <span class="media-heading"><span class="hasnotification hasnotification-danger mr5"></span> Austin Shields</span>
+                            <span class="media-meta ellipsis">Timor-Leste</span>
+                        </span>
+                    </a>
+
+                    <a href="javascript:void(0);" class="media">
+                        <span class="media-object pull-left">
+                            <img src="image/avatar/avatar.png" class="img-circle" alt="">
+                        </span>
+                        <span class="media-body">
+                            <span class="media-heading"><span class="hasnotification hasnotification-danger mr5"></span> Caryn Gibson</span>
+                            <span class="media-meta ellipsis">Libya</span>
+                        </span>
+                    </a>
+
+                    <a href="javascript:void(0);" class="media">
+                        <span class="media-object pull-left">
+                            <img src="image/avatar/avatar3.jpg" class="img-circle" alt="">
+                        </span>
+                        <span class="media-body">
+                            <span class="media-heading"><span class="hasnotification hasnotification-success mr5"></span> Nash Evans</span>
+                            <span class="media-meta ellipsis">Honduras</span>
+                        </span>
+                    </a>
+
+                    <a href="javascript:void(0);" class="media">
+                        <span class="media-object pull-left">
+                            <img src="image/avatar/avatar4.jpg" class="img-circle" alt="">
+                        </span>
+                        <span class="media-body">
+                            <span class="media-heading"><span class="hasnotification hasnotification-default mr5"></span> Josiah Johnson</span>
+                            <span class="media-meta ellipsis">Belgium</span>
+                        </span>
+                    </a>
+
+                    <a href="javascript:void(0);" class="media">
+                        <span class="media-object pull-left">
+                            <img src="image/avatar/avatar.png" class="img-circle" alt="">
+                        </span>
+                        <span class="media-body">
+                            <span class="media-heading"><span class="hasnotification hasnotification-default mr5"></span> Philip Hewitt</span>
+                            <span class="media-meta ellipsis">Bahrain</span>
+                        </span>
+                    </a>
+
+                    <a href="javascript:void(0);" class="media">
+                        <span class="media-object pull-left">
+                            <img src="image/avatar/avatar5.jpg" class="img-circle" alt="">
+                        </span>
+                        <span class="media-body">
+                            <span class="media-heading"><span class="hasnotification hasnotification-default mr5"></span> Wilma Hunt</span>
+                            <span class="media-meta ellipsis">Dominica</span>
+                        </span>
+                    </a>
+
+                    <a href="javascript:void(0);" class="media">
+                        <span class="media-object pull-left">
+                            <img src="image/avatar/avatar6.jpg" class="img-circle" alt="">
+                        </span>
+                        <span class="media-body">
+                            <span class="media-heading"><span class="hasnotification hasnotification-success mr5"></span> Noah Gill</span>
+                            <span class="media-meta ellipsis">Guatemala</span>
+                        </span>
+                    </a>
+
+                    <a href="javascript:void(0);" class="media">
+                        <span class="media-object pull-left">
+                            <img src="image/avatar/avatar8.jpg" class="img-circle" alt="">
+                        </span>
+                        <span class="media-body">
+                            <span class="media-heading"><span class="hasnotification hasnotification-success mr5"></span> David Fisher</span>
+                            <span class="media-meta ellipsis">French Guiana</span>
+                        </span>
+                    </a>
+
+                    <a href="javascript:void(0);" class="media">
+                        <span class="media-object pull-left">
+                            <img src="image/avatar/avatar9.jpg" class="img-circle" alt="">
+                        </span>
+                        <span class="media-body">
+                            <span class="media-heading"><span class="hasnotification hasnotification-success mr5"></span> Samantha Avery</span>
+                            <span class="media-meta ellipsis">Jersey</span>
+                        </span>
+                    </a>
+
+                    <a href="javascript:void(0);" class="media">
+                        <span class="media-object pull-left">
+                            <img src="image/avatar/avatar.png" class="img-circle" alt="">
+                        </span>
+                        <span class="media-body">
+                            <span class="media-heading"><span class="hasnotification hasnotification-success mr5"></span> Madaline Medina</span>
+                            <span class="media-meta ellipsis">Finland</span>
+                        </span>
+                    </a>
+                </div>
+                <!--/ END Sidebar contact -->
+            </section>
+            <!--/ END Sidebar Content -->
+        </aside>
+        <!--/ END Template Sidebar (right) -->
+
+        <!-- START JAVASCRIPT SECTION (Load javascripts at bottom to reduce load time) -->
+        <!-- Library script : mandatory -->
+        <script type="text/javascript" src="library/jquery/js/jquery.min.js"></script>
+        <script type="text/javascript" src="library/jquery/js/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="library/jquery/js/jquery-ui-touch.min.js"></script>
+        <script type="text/javascript" src="library/jquery/js/jquery-migrate.min.js"></script>
+        <script type="text/javascript" src="library/bootstrap/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="library/core/js/core.min.js"></script>
+        <!--/ Library script -->
+
+        <!-- app init script -->
+        <script type="text/javascript">
+            (function($){
+                $("html").Core({ "console": false });
+            })(jQuery);
+        </script>
+        <!--/ app init script -->
+
+        <!-- 3rd party plugin script : optional(per use) -->
+        <script type="text/javascript" src="plugins/flot/jquery.flot.min.js"></script>
+        <script type="text/javascript" src="plugins/flot/jquery.flot.spline.min.js"></script>
+        <script type="text/javascript" src="plugins/flot/jquery.flot.categories.min.js"></script>
+        <script type="text/javascript" src="plugins/flot/jquery.flot.tooltip.min.js"></script>
+        <script type="text/javascript" src="plugins/flot/jquery.flot.resize.min.js"></script>
+        <script type="text/javascript" src="javascript/page.js"></script>
+        <!--/ 3rd party plugin script -->
+        <!--/ END JAVASCRIPT SECTION -->
+    </body>
+</html>
