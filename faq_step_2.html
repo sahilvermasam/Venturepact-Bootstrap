@@ -416,15 +416,15 @@ CONTACT : pampersdry@gmail.com
                             <span class="number"><span class="label label-danger">5</span></span>
                         </a>
                     </li>
-                    <li class="active" >
+                    <li  >
                         <a href="javascript:void(0);" data-toggle="submenu" data-target="#components" data-parent="#nav">
                             <span class="figure"><i class="ico-screwdriver"></i></span>
                             <span class="text">Profile</span>
                             <span class="arrow"></span>
                         </a>
                         <!-- START 2nd Level Menu -->
-                        <ul id="components" class="submenu collapse in ">
-                            <li  >
+                        <ul id="components" class="submenu collapse ">
+                            <li   >
                                 <a href="c_profile_1.html" >
                                     <span class="text">Profile Option1</span>
                                 </a>
@@ -434,7 +434,7 @@ CONTACT : pampersdry@gmail.com
                                     <span class="text">Profile Option2</span>
                                 </a>
                             </li>
-                            <li  class="active" >
+                            <li >
                                 <a href="c_profile_3.html">
                                     <span class="text">Profile Option3</span>
                                 </a>
@@ -448,7 +448,56 @@ CONTACT : pampersdry@gmail.com
                         </ul>
                         <!--/ END 2nd Level Menu -->
                     </li>
-                    <li >
+                     <li >
+                        <a href="javascript:void(0);" data-toggle="submenu" data-target="#pages" data-parent="#nav">
+                            <span class="figure"><i class="ico-file6"></i></span>
+                            <span class="text">Proposal</span>
+                            <span class="arrow"></span>
+                        </a>
+                        <!-- START 2nd Level Menu -->
+                        <ul id="pages" class="submenu collapse ">
+                            <li >
+                                <a href="javascript:void(0);" data-toggle="submenu" data-target="#compare" data-parent="#pages">
+                                    <span class="text">Compare</span>
+                                    <span class="arrow"></span>
+                                </a>
+                                <!-- START 2nd Level Menu -->
+                                <ul id="compare" class="submenu collapse ">
+                                    <li>
+                                        <a href="javascript:void(0);" data-toggle="submenu" data-target="#subsubmenu" data-parent="#3rdlvl2">
+                                            <span class="text">Nehrus</span>
+                                            <span class="arrow"></span>
+                                        </a>
+                                        <!-- START 4th Level Menu -->
+                                        <ul id="subsubmenu" class="submenu collapse ">
+                                            <li >
+                                                <a href="portfolio.html"><span class="text">Portfolio</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0);"><span class="text">Sub Menu 8</span></a>
+                                            </li>
+                                        </ul>
+                                        <!--/ END 4th Level Menu -->
+                                    </li>
+                                    <li >
+                                        <a href="javascript:void(0);"><span class="text">Company 2</span></a>
+                                    </li>
+                                    <li >
+                                        <a href="javascript:void(0);"><span class="text">Company 3</span></a>
+                                    </li>
+                                </ul>
+                                <!--/ END 2nd Level Menu -->
+                            </li>
+                            <!--<li >
+                                <a href="page-invoice.html">
+                                    <span class="text">Invoice</span>
+                                </a>
+                            </li>-->
+                        </ul>
+                        <!--/ END 2nd Level Menu -->
+                    </li> 
+
+                    <li class="active" >
                         <a href="javascript:void(0);" data-toggle="submenu" data-target="#faq" data-parent="#nav" >
                             <span class="figure"><i class="ico-quill2"></i></span>
                             <span class="text">FAQ's</span>
@@ -457,13 +506,13 @@ CONTACT : pampersdry@gmail.com
                         </a>
                         
                         <!-- START 2nd Level Menu -->
-                        <ul id="faq" class="submenu collapse ">
-                            <li   >
+                        <ul id="faq" class="submenu collapse in">
+                            <li >
                                 <a href="faq_step_1.html" >
                                     <span class="text">Step 1</span>
                                 </a>
                             </li>
-                            <li >
+                            <li class="active"  >
                                 <a href="faq_step_2.html">
                                     <span class="text">Step 2</span>
                                 </a>
@@ -514,7 +563,7 @@ CONTACT : pampersdry@gmail.com
                 <!-- Page header -->
                 <div class="page-header page-header-block">
                     <div class="page-header-section">
-                        <h4 class="title semibold">Profile Option 3</h4>
+                        <h4 class="title semibold">FAQ Step 2</h4>
                     </div>
                 </div>
                 <!--/ Page header -->
@@ -533,63 +582,58 @@ CONTACT : pampersdry@gmail.com
                         <form class="panel panel-default form-horizontal form-bordered" action="">
                             <!-- panel heading/header -->
                             <div class="panel-heading">
-                                <h3 class="panel-title">Option 3</h3>
+                                <h3 class="panel-title">Development Process</h3>
                             </div>
                             <!--/ panel heading/header -->
                             <!-- panel body -->
                             <div class="panel-body">
-                                                                     
+                                  
                                     <div class="form-group">
-                                        <label class="col-sm-5 control-label">Please upload the standard pitch deck that you use?<span class="text-danger">*</span></label>
-                                        <div class="col-sm-4">
-                                            <div class="input-group">
-                                                <input type="text" readonly class="form-control">
-                                                <span class="input-group-btn">
-                                                    <div class="btn btn-primary btn-file">
-                                                        <span class="icon iconmoon-file-3"></span> Browse <input type="file">
-                                                    </div>
-                                                </span>
-                                            </div>
+                                        <label class="col-sm-5 control-label">Q. What task management, version control, hosting and communication tools do you use? If you have a link to a guide that explains how these tools work, please list them here. <span class="text-danger">*</span></label>
+                                        <div class="col-sm-7">
+                                            <textarea class="form-control" rows="3" required></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-5 control-label">Q. How will daily communication & workflow work? <span class="text-danger">*</span></label>
+                                        <div class="col-sm-7">
+                                            <textarea class="form-control" rows="3" required></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-5 control-label">
+Q. When and how can I see the progress made on the product?<span class="text-danger">*</span></label>
+                                        <div class="col-sm-7">
+                                            <textarea class="form-control" rows="3" required></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-5 control-label">
+Q. After we get started, what are the first steps? How will on-boarding work? Can you integrate with my existing development tools and hosting services?<span class="text-danger">*</span></label>
+                                        <div class="col-sm-7">
+                                            <textarea class="form-control" rows="3" required></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-5 control-label">
+Q. How do you test the product and ensure security?<span class="text-danger">*</span></label>
+                                        <div class="col-sm-7">
+                                            <textarea class="form-control" rows="3" required></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-5 control-label">
+Q. Do I have the option to bring engineers onsite? Are you open to working alongside my existing team of developers?<span class="text-danger">*</span></label>
+                                        <div class="col-sm-7">
+                                            <textarea class="form-control" rows="3" required></textarea>
                                         </div>
                                     </div>
                                     
-                                    <div class="form-group">
-                                        <label class="col-sm-5 control-label">Currently, how many of your employees are available to work full time on a project i.e. not engaged in other projects? <span class="text-danger">*</span></label>
-                                        <div class="col-sm-4 pt5">
-                                           <input class="form-control" type="text" >
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="form-group">
-                                        <label class="col-sm-5 control-label">Can you give us a copy of the standard services agreement that you use with clients?  If you have different services contracts for different engagements, choose the one you have used more often.<span class="text-danger">*</span></label>
-                                        <div class="col-sm-4 mt15 mb15 pt10">
-                                          <div class="input-group">
-                                                <input type="text" readonly class="form-control">
-                                                <span class="input-group-btn">
-                                                    <div class="btn btn-primary btn-file">
-                                                        <span class="icon iconmoon-file-3"></span> Browse <input type="file">
-                                                    </div>
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    
-                                    
-                                    
-                                    
-                                    <div class="form-group">
-                                        <label class="col-sm-5 control-label">If none are available, when is the earliest that you will be able to accept a new project?<span class="text-danger">*</span></label>
-                                        <div class="col-sm-4 pt10">
-                                             <input class="form-control" type="text" >
-                                        </div>
-                                    </div>
-                                    
-                               
-                               
+                                 
                                 <div class="panel-footer">
                                         <div class="form-group no-border">
                                             <label class="col-sm-5 control-label"></label>
-                                            <div class="col-sm-4">
+                                            <div class="col-sm-7">
                                                 <button type="submit" class="btn btn-primary">Save & Next</button>
                                                 
                                             </div>
