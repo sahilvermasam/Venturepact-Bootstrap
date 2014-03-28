@@ -14,7 +14,7 @@ CONTACT : pampersdry@gmail.com
         <!-- START META SECTION -->
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Adminre - 1.0.0</title>
+        <title>Venturepact</title>
         <meta name="description" content="Adminre admin dashboard">
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
 
@@ -45,61 +45,59 @@ CONTACT : pampersdry@gmail.com
         <!-- START JAVASCRIPT SECTION - Load only modernizr script here -->
         <script src="library/modernizr/js/modernizr.min.js"></script>
         
-         <script type="text/javascript" src="library/jquery/js/jquery.min.js"></script>
-          <script>
-			
+        <script type="text/javascript" src="library/jquery/js/jquery.min.js"></script>
+        <script>
 			$(document).ready(function(){
 			    $("#show").click(function(){
-				$(".showdiv").slideDown(700);
+				$(".showdiv").slideToggle(700);
 			  });
 			});
 		</script> 
-
-        
-        <!--/ END JAVASCRIPT SECTION -->
+		<!--/ END JAVASCRIPT SECTION -->
     </head>
     <!--/ END Head -->
     <body data-page="form-element">
 
-             <!-- START Template Container -->
-           	<section class="col-lg-12 logo-header">
-                <!-- START row -->
-                <div class="row">
-                    <div class="col-lg-4 col-lg-offset-4">
-                        <!-- Brand -->
-                        <div class="text-center" style="margin-bottom:15px;  margin-top:15px;">
-                            <span class="template-logo template-logo-inverse"></span>
-                            <!--<h5 class="semibold text-muted mt-10">Login to your account.</h5>-->
-                        </div>
+        <!-- START Template Container -->
+        
+        <section class="col-lg-12 logo-header">
+            <!-- START row -->
+            <div class="row">
+                <div class="col-lg-4 col-lg-offset-4">
+                    <div class="text-center" style="margin-bottom:15px;  margin-top:15px;">
+                        <span class="template-logo template-logo-inverse"></span>
+                        <!--<h5 class="semibold text-muted mt-10">Login to your account.</h5>-->
                     </div>
                 </div>
-                <!--/ END row -->
-            </section>
-            
-            <section class="col-lg-12 bg-teal">
-                <!-- START row -->
-                <div class="row">
-                    <div class="col-lg-6 col-lg-offset-3">
-                        <h3 class="title light text-white mtb10 text-center">What do you need work on ?</h3>
-                        <div class="col-md-12">
-                        	<form action="" class="form-horizontal form-bordered">
-                            	<div class="form-group">
-                                    <div class="col-sm-6">
-                                        <div class="selectize-control form-control single mb5">
-                                        	<select class="form-control" id="selectize-customselect">
+            </div>
+            <!--/ END row -->
+        </section>
+        
+        <section class="col-lg-12 bg-teal">
+            <!-- START row -->
+            <div class="row">
+                <div class="col-lg-6 col-lg-offset-3">
+                    <h3 class="title light text-white mtb10 text-center">What do you need work on ?</h3>
+                    <div class="col-md-12">
+                        <form action="" class="form-horizontal form-bordered">
+                            <div class="form-group">
+                                <div class="col-sm-6">
+                                    <div class="selectize-control form-control single mb5">
+                                        <select class="form-control" id="selectize-customselect">
+                                        	<option value="">Select</option>
                                             <option value="1">Build a new</option>
                                             <option value="2">Add features to</option>
                                             <option value="3">Rebuild/repair an existing</option>
                                             <option value="4">Add security to</option>
                                             <option value="5">Design a new</option>
                                             <option value="6">Other work on</option>
-                           </select>
-                                        </div>
+                       					</select>
                                     </div>
-                                    <div class="col-sm-6">
-                                      <div class="selectize-control form-control single mb5">
-
-                                        <select class="form-control" id="satnma">
+                               	</div>
+                                <div class="col-sm-6">
+                                    <div class="selectize-control form-control single mb5 ">
+                                        <select class="form-control" id="satnam">
+                                        	<option value="">Select</option>
                                             <option value="1">iPhone/iPad app</option>
                                             <option value="2">Android app</option>
                                             <option value="3">Web app</option>
@@ -108,63 +106,68 @@ CONTACT : pampersdry@gmail.com
                                             <option value="1">Other software</option>
                                             <option value="1">Google Glass app</option>
                                         </select>
-
-                                	</div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
+                                    </div>
+                            	</div>
+                        	</div>
+                    	</form>
+                	</div>
                 </div>
             </div>
             <!--/ END row -->
         </section>
         
-            <section class="col-lg-12">
-                <!-- START row -->
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h3 class="title light text-grey5 mtb28">To connect you with the right service providers, we will need some more detail.</h3>
-                    </div>
+        <section class="col-lg-12">
+            <!-- START row -->
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h3 class="title light text-grey5 mtb22">To connect you with the right service providers, we will need some more detail.</h3>
                 </div>
-                <!--/ END row -->
-            </section>
-            
-           <section class="col-lg-12">
-                <!-- START row -->
-                <div class="row">
-                    <div class="col-lg-4 col-lg-offset-2 text-center">
-						<div class="col-sm-12">
-                        	<h4 class="title light text-grey9 text-size16 mb20">If you prefer to write out the requirements, access our self service platfrom. It will take 5-10 minutes.</h4>
+            </div>
+            <!--/ END row -->
+        </section>
+        
+        <section class="col-lg-12">
+            <!-- START row -->
+            <div class="row">
+                <div class="col-md-6 col-lg-offset-1">
+                   	<div class="col-sm-9">
+                        <div class="col-sm-12 text-center">
+                            <h4 class="title light text-grey9 text-size16 mb20">If you prefer to write out the requirements, access our self service platfrom. It will take 5-10 minutes.</h4>
                         </div>
                         
                         <!-- Social button -->
                         <div class="col-sm-12">
-                        	<button class="btn btn-social btn-block btn-linkedin" type="button"><i class="ico-linkedin2 mr15"></i>Sign in with LinkedIn</button>
+                            <button class="btn btn-social btn-block btn-linkedin" type="button">
+                                <i class="ico-linkedin2 mr15"></i>
+                                Sign in with LinkedIn
+                            </button>
                         </div>
-                        <!-- Social button -->
+                        <!--/ Social button -->
                         
-                        <div class="col-sm-12">
-                        	<h6 class="title light text-grey9 text-size13 mb20">Don’t have a LinkedIn Account, <a href="javascript:void(0);" id="show" class="text-teal-new"> Click here</a></h6>
+                        <div class="col-sm-12 text-center">
+                            <h6 class="title light text-grey9 text-size13 mb20">Don’t have a LinkedIn Account, <a href="javascript:void(0);" id="show" class="text-teal-new"> Click here</a></h6>
                         </div>
                         
                         <!-- Login form -->
                         <div class="col-sm-12 showdiv">
                             <form class="" action="">
                                 <div class="form-group mb10">
-    								<div class="row">
-                                    	<div class="col-sm-6">
-                                        <div class="has-icon pull-right">
-                                            <input type="text" placeholder="Username / email" name="username" class="form-control input-white">
-                                            <i class="ico-user2  form-control-icon icon-top"></i>
-                                        </div>
-                                    </div>
-    									<div class="col-sm-6">
+                                    <div class="row">
+                                        <div class="col-sm-6 mb5">
+                                            <label class="control-label">Email <span class="text-danger">*</span></label>
+                                            <div class="has-icon pull-right">
+                                                <input type="text" placeholder="Username / email" name="username" class="form-control input-white">
+                                                <i class="ico-user2  form-control-icon icon-top"></i>
+                                            </div>
+                                         </div>
+                                        <div class="col-sm-6 mb5">
+                                            <label class="control-label">Password <span class="text-danger">*</span></label>
                                             <div class="has-icon pull-right">
                                                 <input type="password" placeholder="Password" name="password" class="form-control input-white ">
-                                                <i class="ico-lock2 form-control-icon icon-top"></i>
+                                                <i class="ico-lock4 form-control-icon icon-top"></i>
                                             </div>
-                                		</div>
-   									</div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="form-group mb10">
                                     <div class="row">
@@ -182,275 +185,95 @@ CONTACT : pampersdry@gmail.com
                                 <div class="form-group mb10">
                                     <button class="btn btn-block btn-success btn-social btn-signin col-lg-offset-4" type="submit">Sign In</button>
                                 </div>
-                                <p class="clearfix">
+                                <p class="clearfix text-center">
                                     <span class="text-muted">Don't have any account? <a href="javascript:void(0);"  data-target="#bs-modal" data-toggle="modal" class="semibold">Sign up to get started</a></span>
                                 </p>
                             </form>
                         </div>
-                       
+                        <!--/ Login form -->
+                	</div>
+                 	<div class="col-sm-3">
+                 		<div class="col-sm-6 col-sm-offset-0 text-center border_design">
+                        <div class="center_border"></div>
+                        <div class="center_text">Or</div>
+                        <div class="center_border"></div>
+                	</div>
+                	</div>   
                 </div>
                 
-                <div class="col-lg-1 col-lg-offset-0 text-center border_design">
-                    <div class="center_border"></div>
-                    <div class="center_text">Or</div>
-                    <div class="center_border"></div>
+                <div class="col-md-5">
+                	<div class="col-sm-6 btn-mt78 ml15 pl15">	
+                		<script id="timelyScript" src="https://book.gettimely.com/widget/book-button.js"> </script>
+<script id="my1">var ownButton = new timelyButton("venturepact", { buttonId: "my1", imgSrc: "image/book-now-grey.png" });</script>
+                    </div>
                 </div>
-                <div class="col-lg-2 col-lg-offset-1 text-center">
-                    <button class="btn btn-social btn-block btn-call btn-mt80 ml15" type="button">Schedule a call</button>
+                
+                <!-- START modal -->
+                <div id="bs-modal" class="modal fade">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header text-center">
+                                <button type="button" class="close" data-dismiss="modal">×</button>
+                                <!--<div class=" ico-gun-ban mb15 mt15" style="font-size:36px;"></div>-->
+                                <h3 class=" modal-title">Sign Up</h3>
+                                <!--<p class="text-muted">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>-->
+                            </div>
+                            <div class="modal-body">
+                                <form class="" action="">
+                                    <div class="form-group mb10">
+                                        <div class="row">
+                                            <div class="col-sm-6 mb5">
+                                        	<label class="control-label">First Name <span class="text-danger">*</span></label>
+                                                <div class="has-icon pull-right">
+                                                    <input type="text" class="form-control input-white" name="fname" placeholder="First Name">
+                                                    <!--<i class="ico-checkmark form-control-icon icon-top"></i>-->
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 mb5">
+                                            	<label class="control-label">Last Name <span class="text-danger">*</span></label>
+                                                <div class="has-icon pull-right">
+                                                    <input type="text" class="form-control input-white " name="lname" placeholder="Last Name">
+                                                    <!--<i class="ico-checkmark form-control-icon icon-top"></i>-->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group mb10">
+                                        <div class="row">
+                                            <div class="col-sm-6 mb5">
+                                                <label class="control-label">Email <span class="text-danger">*</span></label>
+                                                <div class="has-icon pull-right">
+                                                    <input type="text" placeholder="Username / email" name="username" class="form-control input-white">
+                                                    <i class="ico-user2 form-control-icon icon-top"></i>
+                                                </div>
+                                             </div>
+                                            <div class="col-sm-6 mb5">
+                                                <label class="control-label">Password <span class="text-danger">*</span></label>
+                                                <div class="has-icon pull-right">
+                                                    <input type="password" placeholder="Password" name="password" class="form-control input-white">
+                                                    <i class="ico-lock4 form-control-icon icon-top"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="text-center text-grey9">By clicking on "Sign Up" below, you agree to the <a href="javascript:void(0);">Terms &amp; Conditions</a>.</p>
+                                    
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-block btn-success btn-social btn-signup col-lg-offset-5" type="submit">Sign Up</button>
+                            </div>
+                        </div><!-- /.modal-content -->
+                    </div><!-- /.modal-dialog -->
                 </div>
+                <!--/ END modal -->
+                
             </div>
             <!--/ END row -->
-               
-           <!-- START modal -->
-            <div id="bs-modal" class="modal fade">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header text-center">
-                            <button type="button" class="close" data-dismiss="modal">×</button>
-                            <!--<div class=" ico-gun-ban mb15 mt15" style="font-size:36px;"></div>-->
-                            <h3 class="semibold modal-title text-danger">Sign Up Form</h3>
-                            <!--<p class="text-muted">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>-->
-                        </div>
-                        <div class="modal-body">
-                            <form class="" action="">
-                            	<div class="form-group mb10">
-                                    <div class="row">
-                                        <div class="col-sm-6 mb5">
-                                            <div class="has-icon pull-right">
-                                                <input type="text" class="form-control input-white" name="fname" placeholder="First Name">
-                                                <!--<i class="ico-user2  form-control-icon icon-top"></i>-->
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6 mb5">
-                                            <div class="has-icon pull-right">
-                                                <input type="text" class="form-control input-white " name="lname" placeholder="Last Name">
-                                                <!--<i class="ico-lock2 form-control-icon icon-top"></i>-->
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group mb10">
-                                    <div class="row">
-                                        <div class="col-sm-6 mb5">
-                                            <div class="has-icon pull-right">
-                                                <input type="text" placeholder="Username / email" name="username" class="form-control input-white">
-
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6 mb5">
-                                            <div class="has-icon pull-right">
-                                                <input type="password" placeholder="Password" name="password" class="form-control input-white ">
-                                                
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                               
-                                <div class="form-group mb10">
-                                    <button class="btn btn-block btn-info btn-social btn-signin col-lg-offset-4" type="submit">Sign Up</button>
-                                </div>
-                            </form>
-                        
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                            <!--<button type="button" class="btn btn-primary">Save changes</button>-->
-                        </div>
-                    </div><!-- /.modal-content -->
-                </div><!-- /.modal-dialog -->
-            </div>
-            <!--/ END modal -->
+            
         </section>
+        
         <!--/ END Template Container -->
-
-                    </div>
-                    
-                   
-                </div>
-                <!--/ END row -->
-            </section>
-            <!--/ END Template Container -->
-            <!--/ END Template Container -->
-
-
-        <!-- START Template Sidebar (right) -->
-        <aside class="sidebar sidebar-right">
-            <!-- START Sidebar Content -->
-            <section class="content slimscroll">
-                <!-- START Sidebar Profile -->
-                <!-- START Panel -->
-                <div class="panel">
-                    <!-- thumbnail -->
-                    <div class="thumbnail">
-                        <!-- media -->
-                        <div class="media">
-                            <!-- meta -->
-                            <span class="meta text-center">
-                                <h5 class="semibold mb0">Erich Reyes</h5>
-                                <p class="nm"><i class="ico-user7 mr5"></i>Administrator</p>
-                            </span>
-                            <!-- meta -->
-                            <!-- indicator -->
-                            <div class="indicator"><span class="spinner"></span></div>
-                            <!--/ indicator -->
-                            <img data-toggle="unveil" src="image/background/400x250/placeholder.jpg" data-src="image/background/400x250/background3.jpg" alt="Cover" width="100%">
-                        </div>
-                        <!--/ media -->
-                    </div>
-                    <!--/ thumbnail -->
-                    <!-- panel body -->
-                    <div class="panel-body" style="margin-top:-55px;z-index:2;">
-                        <ul class="list-unstyled">
-                            <li class="text-center">
-                                <img class="img-circle" src="image/avatar/avatar7.jpg" alt="" width="75px" height="75px">
-                                <br>
-                                <!-- dropdown -->
-                                <div class="btn-group mt10">
-                                    <button type="button" class="btn btn-default"><span class="hasnotification hasnotification-success mr5"></span>Online</button>
-                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
-                                    <ul class="dropdown-menu" role="menu">
-                                        <li><a href="#">Away</a></li>
-                                        <li><a href="#">Offline</a></li>
-                                        <li><a href="#">Busy</a></li>
-                                    </ul>
-                                </div>
-                                <!--/ dropdown -->
-                            </li>
-                        </ul>
-                    </div>
-                    <!--/ panel body -->
-                </div>
-                <!--/ END Panel -->
-                <!--/ END Sidebar Profile -->
-
-                <!-- START Sidebar contact -->
-                <div class="media-list media-list-contact">
-                    <a href="javascript:void(0);" class="media">
-                        <span class="media-object pull-left">
-                            <img src="image/avatar/avatar1.jpg" class="img-circle" alt="">
-                        </span>
-                        <span class="media-body">
-                            <span class="media-heading"><span class="hasnotification hasnotification-success mr5"></span> Autumn Barker</span>
-                            <span class="media-meta ellipsis">Malaysia</span>
-                        </span>
-                    </a>
-
-                    <a href="javascript:void(0);" class="media">
-                        <span class="media-object pull-left">
-                            <img src="image/avatar/avatar2.jpg" class="img-circle" alt="">
-                        </span>
-                        <span class="media-body">
-                            <span class="media-heading"><span class="hasnotification hasnotification-success mr5"></span> Giselle Horn</span>
-                            <span class="media-meta ellipsis">Bolivia</span>
-                        </span>
-                    </a>
-
-                    <a href="javascript:void(0);" class="media">
-                        <span class="media-object pull-left">
-                            <img src="image/avatar/avatar.png" class="img-circle" alt="">
-                        </span>
-                        <span class="media-body">
-                            <span class="media-heading"><span class="hasnotification hasnotification-danger mr5"></span> Austin Shields</span>
-                            <span class="media-meta ellipsis">Timor-Leste</span>
-                        </span>
-                    </a>
-
-                    <a href="javascript:void(0);" class="media">
-                        <span class="media-object pull-left">
-                            <img src="image/avatar/avatar.png" class="img-circle" alt="">
-                        </span>
-                        <span class="media-body">
-                            <span class="media-heading"><span class="hasnotification hasnotification-danger mr5"></span> Caryn Gibson</span>
-                            <span class="media-meta ellipsis">Libya</span>
-                        </span>
-                    </a>
-
-                    <a href="javascript:void(0);" class="media">
-                        <span class="media-object pull-left">
-                            <img src="image/avatar/avatar3.jpg" class="img-circle" alt="">
-                        </span>
-                        <span class="media-body">
-                            <span class="media-heading"><span class="hasnotification hasnotification-success mr5"></span> Nash Evans</span>
-                            <span class="media-meta ellipsis">Honduras</span>
-                        </span>
-                    </a>
-
-                    <a href="javascript:void(0);" class="media">
-                        <span class="media-object pull-left">
-                            <img src="image/avatar/avatar4.jpg" class="img-circle" alt="">
-                        </span>
-                        <span class="media-body">
-                            <span class="media-heading"><span class="hasnotification hasnotification-default mr5"></span> Josiah Johnson</span>
-                            <span class="media-meta ellipsis">Belgium</span>
-                        </span>
-                    </a>
-
-                    <a href="javascript:void(0);" class="media">
-                        <span class="media-object pull-left">
-                            <img src="image/avatar/avatar.png" class="img-circle" alt="">
-                        </span>
-                        <span class="media-body">
-                            <span class="media-heading"><span class="hasnotification hasnotification-default mr5"></span> Philip Hewitt</span>
-                            <span class="media-meta ellipsis">Bahrain</span>
-                        </span>
-                    </a>
-
-                    <a href="javascript:void(0);" class="media">
-                        <span class="media-object pull-left">
-                            <img src="image/avatar/avatar5.jpg" class="img-circle" alt="">
-                        </span>
-                        <span class="media-body">
-                            <span class="media-heading"><span class="hasnotification hasnotification-default mr5"></span> Wilma Hunt</span>
-                            <span class="media-meta ellipsis">Dominica</span>
-                        </span>
-                    </a>
-
-                    <a href="javascript:void(0);" class="media">
-                        <span class="media-object pull-left">
-                            <img src="image/avatar/avatar6.jpg" class="img-circle" alt="">
-                        </span>
-                        <span class="media-body">
-                            <span class="media-heading"><span class="hasnotification hasnotification-success mr5"></span> Noah Gill</span>
-                            <span class="media-meta ellipsis">Guatemala</span>
-                        </span>
-                    </a>
-
-                    <a href="javascript:void(0);" class="media">
-                        <span class="media-object pull-left">
-                            <img src="image/avatar/avatar8.jpg" class="img-circle" alt="">
-                        </span>
-                        <span class="media-body">
-                            <span class="media-heading"><span class="hasnotification hasnotification-success mr5"></span> David Fisher</span>
-                            <span class="media-meta ellipsis">French Guiana</span>
-                        </span>
-                    </a>
-
-                    <a href="javascript:void(0);" class="media">
-                        <span class="media-object pull-left">
-                            <img src="image/avatar/avatar9.jpg" class="img-circle" alt="">
-                        </span>
-                        <span class="media-body">
-                            <span class="media-heading"><span class="hasnotification hasnotification-success mr5"></span> Samantha Avery</span>
-                            <span class="media-meta ellipsis">Jersey</span>
-                        </span>
-                    </a>
-
-                    <a href="javascript:void(0);" class="media">
-                        <span class="media-object pull-left">
-                            <img src="image/avatar/avatar.png" class="img-circle" alt="">
-                        </span>
-                        <span class="media-body">
-                            <span class="media-heading"><span class="hasnotification hasnotification-success mr5"></span> Madaline Medina</span>
-                            <span class="media-meta ellipsis">Finland</span>
-                        </span>
-                    </a>
-                </div>
-                <!--/ END Sidebar contact -->
-            </section>
-            <!--/ END Sidebar Content -->
-        </aside>
-        <!--/ END Template Sidebar (right) -->
-
 
         <!-- START JAVASCRIPT SECTION (Load javascripts at bottom to reduce load time) -->
         <!-- Library script : mandatory -->

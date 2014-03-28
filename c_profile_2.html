@@ -26,6 +26,10 @@ CONTACT : pampersdry@gmail.com
         <!--/ END META SECTION -->
 
         <!-- START STYLESHEETS -->
+        <!-- 3rd party plugin stylesheet : optional(per use) -->
+        <link rel="stylesheet" href="plugins/magnific/css/magnific-popup.min.css">
+        <!--/ 3rd party plugin stylesheet -->
+
         <!-- Library stylesheet : mandatory -->
         <link rel="stylesheet" href="library/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="library/jquery/css/jquery-ui.min.css">
@@ -42,7 +46,7 @@ CONTACT : pampersdry@gmail.com
         <!--/ END JAVASCRIPT SECTION -->
     </head>
     <!--/ END Head -->
-    <body data-page="component-custom-widget">
+    <body data-page="page-media">
         <!-- START Template Header -->
         <header id="header" class="navbar navbar-fixed-top">
             <!-- START navbar header -->
@@ -405,27 +409,27 @@ CONTACT : pampersdry@gmail.com
                 <!-- START Template Navigation/Menu -->
                 <ul id="nav" class="topmenu">
                     <li class="menuheader">MAIN MENU</li>
-                    <li class="active"  >
+                    <li  >
                         <a href="company_dashboard.html">
                             <span class="figure"><i class="ico-home2"></i></span>
                             <span class="text">Dashboard</span>
                             <span class="number"><span class="label label-danger">5</span></span>
                         </a>
                     </li>
-                    <li  >
+                    <li class="active" >
                         <a href="javascript:void(0);" data-toggle="submenu" data-target="#components" data-parent="#nav">
                             <span class="figure"><i class="ico-screwdriver"></i></span>
                             <span class="text">Profile</span>
                             <span class="arrow"></span>
                         </a>
                         <!-- START 2nd Level Menu -->
-                        <ul id="components" class="submenu collapse ">
+                        <ul id="components" class="submenu collapse in ">
                             <li  >
                                 <a href="c_profile_1.html" >
                                     <span class="text">Profile Option1</span>
                                 </a>
-                            </li>
-                            <li >
+                            </li >
+                            <li class="active"  >
                                 <a href="c_profile_2.html">
                                     <span class="text">Profile Option2</span>
                                 </a>
@@ -556,339 +560,251 @@ CONTACT : pampersdry@gmail.com
         <section id="main" role="main">
             <!-- START Template Container -->
             <section class="container-fluid">
-                <!-- section header -->
-                <div class="section-header">
-                    <h5 class="semibold title mb15">Supplier Dashbaord</h5>
+                <!-- Page header -->
+                <div class="page-header page-header-block">
+                    <div class="page-header-section">
+                        <h4 class="title semibold">Media gallery</h4>
+                    </div>
+                    <div class="page-header-section">
+                        <!-- Toolbar -->
+                        <div class="toolbar">
+                            <span class="toolbar-label semibold mr5">Filters : </span>
+                            <div class="btn-group">
+                                <button class="btn btn-default filter active" data-filter="all">All</button>
+                                <button class="btn btn-default filter" data-filter="filter_creative">Creative</button>
+                                <button class="btn btn-default filter" data-filter="filter_business">Business</button>
+                                <button class="btn btn-default filter" data-filter="filter_nature">Nature</button>
+                            </div>
+                        </div>
+                        <!--/ Toolbar -->
+                    </div>
+                    <div class="page-header-section">
+                        <!-- Toolbar -->
+                        <div class="toolbar">
+                            <span class="toolbar-label semibold mr5">Sort : </span>
+                            <div class="btn-group">
+                                <button class="btn btn-default active sort" data-sort="data-cat" data-order="desc"><i class="ico-sort-by-alphabet"></i></button>
+                                <button class="btn btn-default sort" data-sort="data-cat" data-order="asc"><i class="ico-sort-by-alphabet-alt"></i></button>
+                            </div>
+                        </div>
+                        <!--/ Toolbar -->
+                    </div>
                 </div>
-                <!--/ section header -->
+                <!--/ Page header -->
 
                 <!-- START row -->
-                <div class="row">
-                	<div class="col-xs-12 col-md-6 col-lg-4">
-                    	<div class="panel">
-                            <hr class="nm"><!-- horizontal line -->
-                            <!-- Panel body -->
-                            <div class="panel-body">
-                            	<form data-parsley-validate="" action="" class=" panel-default form-horizontal form-bordered " novalidate>
-                                	<div class="panel-default">
-                                    	<h4 class="semibold title mb10 text-success">Are you accepting project?</h4>
-                                        <h4>Collapse (Show/Hide)</h4>
-                                        <div class="btn-group btn-toggle"> 
-                                            <button class="btn btn-default" data-toggle="collapse" data-target="#collapsible">Yes</button>
-                                            <button class="btn btn-primary active" data-toggle="collapse" data-target="#collapsible">No</button>
-                                        </div>
-                                        <div class="well collapse" id="collapsible"> 
-                                        	<div class="panel-group">
-                                                <label class="control-label">Apps</label>
-                                                <span class="checkbox custom-checkbox ">
-                                                    <input type="checkbox" id="customcheckbox1" name="customcheckbox1" data-parsley-multiple="customcheckbox1" data-parsley-id="9118">
-                                                    <label for="customcheckbox1">&nbsp;&nbsp;iOS.</label>
-                                                </span>
-                                                <ul class="parsley-errors-list" id="parsley-id-multiple-customcheckbox1"></ul>
-                                                <span class="checkbox custom-checkbox">
-                                                    <input type="checkbox" id="customcheckbox2" name="customcheckbox2" data-parsley-multiple="customcheckbox2" data-parsley-id="0591">
-                                                    <label for="customcheckbox2">&nbsp;&nbsp;Android.</label>
-                                                </span>
-                                                <ul class="parsley-errors-list" id="parsley-id-multiple-customcheckbox2"></ul>
-                                                <span class="checkbox custom-checkbox">
-                                                    <input type="checkbox" id="customcheckbox3" name="customcheckbox3" data-parsley-multiple="customcheckbox3" data-parsley-id="2794">
-                                                    <label for="customcheckbox3">&nbsp;&nbsp;iOS and Android.</label>
-                                                </span>
-                                                <ul class="parsley-errors-list" id="parsley-id-multiple-customcheckbox3"></ul>
-                                			</div>
-                                            <hr class="nm"><!-- horizontal line -->
-                                        	<div class="panel-default">
-                                            <div class="panel-group">
-                                                <label class="control-label">Websites</label>
-                                                <span class="checkbox custom-checkbox ">
-                                                    <input type="checkbox" id="customcheckbox4" name="customcheckbox1" data-parsley-multiple="customcheckbox1" data-parsley-id="9118">
-                                                    <label for="customcheckbox4">&nbsp;&nbsp;Basic Website</label>
-                                                </span>
-                                                <ul class="parsley-errors-list" id="parsley-id-multiple-customcheckbox1"></ul>
-                                                <span class="checkbox custom-checkbox">
-                                                    <input type="checkbox" id="customcheckbox5" name="customcheckbox2" data-parsley-multiple="customcheckbox2" data-parsley-id="0591">
-                                                    <label for="customcheckbox5">&nbsp;&nbsp;Dynamic Website</label>
-                                                </span>
-                                                <ul class="parsley-errors-list" id="parsley-id-multiple-customcheckbox2"></ul>
-                                                <span class="checkbox custom-checkbox">
-                                                    <input type="checkbox" id="customcheckbox6" name="customcheckbox3" data-parsley-multiple="customcheckbox3" data-parsley-id="2794">
-                                                    <label for="customcheckbox6">&nbsp;&nbsp;eCommerce Website</label>
-                                                </span>
-                                                <ul class="parsley-errors-list" id="parsley-id-multiple-customcheckbox3"></ul>
-                                            </div>
-                                        </div>
-                                        </div>
-                                        
-                                	</div>
-                                	
-                            	</form>
-                            </div>
-                            <!--/ Panel body -->
-                            <hr class="nm"><!-- horizontal line -->
-                            
-                            <hr class="nm"><!-- horizontal line -->
-                            
-                        </div>
-                        <br/>
-                        <div class="panel">
-                            <hr class="nm"><!-- horizontal line -->
-                            <!-- Panel body -->
-                            <div class="panel-body">
-                            	<form data-parsley-validate="" action="" class=" panel-default form-horizontal form-bordered " novalidate>
-                                	<div class="panel-default">
-                                    	<h5 class="semibold title mb10 text-success">Projects which you are not accepting ?</h5>
-                                        
-                                        <div class="widget panel">
-                                            <!-- panel body -->
-                                            <div class="panel-body">
-                                                <h5 class="semibold text-primary">Task Widget</h5>
-                                            </div>
-                                            <!--/ panel body -->
-                                            <table class="table">
-                                                <tbody>
-                                                    <tr>
-                                                        <td width="5%">
-                                                            <div class="checkbox custom-checkbox nm">  
-                                                                <input type="checkbox" id="customcheckbox10" value="1" data-toggle="selectrow" data-target="tr" data-contextual="stroke">  
-                                                                <label for="customcheckbox10"></label>   
-                                                            </div>
-                                                        </td>
-                                                        
-                                                        <td width="80%">iOS.</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td width="5%">
-                                                            <div class="checkbox custom-checkbox nm">  
-                                                                <input type="checkbox" id="customcheckbox11" value="1" data-toggle="selectrow" data-target="tr" data-contextual="stroke">  
-                                                                <label for="customcheckbox11"></label>   
-                                                            </div>
-                                                        </td>
-                                                       
-                                                        <td width="80%">Android.</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td width="5%">
-                                                            <div class="checkbox custom-checkbox nm">  
-                                                                <input type="checkbox" id="customcheckbox12" value="1" data-toggle="selectrow" data-target="tr" data-contextual="stroke">  
-                                                                <label for="customcheckbox12"></label>   
-                                                            </div>
-                                                        </td>
-                                                       
-                                                        <td width="80%">iOS and Android.</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td width="5%">
-                                                            <div class="checkbox custom-checkbox nm">  
-                                                                <input type="checkbox" id="customcheckbox13" value="1" data-toggle="selectrow" data-target="tr" data-contextual="stroke">  
-                                                                <label for="customcheckbox13"></label>   
-                                                            </div>
-                                                        </td>
-                                                       
-                                                        <td width="80%">Basic Website</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td width="5%">
-                                                            <div class="checkbox custom-checkbox nm">  
-                                                                <input type="checkbox" id="customcheckbox14" value="1" data-toggle="selectrow" data-target="tr" data-contextual="stroke">  
-                                                                <label for="customcheckbox14"></label>   
-                                                            </div>
-                                                        </td>
-                                                       
-                                                        <td width="80%">Dynamic Website</td>
-                                                    </tr>
-                                                     <tr>
-                                                        <td width="5%">
-                                                            <div class="checkbox custom-checkbox nm">  
-                                                                <input type="checkbox" id="customcheckbox14" value="1" data-toggle="selectrow" data-target="tr" data-contextual="stroke">  
-                                                                <label for="customcheckbox14"></label>   
-                                                            </div>
-                                                        </td>
-                                                       
-                                                        <td width="80%">eCommerce Website</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                            <!-- panel footer -->
-                                            <div class="panel-footer">
-                                                <div class="input-group">
-                                                    <input type="text" class="form-control" name="task" placeholder="Add new task">
-                                                    <span class="input-group-btn">
-                                                        <button class="btn btn-default" type="button">Add</button>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                            <!--/ panel footer -->
-                                        </div>
-                                    
-                                    	
-                                        
-                                	</div>
-                                	
-                            	</form>
-                            </div>
-                            <!--/ Panel body -->
-                            <hr class="nm"><!-- horizontal line -->
-                            
-                            <hr class="nm"><!-- horizontal line -->
-                            
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-md-6 col-lg-4">
-                    	<div class="table-layout widget panel">
-                            <div class="col-xs-6 widget panel panel-minimal bgcolor-inverse">
-                                <div class="panel-body">
-                                    <ul class="list-unstyled">
-                                        <li class="text-center">
-                                            <i style="font-size:46px;" class="ico-apple2"></i>
-                                            <!--<img class="img-circle img-bordered-danger" src="image/avatar/avatar4.jpg" alt="" width="75px" height="75px">-->
-                                            <br/>
-                                            <h5 class="semibold mb0">Nehrus</h5>
-                                            <p class="nm text-white">Build in iOS</p><br/>
-                                            <p class="nm text-white">
-                                            	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                                            </p>
-                                            <br/>
-                                            <h5 class="semibold mb0">Client</h5>
-                                            <p class="nm text-muted">Awaiting your response</p>
-                                        </li>
-                                    </ul>
-                                    
-                                </div>
-                            </div>
-                            <div class="col-xs-6 widget panel panel-minimal bgcolor-white">
-                                <div class="panel-body text-center bgcolor-white">
-                                    <ul class="list-unstyled">
-                                        <li class="text-center">
-                                            <i class="ico-dollar" style="font-size:26px;"></i>
-                                            <br>
-                                            <h5 class="semibold mb0">$7000 - 15000</h5>
-                                            <p class="nm text-muted">Budget</p>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <hr class="mt0 mb0">
-                                <div class="panel-body text-center bgcolor-white">
-                                    <ul class="list-unstyled">
-                                        <li class="text-center">
-                                            <i class="ico-calendar" style="font-size:26px;"></i>
-                                            <br>
-                                            <h5 class="semibold mb0">27 March, 2014</h5>
-                                            <p class="nm text-muted">Start Date</p>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <hr class="mt0 mb0">
-                                <div class="panel-body text-center bgcolor-white">
-                                    <ul class="list-unstyled">
-                                        <li class="text-center">
-                                            <i class="ico-calendar" style="font-size:26px;"></i>
-                                            <br>
-                                            <h5 class="semibold mb0">Proposals received. Awaiting your response</h5>
-                                            <p class="nm text-muted">Status</p>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="panel-body text-center bgcolor-success">
-                                    
-                                    <div class="col-sm-12">
-                                        <ul class="nav nav-section nav-justified">
-                                            <li class="text-center">
-                                                <div class="section">
-                                                    <span class="number"><span class="label label-danger">2</span></span>
-                                                    <p class="nm"><a href="" class="text-white">Message</a></p>
-                                                </div>
-                                            </li>
-                                        </ul>
+                <div class="row" id="mixitup-grid">
+                    <div class="col-md-4 mix filter_creative filter_nature dis-none" data-cat="background1.jpg">
+                        <!-- thumbnail -->
+                        <div class="thumbnail thumbnail-album">
+                            <!-- media -->
+                            <div class="media">
+                                <!-- indicator -->
+                                <div class="indicator"><span class="spinner"></span></div>
+                                <!--/ indicator -->
+                                <!-- toolbar overlay -->
+                                <div class="overlay">
+                                    <div class="toolbar">
+                                      
+                                        <a title="add images" class="btn btn-success" href="#" data-toggle="modal" data-target="#bs-modal"><i class="ico-plus"></i></a>
+                                        <!--<a href="#" class="btn btn-default" title="love this picture"><i class="ico-heart6"></i></a>-->
                                     </div>
                                 </div>
+                                <!--/ toolbar overlay -->
+                                <img width="100%" alt="Cover" data-src="image/background/400x250/background14.jpg" src="image/background/400x250/background14.jpg" data-toggle="unveil" class="unveiled">
                             </div>
+                            <!--/ media -->
+                            <div class="caption">
+                                <h5 class="semibold mt0 mb5">Rail station</h5>
+                                <p class="text-muted mb5 ellipsis">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                                <p class="tag ellipsis">
+                                    <a href="#">#Railstation</a>&nbsp;
+                                    <a href="#">#Rail</a>&nbsp;
+                                    <a href="#">#Train</a>
+                                </p>
+                            </div>
+                            <hr class="mt5 mb5">
+                            <ul class="meta">
+                                <li>
+                                    <div class="img-group img-group-stack">
+                                        <img alt="" class="img-circle" src="image/avatar/avatar7.jpg">
+                                        <img alt="" class="img-circle" src="image/avatar/avatar2.jpg">
+                                        <span class="more img-circle">2+</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p class="nm"><a class="semibold" href="#">4 people</a> love this</p>
+                                </li>
+                            </ul>
                         </div>
+                        <!--/ thumbnail -->
                     </div>
-                    <div class="col-xs-12 col-md-6 col-lg-4">
-                    	<div class="table-layout widget panel">
-                            <div class="col-xs-6 widget panel panel-minimal bgcolor-inverse">
-                                <div class="panel-body">
-                                    <ul class="list-unstyled">
-                                        <li class="text-center">
-                                            <i style="font-size:46px;" class="ico-apple2"></i>
-                                            <!--<img class="img-circle img-bordered-danger" src="image/avatar/avatar4.jpg" alt="" width="75px" height="75px">-->
-                                            <br/>
-                                            <h5 class="semibold mb0">Nehrus</h5>
-                                            <p class="nm text-white">Build in iOS</p><br/>
-                                            <p class="nm text-white">
-                                            	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                                            </p>
-                                            <br/>
-                                            <h5 class="semibold mb0">Client</h5>
-                                            <p class="nm text-muted">Awaiting your response</p>
-                                        </li>
-                                    </ul>
-                                    
-                                </div>
-                            </div>
-                            <div class="col-xs-6 widget panel panel-minimal bgcolor-white">
-                                <div class="panel-body text-center bgcolor-white">
-                                    <ul class="list-unstyled">
-                                        <li class="text-center">
-                                            <i class="ico-dollar" style="font-size:26px;"></i>
-                                            <br>
-                                            <h5 class="semibold mb0">$7000 - 15000</h5>
-                                            <p class="nm text-muted">Budget</p>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <hr class="mt0 mb0">
-                                <div class="panel-body text-center bgcolor-white">
-                                    <ul class="list-unstyled">
-                                        <li class="text-center">
-                                            <i class="ico-calendar" style="font-size:26px;"></i>
-                                            <br>
-                                            <h5 class="semibold mb0">27 March, 2014</h5>
-                                            <p class="nm text-muted">Start Date</p>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <hr class="mt0 mb0">
-                                <div class="panel-body text-center bgcolor-white">
-                                    <ul class="list-unstyled">
-                                        <li class="text-center">
-                                            <i class="ico-calendar" style="font-size:26px;"></i>
-                                            <br>
-                                            <h5 class="semibold mb0">Proposals received. Awaiting your response</h5>
-                                            <p class="nm text-muted">Status</p>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="panel-body text-center bgcolor-success">
-                                    
-                                    <div class="col-sm-12">
-                                        <ul class="nav nav-section nav-justified">
-                                            <li class="text-center">
-                                                <div class="section">
-                                                    <span class="number"><span class="label label-danger">2</span></span>
-                                                    <p class="nm"><a href="" class="text-white">Message</a></p>
-                                                </div>
-                                            </li>
-                                        </ul>
+                    <div class="col-md-4 mix filter_creative dis-none" data-cat="background2.jpg">
+                        <!-- thumbnail -->
+                        <div class="thumbnail thumbnail-album ">
+                            <!-- media -->
+                            <div class="media">
+                                <!-- indicator -->
+                                <div class="indicator"><span class="spinner"></span></div>
+                                <!--/ indicator -->
+                                <!-- toolbar overlay -->
+                                <div class="overlay">
+                                    <div class="toolbar">
+                                      
+                                        <a title="add images" class="btn btn-success" href="#"><i class="ico-plus"></i></a>
+                                        <!--<a href="#" class="btn btn-default" title="love this picture"><i class="ico-heart6"></i></a>-->
                                     </div>
                                 </div>
+                                <!--/ toolbar overlay -->
+                                
+                                <img width="100%" alt="Cover" data-src="image/background/400x250/background13.jpg" src="image/background/400x250/background13.jpg" data-toggle="unveil" class="unveiled">
                             </div>
+                            <!--/ media -->
+                            <div class="caption">
+                                <h5 class="semibold mt0 mb5">Bird collection</h5>
+                                <p class="text-muted mb5 ellipsis">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                                <p class="tag ellipsis">
+                                    <a href="#">#Animal</a>&nbsp;
+                                    <a href="#">#Bird</a>
+                                </p>
+                            </div>
+                            <hr class="mt5 mb5">
+                            <ul class="meta">
+                                <li>
+                                    <div class="img-group img-group-stack">
+                                        <img alt="" class="img-circle" src="image/avatar/avatar2.jpg">
+                                        <img alt="" class="img-circle" src="image/avatar/avatar7.jpg">
+                                        <span class="more img-circle">6+</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p class="nm"><a class="semibold" href="#">8 people</a> love this</p>
+                                </li>
+                            </ul>
                         </div>
+                        <!--/ thumbnail -->
                     </div>
-
-                    
+                    <div class="col-md-4 mix filter_business dis-none" data-cat="background3.jpg">
+                        <!-- thumbnail -->
+                        <div class="thumbnail thumbnail-album ">
+                            <!-- media -->
+                            <div class="media">
+                                <!-- indicator -->
+                                <div class="indicator"><span class="spinner"></span></div>
+                                <!--/ indicator -->
+                                <!-- toolbar overlay -->
+                                <div class="overlay">
+                                    <div class="toolbar">
+                                       
+                                        <a title="add images" class="btn btn-success" href="#"><i class="ico-plus"></i></a>
+                                        <!--<a href="#" class="btn btn-default" title="love this picture"><i class="ico-heart6"></i></a>-->
+                                    </div>
+                                </div>
+                                <!--/ toolbar overlay -->
+                                <img width="100%" alt="Cover" data-src="image/background/400x250/background15.jpg" src="image/background/400x250/background15.jpg" data-toggle="unveil" class="unveiled">
+                            </div>
+                            <!--/ media -->
+                            <div class="caption">
+                                <h5 class="semibold mt0 mb5">Cute pet</h5>
+                                <p class="text-muted mb5 ellipsis">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                                <p class="tag ellipsis">
+                                    <a href="#">#Pet</a>&nbsp;
+                                    <a href="#">#Cute</a>
+                                </p>
+                            </div>
+                            <hr class="mt5 mb5">
+                            <ul class="meta">
+                                <li>
+                                    <div class="img-group img-group-stack">
+                                        <img alt="" class="img-circle" src="image/avatar/avatar8.jpg">
+                                    </div>
+                                </li>
+                                <li>
+                                    <p class="nm"><a class="semibold" href="#">Samuel Jackson</a> love this</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--/ thumbnail -->
+                    </div>
                     
                 </div>
-                <div id="bs-modal-sm" class="modal fade">
-                    <div class="modal-dialog modal-sm">
+                <!--/ END row -->
+                <div id="bs-modal" class="modal fade">
+                    <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header text-center">
                                 <button type="button" class="close" data-dismiss="modal">×</button>
-                                <h4 class="semibold modal-title text-grey5">Enter your Project Name</h4>
+                                <div class=" ico-user-plus2 mb15 mt15" style="font-size:36px;"></div>
+                                <h3 class="semibold modal-title text-danger">Add your portfolio</h3>
                             </div>
-                            <div class="modal-body">
-                                <input type="text" class="form-control" data-parsley-id="7405">
+                            <form class="panel-default form-horizontal" data-parsley-validate="" action="" novalidate>
+                                <br/>
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                    <label class="col-sm-4 control-label">Upload screenshots: <span class="text-danger">*</span></label>
+                                    <div class="col-sm-7">
+                                        <div class="input-group">
+                                            <input type="text" readonly class="form-control" data-parsley-id="4011"><ul class="parsley-errors-list" id="parsley-id-4011"></ul>
+                                            <span class="input-group-btn">
+                                            <div class="btn btn-primary btn-file">
+                                                <span class="icon iconmoon-file-3"></span> Browse 
+                                                <input type="file" data-parsley-id="6400"><ul class="parsley-errors-list" id="parsley-id-6400"></ul>
+                                            </div>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                            <label class="col-sm-4 control-label">Name of the project<span class="text-danger">*</span></label>
+                            <div class="col-sm-7">
+                                <input type="text" required name="required" class="form-control " data-parsley-id="9793"><ul class="parsley-errors-list" id="parsley-id-9793"></ul>
                             </div>
+                        </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <label class="col-sm-4 control-label">Link to the project<span class="text-danger">*</span></label>
+                                        <div class="col-sm-7">
+                                            <input type="text" required name="required" class="form-control " data-parsley-id="9793"><ul class="parsley-errors-list" id="parsley-id-9793"></ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <label class="col-sm-4 control-label">Description<span class="text-danger">*</span></label>
+                                        <div class="col-sm-7">
+                                            <textarea required rows="3" class="form-control" data-parsley-id="9568"></textarea>
+                                            <ul class="parsley-errors-list" id="parsley-id-9793"></ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <label class="col-sm-4 control-label">Industry<span class="text-danger">*</span></label>
+                                        <div class="col-sm-7">
+                                            <input type="text" required name="required" class="form-control " data-parsley-id="9793"><ul class="parsley-errors-list" id="parsley-id-9793"></ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <label class="col-sm-4 control-label">Client name<span class="text-danger">*</span></label>
+                                        <div class="col-sm-7">
+                                            <input type="text" required name="required" class="form-control " data-parsley-id="9793"><ul class="parsley-errors-list" id="parsley-id-9793"></ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <label class="col-sm-4 control-label">Year done<span class="text-danger">*</span></label>
+                                        <div class="col-sm-7">
+                                            <input type="text" required name="required" class="form-control " data-parsley-id="9793" data-mask="99/99/9999"><ul class="parsley-errors-list" id="parsley-id-9793"></ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                                 <button type="button" class="btn btn-primary">Save changes</button>
@@ -896,7 +812,6 @@ CONTACT : pampersdry@gmail.com
                         </div><!-- /.modal-content -->
                     </div><!-- /.modal-dialog -->
                 </div>
-                <!--/ END row -->
             </section>
             <!--/ END Template Container -->
 
@@ -1003,6 +918,7 @@ CONTACT : pampersdry@gmail.com
                             <img src="image/avatar/avatar3.jpg" class="img-circle" alt="">
                         </span>
                         <span class="media-body">
+
                             <span class="media-heading"><span class="hasnotification hasnotification-success mr5"></span> Nash Evans</span>
                             <span class="media-meta ellipsis">Honduras</span>
                         </span>
@@ -1099,27 +1015,14 @@ CONTACT : pampersdry@gmail.com
             (function($){
                 $("html").Core({ "console": false });
             })(jQuery);
-			
-			
-			$('.btn-toggle').click(function() {
-				
-				$(this).find('.btn').toggleClass('btn-default');
-				   
-			});
-			
-			$('form').submit(function(){
-				//alert($(this["options"]).val());
-				return false;
-			});
         </script>
         <!--/ app init script -->
 
         <!-- 3rd party plugin script : optional(per use) -->
-        <script type="text/javascript" src="plugins/flot/jquery.flot.min.js"></script>
-        <script type="text/javascript" src="plugins/flot/jquery.flot.spline.min.js"></script>
-        <script type="text/javascript" src="plugins/flot/jquery.flot.categories.min.js"></script>
-        <script type="text/javascript" src="plugins/flot/jquery.flot.tooltip.min.js"></script>
-        <script type="text/javascript" src="plugins/flot/jquery.flot.resize.min.js"></script>
+        <script type="text/javascript" src="plugins/magnific/js/jquery.magnific-popup.min.js"></script>
+        <script type="text/javascript" src="plugins/mixitup/js/jquery.mixitup.min.js"></script>
+        <script type="text/javascript" src="plugins/inputmask/js/inputmask.min.js"></script>
+        <script type="text/javascript" src="plugins/selectize/js/selectize.min.js"></script>
         <script type="text/javascript" src="javascript/page.js"></script>
         <!--/ 3rd party plugin script -->
         <!--/ END JAVASCRIPT SECTION -->
