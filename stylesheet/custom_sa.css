@@ -90,6 +90,8 @@
     padding: 10px 15px!important;
 }
 /*new css for page-login*/ 
+.table_cell{}
+td .table_cell:hover{ background:#DFF0D8 !important;}
 .border_design{}
 @media (max-width: 600px) 
 {
@@ -110,4 +112,6 @@
     line-height: 18px;
     padding: 10px 0;}
 .plus_new{font-size: 10px!important;}
+.panel-title_new{font-size: 13px!important; font-weight: normal!important;}
 /* new css for faq */
+
