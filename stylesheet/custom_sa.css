@@ -56,6 +56,7 @@
 }
 .btn-signin{width: 30%;}
 .btn-signup{width: 20%; padding: 12px 10px !important;}
+.btn-signup{width: 40%; padding: 12px 10px !important;}
 .text-teal-new{color: #00b6ad;}
 .text-teal-new:hover{color: #00b6ad; text-decoration: underline;}
 .center_border{ border-right: 5px solid #e5e5e5; min-height: 80px;}
@@ -101,3 +102,7 @@
 
 .custom_white{ color:#fff;}
 .custom_white:hover{color:#fff; opacity:0.8 !important;}
+
+/* new css for faq */
+.panel-title_new{font-size: 13px!important; font-weight: normal!important;}
+/* new css for faq */

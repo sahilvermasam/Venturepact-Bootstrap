@@ -491,7 +491,7 @@ CONTACT : pampersdry@gmail.com
                                                 <a href="portfolio.html"><span class="text">Portfolio</span></a>
                                             </li>
                                             <li>
-                                                <a href="javascript:void(0);"><span class="text">Sub Menu 8</span></a>
+                                                <a href="faq.html"><span class="text">Faq</span></a>
                                             </li>
                                         </ul>
                                         <!--/ END 4th Level Menu -->
@@ -629,7 +629,9 @@ CONTACT : pampersdry@gmail.com
                                     <hr class="nm"><!-- horizontal line -->
                                     <!-- Panel body -->
                                     <div class="panel-body"> 
-                                        <h5 class="semibold mb5 mt0 text-success">Dear Client <a title="Edit" href="" class="pull-right"><i class="ico-edit"></i></a></h5>
+                                        <h5 class="semibold mb5 mt0 text-success">Dear Client 
+                                        <a title="Edit" href="" class="pull-right" data-toggle="modal" data-target="#edit_box1"><i class="ico-edit"></i></a>
+                                        </h5>
                                         <p class="nm">
                                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
                                         </p>
@@ -680,7 +682,7 @@ CONTACT : pampersdry@gmail.com
                                             <p class="ellipsis nm semibold">Your Team</p>
                                         </li>
                                         <li class="pull-right">
-                                        	<a title="Edit" href="" class="pull-right"><i class="ico-edit"></i></a>    
+                                        	<a title="Edit"  data-toggle="modal" data-target="#edit_team" href="" class="pull-right"><i class="ico-edit"></i></a>    
                                         </li>
                                         
                                     </ul>
@@ -700,9 +702,6 @@ CONTACT : pampersdry@gmail.com
                                             <div class="media-body">
                                                 <p class="media-heading">Arthur Abbott</p>
                                                 <p class="media-text">Lorem ipsum dolor sit amet, consectetur.</p>
-                                                <!-- meta icon -->
-                                                <p class="media-meta">2m</p>
-                                                <!--/ meta icon -->
                                             </div>
                                         </li>
                                         <li class="media border-dotted">
@@ -712,9 +711,6 @@ CONTACT : pampersdry@gmail.com
                                             <div class="media-body">
                                                 <p class="media-heading">Martina Poole</p>
                                                 <p class="media-text">Lorem ipsum dolor sit amet, consectetur.</p>
-                                                <!-- meta icon -->
-                                                <p class="media-meta">20m</p>
-                                                <!--/ meta icon -->
                                             </div>
                                         </li>
                                         <li class="media border-dotted">
@@ -724,33 +720,6 @@ CONTACT : pampersdry@gmail.com
                                             <div class="media-body">
                                                 <p class="media-heading">Elvis Christensen</p>
                                                 <p class="media-text">Duis aute irure dolor in reprehenderit.</p>
-                                                <!-- meta icon -->
-                                                <p class="media-meta">5h</p>
-                                                <!--/ meta icon -->
-                                            </div>
-                                        </li>
-                                        <li class="media border-dotted">
-                                            <a class="pull-left" href="javascript:void(0);">
-                                                <img alt="" class="media-object img-circle" src="image/avatar/avatar3.jpg">
-                                            </a>
-                                            <div class="media-body">
-                                                <p class="media-heading">Walter Foster</p>
-                                                <p class="media-text">Cum sociis natoque penatibus et.</p>
-                                                <!-- meta icon -->
-                                                <p class="media-meta">21h</p>
-                                                <!--/ meta icon -->
-                                            </div>
-                                        </li>
-                                        <li class="media border-dotted">
-                                            <a class="pull-left" href="javascript:void(0);">
-                                                <img alt="" class="media-object img-circle" src="image/avatar/avatar4.jpg">
-                                            </a>
-                                            <div class="media-body">
-                                                <p class="media-heading">Callum Santosr</p>
-                                                <p class="media-text">Cum sociis natoque penatibus.</p>
-                                                <!-- meta icon -->
-                                                <p class="media-meta">1d</p>
-                                                <!--/ meta icon -->
                                             </div>
                                         </li>
                                     </ul>
@@ -763,84 +732,85 @@ CONTACT : pampersdry@gmail.com
                             </div>
                             <div class="col-lg-6">
                             	<div class="table-layout">
-                            <div class="col-lg-5 valign-top panel panel-default">
-                                <!-- panel heading -->
-                                <div class="panel-heading">
-                                    <h5 class="panel-title"><i class="ico-star6 text-warning mr5"></i> Chatting Here</h5>
-                                    <!-- panel toolbar -->
-                                </div>
-                                <!--/ panel heading -->
-        
-                                <!-- panel body -->
-                                <div class="panel-body np">
-                                    <!-- message list -->
-                                    <ul class="media-list media-list-bubble">
-                                        <li class="media media-right">
-                                            <a href="javascript:void(0);" class="media-object">
-                                                <img src="image/avatar/avatar7.jpg" class="img-circle" alt="">
-                                            </a>
-                                            <div class="media-body">
-                                                <p class="media-text">Suspendisse dui.</p>
-                                                <!-- meta -->
-                                                <span class="clearfix"></span><!-- important: clearing floated media text -->
-                                                <p class="media-meta">Sun, Mar 02</p>
+                                    <div class="col-lg-5 valign-top panel panel-default">
+                                        <!-- panel heading -->
+                                        <div class="panel-heading">
+                                            <h5 class="panel-title"><i class="ico-star6 text-warning mr5"></i> Chatting Here</h5>
+                                            <!-- panel toolbar -->
+                                        </div>
+                                        <!--/ panel heading -->
+                
+                                        <!-- panel body -->
+                                        <div class="panel-body np">
+                                            <!-- message list -->
+                                            <ul class="media-list media-list-bubble">
+                                                <li class="media media-right">
+                                                    <a href="javascript:void(0);" class="media-object">
+                                                        <img src="image/avatar/avatar7.jpg" class="img-circle" alt="">
+                                                    </a>
+                                                    <div class="media-body">
+                                                        <p class="media-text">Suspendisse dui.</p>
+                                                        <!-- meta -->
+                                                        <span class="clearfix"></span><!-- important: clearing floated media text -->
+                                                        <p class="media-meta">Sun, Mar 02</p>
+                                                    </div>
+                                                </li>
+                                                <li class="media">
+                                                    <a href="javascript:void(0);" class="media-object">
+                                                        <img src="image/avatar/avatar6.jpg" class="img-circle" alt="">
+                                                    </a>
+                                                    <div class="media-body">
+                                                        <p class="media-text">Etiam laoreet, libero et in sodales elit erat.</p>
+                                                        <!-- meta -->
+                                                        <span class="clearfix"></span><!-- important: clearing floated media text -->
+                                                        <p class="media-meta">Tue, Oct 01</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <!--/ message list -->
+                                        </div>
+                                        <!-- panel body -->
+                
+                                        <!-- panel footer -->
+                                        <div class="panel-footer">
+                                            <div class="panel-toolbar-wrapper">
+                                                <div class="panel-toolbar">
+                                                    <div class="input-group" style="width:100%;">
+                                                        <input type="text" class="form-control" placeholder="Type your message">
+                                                        <span class="input-group-btn">
+                                                            <button class="btn btn-primary" type="button"><i class="ico-paper-plane"></i> <span class="semibold">Send</span></button>
+                                                        </span>
+                                                    </div>
+                                                </div>
                                             </div>
-                                        </li>
-                                        <li class="media">
-                                            <a href="javascript:void(0);" class="media-object">
-                                                <img src="image/avatar/avatar6.jpg" class="img-circle" alt="">
-                                            </a>
-                                            <div class="media-body">
-                                                <p class="media-text">Etiam laoreet, libero et in sodales elit erat.</p>
-                                                <!-- meta -->
-                                                <span class="clearfix"></span><!-- important: clearing floated media text -->
-                                                <p class="media-meta">Tue, Oct 01</p>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                    <!--/ message list -->
-                                </div>
-                                <!-- panel body -->
-        
-                                <!-- panel footer -->
-                                <div class="panel-footer">
-                                    <div class="panel-toolbar-wrapper">
-                                        <div class="panel-toolbar">
-                                            <div class="input-group" style="width:100%;">
-                                                <input type="text" class="form-control" placeholder="Type your message">
-                                                <span class="input-group-btn">
-                                                    <button class="btn btn-primary" type="button"><i class="ico-paper-plane"></i> <span class="semibold">Send</span></button>
-                                                </span>
+                                            <hr class="mt10 mb10"><!-- horizontal line -->
+                                            <div class="panel-toolbar-wrapper">
+                                                <div class="panel-toolbar">
+                                                    <div class="btn-group">
+                                                        <button type="button" class="btn btn-default"><i class="ico-google-drive"></i></button>
+                                                        <button type="button" class="btn btn-default"><i class="ico-instagram"></i></button>
+                                                    </div>
+                                                </div>
+                                                <div class="panel-toolbar text-right">
+                                                    <a href="javascript:void(0);" class="btn btn-default"><i class="ico-attachment"></i> Attach files</a>
+                                                </div>
                                             </div>
                                         </div>
+                                        <!-- panel footer -->
                                     </div>
-                                    <hr class="mt10 mb10"><!-- horizontal line -->
-                                    <div class="panel-toolbar-wrapper">
-                                        <div class="panel-toolbar">
-                                            <div class="btn-group">
-                                                <button type="button" class="btn btn-default"><i class="ico-google-drive"></i></button>
-                                                <button type="button" class="btn btn-default"><i class="ico-instagram"></i></button>
-                                            </div>
-                                        </div>
-                                        <div class="panel-toolbar text-right">
-                                            <a href="javascript:void(0);" class="btn btn-default"><i class="ico-attachment"></i> Attach files</a>
-                                        </div>
-                                    </div>
                                 </div>
-                                <!-- panel footer -->
-                            </div>
-                        </div>
                                 <div class="panel-group panel-group-compact" id="accordion2">
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
                                             <h5 class="panel-title">
-                                                <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne1" class="collapsed" style="font-size:12px;">
+                                                <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne1" class="collapsed" style="font-size:10px;">
                                                     Ques. Are there any questions that you want to ask the companies who would bid for your project? 
                                                 </a>
+                                                <a title="Edit"  data-toggle="modal" data-target="#edit_custom_question" href="" class="pull-right"><i class="ico-edit"></i></a>    
                                             </h5>
                                         </div>
                                         <div id="collapseOne1" class="panel-collapse collapse in">
-                                            <div class="panel-body">
+                                            <div class="panel-body" style="font-size:10px;">
                                                 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
                                             </div>
                                         </div>
@@ -848,13 +818,13 @@ CONTACT : pampersdry@gmail.com
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
                                             <h5 class="panel-title">
-                                                <a data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo2" class="collapsed" style="font-size:12px;">
+                                                <a data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo2" class="collapsed" style="font-size:10px;">
                                                     Ques. What is the business problem that you are trying to solve?*
                                                 </a>
                                             </h5>
                                         </div>
                                         <div id="collapseTwo2" class="panel-collapse collapse">
-                                            <div class="panel-body">
+                                            <div class="panel-body" style="font-size:10px;">
                                                 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
                                             </div>
                                         </div>
@@ -862,13 +832,13 @@ CONTACT : pampersdry@gmail.com
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
                                             <h5 class="panel-title">
-                                                <a data-toggle="collapse" data-parent="#accordion2" href="#collapseThree3" class="collapsed" style="font-size:12px;">
+                                                <a data-toggle="collapse" data-parent="#accordion2" href="#collapseThree3" class="collapsed" style="font-size:10px;">
                                                     Ques. What industry does your company fall under?
                                                 </a>
                                             </h5>
                                         </div>
                                         <div id="collapseThree3" class="panel-collapse collapse">
-                                            <div class="panel-body">
+                                            <div class="panel-body" style="font-size:10px;">
                                                 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
                                             </div>
                                         </div>
@@ -1145,6 +1115,183 @@ CONTACT : pampersdry@gmail.com
             </section>
             <!--/ END Sidebar Content -->
         </aside>
+        <div id="edit_box1" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header text-center">
+                        <button type="button" class="close" data-dismiss="modal">×</button>
+                        <div class=" ico-edit mb15 mt15" style="font-size:20px;"></div>
+                        <h4 class="semibold modal-title">Edit Pitch</h4>
+                    </div>
+                    <form class="panel-default form-horizontal" data-parsley-validate="" action="" novalidate>
+                        <br/>
+                        
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                    <label class="col-sm-4 control-label">Title<span class="text-danger">*</span></label>
+                    <div class="col-sm-7">
+                        <input type="text" required name="required" class="form-control "><ul class="parsley-errors-list" id="parsley-id-9793"></ul>
+                    </div>
+                </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <label class="col-sm-4 control-label">Description<span class="text-danger">*</span></label>
+                                <div class="col-sm-7">
+                                    <textarea required rows="3" class="form-control" data-parsley-id="9568"></textarea>
+                                    <ul class="parsley-errors-list" id="parsley-id-9793"></ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <label class="col-sm-4 control-label">File attachment <span class="text-danger">*</span></label>
+                                <div class="col-sm-7">
+                                    <div class="input-group">
+                                        <input type="text" readonly class="form-control" data-parsley-id="4011"><ul class="parsley-errors-list" id="parsley-id-4011"></ul>
+                                        <span class="input-group-btn">
+                                        <div class="btn btn-primary btn-file">
+                                            <span class="icon iconmoon-file-3"></span> Browse 
+                                            <input type="file" data-parsley-id="6400"><ul class="parsley-errors-list" id="parsley-id-6400"></ul>
+                                        </div>
+                                        </span>
+                                    </div>
+                                </div>
+                        	</div>
+                        </div>
+                       	<table class="table table-striped">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <span class="label label-success">HTML</span> file.html (1.2 MB)
+                                    </td>
+                                    <td width="6%"><a href="javascript:void(0);">Delete</a></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="label label-primary">CSS</span> file.css (1.2 MB)
+                                    </td>
+                                    <td width="6%"><a href="javascript:void(0);">Delete</a></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="label label-danger">PHP</span> file.php (1.2 MB)
+                                    </td>
+                                    <td width="6%"><a href="javascript:void(0);">Delete</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        	
+                    </form>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div>
+        <div id="edit_team" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header text-center">
+                        <button type="button" class="close" data-dismiss="modal">×</button>
+                        <div class=" ico-edit mb15 mt15" style="font-size:20px;"></div>
+                        <h4 class="semibold modal-title">Edit Team</h4>
+                    </div>
+                    <form class="panel-default form-horizontal" data-parsley-validate="" action="" novalidate>
+                        <br/>
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                    <label class="col-sm-4 control-label">Name<span class="text-danger">*</span></label>
+                    <div class="col-sm-7">
+                        <input type="text" required name="required" class="form-control "><ul class="parsley-errors-list" id="parsley-id-9793"></ul>
+                    </div>
+                </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <label class="col-sm-4 control-label">Description<span class="text-danger">*</span></label>
+                                <div class="col-sm-7">
+                                    <textarea required rows="3" class="form-control" data-parsley-id="9568"></textarea>
+                                    <ul class="parsley-errors-list" id="parsley-id-9793"></ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <label class="col-sm-4 control-label">Upload image <span class="text-danger">*</span></label>
+                                <div class="col-sm-7">
+                                    <div class="input-group">
+                                        <input type="text" readonly class="form-control" data-parsley-id="4011"><ul class="parsley-errors-list" id="parsley-id-4011"></ul>
+                                        <span class="input-group-btn">
+                                        <div class="btn btn-primary btn-file">
+                                            <span class="icon iconmoon-file-3"></span> Browse 
+                                            <input type="file" data-parsley-id="6400"><ul class="parsley-errors-list" id="parsley-id-6400"></ul>
+                                        </div>
+                                        </span>
+                                    </div>
+                                </div>
+                        	</div>
+                        </div>
+                    </form>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div>
+        <div id="edit_custom_question" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header text-center">
+                        <button type="button" class="close" data-dismiss="modal">×</button>
+                        <div class=" ico-edit mb15 mt15" style="font-size:20px;"></div>
+                        <h4 class="semibold modal-title">Edit Custom Questions</h4>
+                    </div>
+                    <form class="panel-default form-horizontal" data-parsley-validate="" action="" novalidate>
+                        <br/>
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                    <label class="col-sm-4 control-label">Title<span class="text-danger">*</span></label>
+                    <div class="col-sm-7">
+                        <input type="text" required name="required" class="form-control "><ul class="parsley-errors-list" id="parsley-id-9793"></ul>
+                    </div>
+                </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <label class="col-sm-4 control-label">Description<span class="text-danger">*</span></label>
+                                <div class="col-sm-7">
+                                    <textarea required rows="3" class="form-control" data-parsley-id="9568"></textarea>
+                                    <ul class="parsley-errors-list" id="parsley-id-9793"></ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <label class="col-sm-4 control-label">Upload image <span class="text-danger">*</span></label>
+                                <div class="col-sm-7">
+                                    <div class="input-group">
+                                        <input type="text" readonly class="form-control" data-parsley-id="4011"><ul class="parsley-errors-list" id="parsley-id-4011"></ul>
+                                        <span class="input-group-btn">
+                                        <div class="btn btn-primary btn-file">
+                                            <span class="icon iconmoon-file-3"></span> Browse 
+                                            <input type="file" data-parsley-id="6400"><ul class="parsley-errors-list" id="parsley-id-6400"></ul>
+                                        </div>
+                                        </span>
+                                    </div>
+                                </div>
+                        	</div>
+                        </div>
+                    </form>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div>
         <!--/ END Template Sidebar (right) -->
 
         <!-- START JAVASCRIPT SECTION (Load javascripts at bottom to reduce load time) -->
