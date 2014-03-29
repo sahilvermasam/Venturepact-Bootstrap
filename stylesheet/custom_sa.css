@@ -90,6 +90,8 @@
     padding: 10px 15px!important;
 }
 /*new css for page-login*/ 
+.table_cell{}
+td .table_cell:hover{ background:#DFF0D8 !important;}
 .border_design{}
 @media (max-width: 600px) 
 {
