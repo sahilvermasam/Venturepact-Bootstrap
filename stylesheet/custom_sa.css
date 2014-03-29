@@ -104,5 +104,10 @@
 .custom_white:hover{color:#fff; opacity:0.8 !important;}
 
 /* new css for faq */
-.panel-title_new{font-size: 13px!important; font-weight: normal!important;}
+.panel-title_new{
+	font-size: 13px !important;
+    font-weight: normal !important;
+    line-height: 18px;
+    padding: 10px 0;}
+.plus_new{font-size: 10px!important;}
 /* new css for faq */
