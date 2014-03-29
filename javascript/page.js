@@ -666,10 +666,15 @@ SummerNote = function () {
         customSelect();
         (function () {
             // custom select
+
             $("#selectize-customselect1").selectize();
 			$("#selectize-customselect2").selectize();
 			$("#selectize-customselect_supplier1").selectize();
 			$("#selectize-customselect_supplier2").selectize();
+            $("#selectize-customselect").selectize();
+			$("#satnam").selectize();
+			$("#time_z").selectize();
+
 
 
             // tagging
