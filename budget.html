@@ -42,19 +42,6 @@ CONTACT : pampersdry@gmail.com
         <!-- START JAVASCRIPT SECTION - Load only modernizr script here -->
         <script src="library/modernizr/js/modernizr.min.js"></script>
         <script>
-   /* $(function ($) {
-        $("#example_1").ionRangeSlider({
-            min: 0,
-            max: 5000,
-            type: 'double',
-            prefix: "$",
-            maxPostfix: "+",
-            prettify: false,
-            hasGrid: true
-        });
-
-     
-    });*/
 </script>
         <!--/ END JAVASCRIPT SECTION -->
     </head>
@@ -423,7 +410,7 @@ CONTACT : pampersdry@gmail.com
                 <ul id="nav" class="topmenu">
                    <!-- <li class="menuheader">MAIN MENU</li>-->
                     <li >
-                        <a href="index.html">
+                        <a href="client_dashboard.html">
                             <span class="figure"><i class="ico-home2"></i></span>
                             <span class="text">Dashboard</span>
                             <span class="number"><span class="label label-danger">5</span></span>
@@ -668,7 +655,7 @@ CONTACT : pampersdry@gmail.com
                 <!--/ Page Header -->
                 <!-- START row -->
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-6">
                       <form data-parsley-validate="" action="" class="panel panel-default" novalidate>
                         <div class="panel-heading">
                           <h3 class="panel-title"><i class="ico-tshirt mr5"></i>Budget</h3>
@@ -681,7 +668,7 @@ CONTACT : pampersdry@gmail.com
                               <div class="col-sm-6">
                         <!-- section header -->
                         <div class="section-header mb15">
-                             <label class="control-label">Q. We have noted your requirements. Please choose the functionalities from the menus that your app will require.</label>
+                             <label class="control-label">Q. Do you have an absolute geographical preference? </label>
                         </div>
                         <!--/ section header -->
                         <!-- panel group -->
@@ -797,88 +784,200 @@ CONTACT : pampersdry@gmail.com
                         </div>
                         <!--/ panel group -->
                     </div>
-                    			<div class="col-sm-5 pull-right">
-                        <!-- section header -->
-                        <div class="section-header mb15">
-                             <label class="control-label">Q.  You can see an approximate budget on the side. Choose at least one zone that matches your budget.</label>
+                    			
+                            </div>
+                          </div>
                         </div>
-                        <!--/ section header -->
-                        <!-- panel group -->
-                        <div class="col-sm-9">
-                         <div class="section-header mb15">
-                                            <span class="radio custom-radio custom-radio-primary">  
-                                                <input type="radio" id="customradio1" value="option1" name="asd" >  
-                                                <label for="customradio1">&nbsp;&nbsp;Zone 1 <span style="color:#09C; font-size:14px; margin-left:15px;">500$ - 1500$</span></label>  
-                                                <div style="float:left; width:95%; margin-top:5px; padding-left:25px; margin-bottom:10px; font-size:11px; "> ( Country 1, Country 2, Country 3 )</div>
-                                                
-                                                
-                                                
-                                                
-                                                
-                                            </span>
-                                            
-                              </div>              
-                                        <div class="section-header mb15">
-                                            <span class="radio custom-radio custom-radio-primary">  
-                                                <input type="radio" id="customradio2" value="option2"  name="asd">  
-                                                <label for="customradio2">&nbsp;&nbsp;Zone 2 <span style="color:#09C; font-size:14px; margin-left:15px;">300$ - 1000$</span></label>   
-                                                <div style="float:left; width:95%; margin-top:5px; padding-left:25px; margin-bottom:10px; font-size:11px; "> ( Country 1, Country 2, Country 3 )</div>
-                                            </span>
-                                        </div>    
-                                            <div class="section-header mb15">
-                                            <span class="radio custom-radio custom-radio-primary">  
-                                                <input type="radio" id="customradio3" value="option3" name="asd" >  
-                                                <label for="customradio3">&nbsp;&nbsp;Zone 3 <span style="color:#09C; font-size:14px; margin-left:15px;">100$ - 800$</span></label> 
-                                                <div style="float:left; width:95%; margin-top:5px; padding-left:25px; font-size:11px; "> ( Country 1, Country 2, Country 3 )</div>
-                                                  
-                                            </span>
-                              </div> 
-                                        </div>
-                        <!--/ panel group -->
+                        <div class="panel-footer">
+                          <button class="btn btn-primary" type="submit">Next</button>
+                        </div>
+                      </form>
                     </div>
-                            </div>
-                          </div>
-                          
-                          
+                    <div class="col-md-6">
+                      <form data-parsley-validate="" action="" class="panel panel-default" novalidate>
+                        <div class="panel-heading">
+                          <h3 class="panel-title"><i class="ico-tshirt mr5"></i>Budget</h3>
+                        </div>
+                        <div class="panel-body">
                           <div class="form-group">
                             <div class="row">
-                              <div class="col-sm-7">
-                                <label class="control-label">Q. How certain are you of the requirements? How much do you see your requirements changing or evolving over the course of development?</label>
-                                <div class="checkbox custom-checkbox pt10">
-                                  <input type="checkbox" name="checkbox3" id="checkbox3" value="2">
-                                  <label for="checkbox3">&nbsp;&nbsp;Fairly certain (10-20% changes).</label>
-                                </div>
-                                <div class="checkbox custom-checkbox pt10">
-                                  <input type="checkbox" name="checkbox4" id="checkbox4" value="2">
-                                  <label for="checkbox4">&nbsp;&nbsp;Not certain at all (60-70% changes).</label>
+                              <div class="col-sm-12">
+                                <label class="control-label mb-15">Q. Given your geographical preference following are the pricings available. Tell us which ones fit your budget.</label>
+                                <div class="form-group mt15">
+                                    <!-- START panel -->
+                                    
                                 </div>
                                 
                               </div>
                             </div>
                           </div>
                           
+                          
+                          
+                          
+                        </div>
+                        <div class="panel-footer">
+                          <button class="btn btn-primary" type="submit">Next</button>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="col-md-12">
+                      <form data-parsley-validate="" action="" class="panel panel-default" novalidate>
+                        <div class="panel-heading">
+                          <h3 class="panel-title"><i class="ico-tshirt mr5"></i>Budget</h3>
+                        </div>
+                        <div class="panel-body">
                           <div class="form-group">
                             <div class="row">
                               <div class="col-sm-12">
-                                <label class="control-label">Q.  If your budget does not fall in any of the above categories, tell us and we can perhaps figure out a way to accommodate your budget.</label>
+                                <label class="control-label mb-15">Q. Given your geographical preference following are the pricings available. Tell us which ones fit your budget.</label>
+                                <div class="form-group mt15">
+                                    <!-- START panel -->
+                                    <div class="panel panel-default">
+                                        <!-- panel heading/header -->
+                                        <!--<div class="panel-heading">
+                                            <h3 class="panel-title">Contextual classes - Row</h3>
+                                            <div class="panel-toolbar text-right">
+                                                <div class="option">
+                                                    <button class="btn up" data-toggle="panelcollapse"><i class="arrow"></i></button>
+                                                    <button class="btn" data-toggle="panelremove" data-parent=".col-md-12"><i class="remove"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>-->
+                                        <!--/ panel heading/header -->
+                                        <!-- panel body with collapse capabale -->
+                                        <div class="table-responsive panel-collapse pull out">
+                                            <table class="table table-bordered">
+                                                <thead>
+                                                    <tr>
+                                                    	<td>&nbsp;</td>
+                                                        <td>
+                                                        	<b>Tier</b>
+                                                        	<p>Lorem ipsum is a simple dummy text</p>
+                                                        </td>
+                                                        <td>
+                                                        	<b>Tier</b>
+                                                        	<p>Lorem ipsum is a simple dummy text</p>
+                                                        </td>
+                                                        <td>
+                                                        	<b>Tier</b>
+                                                        	<p>Lorem ipsum is a simple dummy text</p>
+                                                        </td>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                        	<div class="form-wizard text-center">
+                                                            	<b class="panel-title">PS1</b>
+                                                        	</div>
+                                                            <div class="form-wizard text-center">
+                                                            	<a href="">India</a>
+                                                           	 	<a href="">China</a>
+                                                            	<a href="">USA</a>
+                                                            </div>
+                                                        </td>
+                                                        <td class="text-center">
+                                                        	<p>$7000 - $15000</p>
+                                                            <span class="checkbox custom-checkbox">
+                                                                <input type="checkbox" id="customcheckbox11" name="sa3">
+                                                                <label for="customcheckbox11"></label>
+                                                            </span>
+                                                        </td>
+                                                        <td class="text-center">
+                                                        	<p>$7000 - $15000</p>
+                                                            <span class="checkbox custom-checkbox">
+                                                                <input type="checkbox" id="customcheckbox12" name="sa3">
+                                                                <label for="customcheckbox12"></label>
+                                                            </span>
+                                                        </td>
+                                                        <td class="text-center">
+                                                        	<p>$7000 - $15000</p>
+                                                            <span class="checkbox custom-checkbox">
+                                                                <input type="checkbox" id="customcheckbox13" name="sa3">
+                                                                <label for="customcheckbox13"></label>
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                    	<td>
+                                                        	<div class="form-wizard text-center">
+                                                            	<b class="panel-title">PS2</b>
+                                                        	</div>
+                                                            <div class="form-wizard text-center">
+                                                            	<a href="">India</a>
+                                                           	 	<a href="">China</a>
+                                                            	<a href="">USA</a>
+                                                                <a href=""></a>
+                                                            </div>
+                                                        </td>
+                                                        <td class="text-center">
+                                                        	<p>$7000 - $15000</p>
+                                                            <span class="checkbox custom-checkbox">
+                                                                <input type="checkbox" id="customcheckbox14" name="sa2">
+                                                                <label for="customcheckbox14"></label>
+                                                            </span>
+                                                        </td>
+                                                        <td class="text-center">
+                                                        	<p>$7000 - $15000</p>
+                                                            <span class="checkbox custom-checkbox">
+                                                                <input type="checkbox" id="customcheckbox15" name="sa2">
+                                                                <label for="customcheckbox15"></label>
+                                                            </span>
+                                                        </td>
+                                                        <td class="text-center">
+                                                        	<p>$7000 - $15000</p>
+                                                            <span class="checkbox custom-checkbox">
+                                                                <input type="checkbox" id="customcheckbox16" name="sa2">
+                                                                <label for="customcheckbox16"></label>
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                    	<td>
+                                                        	<div class="form-wizard text-center">
+                                                            	<b class="panel-title">PS3</b>
+                                                        	</div>
+                                                            <div class="form-wizard text-center">
+                                                            	<a href="">India</a>
+                                                           	 	<a href="">China</a>
+                                                            	<a href="">USA</a>
+                                                                <a href=""></a>
+                                                            </div>
+                                                        </td>
+                                                        <td class="text-center">
+                                                        	<p>$7000 - $15000</p>
+                                                            <span class="checkbox custom-checkbox">
+                                                                <input type="checkbox" id="customcheckbox17" name="sa">
+                                                                <label for="customcheckbox17"></label>
+                                                            </span>
+                                                        </td>
+                                                        <td class="text-center">
+                                                        	<p>$7000 - $15000</p>
+                                                            <span class="checkbox custom-checkbox">
+                                                                <input type="checkbox" id="customcheckbox18" name="sa">
+                                                                <label for="customcheckbox18"></label>
+                                                            </span>
+                                                        </td>
+                                                        <td class="text-center">
+                                                        	<p>$7000 - $15000</p>
+                                                            <span class="checkbox custom-checkbox">
+                                                                <input type="checkbox" id="customcheckbox19" name="sa">
+                                                                <label for="customcheckbox19"></label>
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                    
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <!--/ panel body with collapse capabale -->
+                                    </div>
+                                </div>
                                 
                               </div>
-                              <div class="col-sm-12">
-                              	<div class="col-sm-2">
-                               		<input type="text" required class="form-control" name="name" data-trigger="focus" >
-                                </div>
-                                <div style="width:2%; text-align:center;  float:left;">
-                                    <label  style="font-size:22px; font-weight:bold; color:#ccc; "> - </label>
-                                </div>
-                                <div class="col-sm-2">
-                                   
-                                    <input type="text" required class="form-control" name="name" data-trigger="focus" >
-                               </div> 
-                              </div>
-                              
                             </div>
                           </div>
-                          
                           
                         </div>
                         <div class="panel-footer">
