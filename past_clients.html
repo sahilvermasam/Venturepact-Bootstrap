@@ -416,14 +416,14 @@ CONTACT : pampersdry@gmail.com
                             <span class="number"><span class="label label-danger">5</span></span>
                         </a>
                     </li>
-                    <li  >
+                    <li class="active" >
                         <a href="javascript:void(0);" data-toggle="submenu" data-target="#components" data-parent="#nav">
                             <span class="figure"><i class="ico-screwdriver"></i></span>
                             <span class="text">Profile</span>
                             <span class="arrow"></span>
                         </a>
                         <!-- START 2nd Level Menu -->
-                        <ul id="components" class="submenu collapse ">
+                        <ul id="components" class="submenu collapse in ">
                             <li   >
                                 <a href="c_profile_1.html" >
                                     <span class="text">Profile Option1</span>
@@ -434,6 +434,13 @@ CONTACT : pampersdry@gmail.com
                                     <span class="text">Profile Option2</span>
                                 </a>
                             </li>
+                             <li class="active" >
+                                <a href="past_clients.html">
+                                    <span class="text">Past Clients</span>
+                                </a>
+                            </li>
+                            
+                            
                             <li >
                                 <a href="c_profile_3.html">
                                     <span class="text">Profile Option3</span>
@@ -497,7 +504,7 @@ CONTACT : pampersdry@gmail.com
                         <!--/ END 2nd Level Menu -->
                     </li> 
 
-                    <li class="active" >
+                    <li >
                         <a href="javascript:void(0);" data-toggle="submenu" data-target="#faq" data-parent="#nav" >
                             <span class="figure"><i class="ico-quill2"></i></span>
                             <span class="text">FAQ's</span>
@@ -506,18 +513,18 @@ CONTACT : pampersdry@gmail.com
                         </a>
                         
                         <!-- START 2nd Level Menu -->
-                        <ul id="faq" class="submenu collapse in">
-                            <li >
+                        <ul id="faq" class="submenu collapse ">
+                            <li   >
                                 <a href="faq_step_1.html" >
                                     <span class="text">Step 1</span>
                                 </a>
                             </li>
-                            <li   >
+                            <li >
                                 <a href="faq_step_2.html">
                                     <span class="text">Step 2</span>
                                 </a>
                             </li>
-                            <li class="active" >
+                            <li >
                                 <a href="faq_step_3.html">
                                     <span class="text">Step 3</span>
                                 </a>
@@ -530,6 +537,14 @@ CONTACT : pampersdry@gmail.com
                            
                         </ul>
                         <!--/ END 2nd Level Menu -->
+                        
+                    </li>
+                    <li >
+                        <a href="recommendation.html" >
+                            <span class="figure"><i class="ico-table22"></i></span>
+                            <span class="text">Recommendation</span>
+                            
+                        </a>
                         
                     </li>
                     <li >
@@ -563,7 +578,7 @@ CONTACT : pampersdry@gmail.com
                 <!-- Page header -->
                 <div class="page-header page-header-block">
                     <div class="page-header-section">
-                        <h4 class="title semibold">FAQ Step 3</h4>
+                        <h4 class="title semibold">Past Client's</h4>
                     </div>
                 </div>
                 <!--/ Page header -->
@@ -582,44 +597,34 @@ CONTACT : pampersdry@gmail.com
                         <form class="panel panel-default form-horizontal form-bordered" action="">
                             <!-- panel heading/header -->
                             <div class="panel-heading">
-                                <h3 class="panel-title">Terms</h3>
+                                <h3 class="panel-title"></h3>
                             </div>
                             <!--/ panel heading/header -->
                             <!-- panel body -->
                             <div class="panel-body">
-                                  
-                                    <div class="form-group">
-                                        <label class="col-sm-5 control-label">Q. How do you deal with changes in scope? How do you adjust payments?<span class="text-danger">*</span></label>
-                                        <div class="col-sm-7">
-                                            <textarea class="form-control" rows="3" required></textarea>
+                                  <div class="form-group">
+                                        <label class="col-sm-4 control-label">Name <span class="text-danger">*</span></label>
+                                        <div class="col-sm-4">
+                                            <input type="text"  class="form-control " name="c_name" required >
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label class="col-sm-5 control-label">Q. What are your expectations?<span class="text-danger">*</span></label>
-                                        <div class="col-sm-7">
-                                            <textarea class="form-control" rows="3" required></textarea>
+                                        <label class="col-sm-4 control-label"> Project Name <span class="text-danger">*</span></label>
+                                        <div class="col-sm-4">
+                                            <input type="text"  class="form-control " name="c_name" required >
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label class="col-sm-5 control-label">
-Q. How do you ensure that IP (Intellectual Property) is protected? What terms are included in your employment contracts?<span class="text-danger">*</span></label>
-                                        <div class="col-sm-7">
-                                            <textarea class="form-control" rows="3" required></textarea>
+                                        <label class="col-sm-4 control-label">Client E-mail <span class="text-danger">*</span></label>
+                                        <div class="col-sm-4">
+                                          <input type="text"  class="form-control " name="required" required >
                                         </div>
                                     </div>
-                                    <div class="form-group">
-                                        <label class="col-sm-5 control-label">
-Q.What happens if you go over the original timeline you provided? How do you compensate?<span class="text-danger">*</span></label>
-                                        <div class="col-sm-7">
-                                            <textarea class="form-control" rows="3" required></textarea>
-                                        </div>
-                                    </div>
-                                  
-                                 
+                                   
                                 <div class="panel-footer">
                                         <div class="form-group no-border">
-                                            <label class="col-sm-5 control-label"></label>
-                                            <div class="col-sm-7">
+                                            <label class="col-sm-4 control-label"></label>
+                                            <div class="col-sm-8">
                                                 <button type="submit" class="btn btn-primary">Save & Next</button>
                                                 
                                             </div>

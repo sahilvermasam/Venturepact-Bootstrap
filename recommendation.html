@@ -14,7 +14,7 @@ CONTACT : pampersdry@gmail.com
         <!-- START META SECTION -->
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Venturepact</title>
+        <title>Adminre - 1.0.0</title>
         <meta name="description" content="Adminre admin dashboard">
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
 
@@ -26,10 +26,6 @@ CONTACT : pampersdry@gmail.com
         <!--/ END META SECTION -->
 
         <!-- START STYLESHEETS -->
-        <!-- 3rd party plugin stylesheet : optional(per use) -->
-        <link rel="stylesheet" href="plugins/selectize/css/selectize.min.css">
-        <!--/ 3rd party plugin stylesheet -->
-
         <!-- Library stylesheet : mandatory -->
         <link rel="stylesheet" href="library/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="library/jquery/css/jquery-ui.min.css">
@@ -46,7 +42,7 @@ CONTACT : pampersdry@gmail.com
         <!--/ END JAVASCRIPT SECTION -->
     </head>
     <!--/ END Head -->
-    <body data-page="form-element">
+    <body data-page="form-wizard">
         <!-- START Template Header -->
         <header id="header" class="navbar navbar-fixed-top">
             <!-- START navbar header -->
@@ -434,6 +430,12 @@ CONTACT : pampersdry@gmail.com
                                     <span class="text">Profile Option2</span>
                                 </a>
                             </li>
+                             <li  >
+                                <a href="past_clients.html">
+                                    <span class="text">Past Clients</span>
+                                </a>
+                            </li>
+                            
                             <li >
                                 <a href="c_profile_3.html">
                                     <span class="text">Profile Option3</span>
@@ -497,7 +499,7 @@ CONTACT : pampersdry@gmail.com
                         <!--/ END 2nd Level Menu -->
                     </li> 
 
-                    <li class="active" >
+                    <li >
                         <a href="javascript:void(0);" data-toggle="submenu" data-target="#faq" data-parent="#nav" >
                             <span class="figure"><i class="ico-quill2"></i></span>
                             <span class="text">FAQ's</span>
@@ -506,18 +508,18 @@ CONTACT : pampersdry@gmail.com
                         </a>
                         
                         <!-- START 2nd Level Menu -->
-                        <ul id="faq" class="submenu collapse in">
-                            <li >
+                        <ul id="faq" class="submenu collapse ">
+                            <li   >
                                 <a href="faq_step_1.html" >
                                     <span class="text">Step 1</span>
                                 </a>
                             </li>
-                            <li   >
+                            <li >
                                 <a href="faq_step_2.html">
                                     <span class="text">Step 2</span>
                                 </a>
                             </li>
-                            <li class="active" >
+                            <li >
                                 <a href="faq_step_3.html">
                                     <span class="text">Step 3</span>
                                 </a>
@@ -530,6 +532,14 @@ CONTACT : pampersdry@gmail.com
                            
                         </ul>
                         <!--/ END 2nd Level Menu -->
+                        
+                    </li>
+                      <li class="active" >
+                        <a href="recommendation.html" >
+                            <span class="figure"><i class="ico-table22"></i></span>
+                            <span class="text">Recommendation</span>
+                            
+                        </a>
                         
                     </li>
                     <li >
@@ -560,81 +570,190 @@ CONTACT : pampersdry@gmail.com
         <section id="main" role="main">
             <!-- START Template Container -->
             <section class="container-fluid">
-                <!-- Page header -->
+                <!-- Page Header -->
                 <div class="page-header page-header-block">
                     <div class="page-header-section">
-                        <h4 class="title semibold">FAQ Step 3</h4>
+                        <h4 class="title semibold">VenturePact - Feedback on Service Provider </h4>
                     </div>
                 </div>
-                <!--/ Page header -->
+                <!--/ Page Header -->
 
-               
+                <!-- section header -->
+                <div class="section-header">
+                    <h5 class="semibold title mb15"></h5>
+                </div>
+                <!--/ section header -->
 
-              
-
-               
-
-               
-                  <!-- START row -->
+                <!-- START row -->
                 <div class="row">
                     <div class="col-md-12">
-                        <!-- START panel -->
-                        <form class="panel panel-default form-horizontal form-bordered" action="">
+                        <!-- START Panel -->
+                        <div class="panel panel-default">
                             <!-- panel heading/header -->
                             <div class="panel-heading">
-                                <h3 class="panel-title">Terms</h3>
+                                <h3 class="panel-title"><i class="ico-tshirt mr5"></i>Feed Back</h3>
                             </div>
                             <!--/ panel heading/header -->
-                            <!-- panel body -->
-                            <div class="panel-body">
-                                  
-                                    <div class="form-group">
-                                        <label class="col-sm-5 control-label">Q. How do you deal with changes in scope? How do you adjust payments?<span class="text-danger">*</span></label>
-                                        <div class="col-sm-7">
-                                            <textarea class="form-control" rows="3" required></textarea>
+                            <!-- START Form Wizard -->         
+                            <form class="form-horizontal form-bordered" action="" id="wizard-validate">
+                                <!-- Wizard Container 1 -->
+                                <div class="wizard-title">Step 1</div>
+                                <div class="wizard-container">
+                                  <div class="panel-body">
+                                  <div class="form-group">
+                                        <label class="col-sm-4 control-label">Name <span class="text-danger">*</span></label>
+                                        <div class="col-sm-8">
+                                            <input type="text"  class="form-control " name="c_name" required >
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label class="col-sm-5 control-label">Q. What are your expectations?<span class="text-danger">*</span></label>
-                                        <div class="col-sm-7">
-                                            <textarea class="form-control" rows="3" required></textarea>
+                                        <label class="col-sm-4 control-label">Company Name <span class="text-danger">*</span></label>
+                                        <div class="col-sm-8">
+                                            <input type="text"  class="form-control " name="c_name" required >
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label class="col-sm-5 control-label">
-Q. How do you ensure that IP (Intellectual Property) is protected? What terms are included in your employment contracts?<span class="text-danger">*</span></label>
-                                        <div class="col-sm-7">
-                                            <textarea class="form-control" rows="3" required></textarea>
+                                        <label class="col-sm-4 control-label">Industry - Hospitality, Healthcare, FinTech, Education etc <span class="text-danger">*</span></label>
+                                        <div class="col-sm-8">
+                                            <input type="text"  class="form-control " name="c_name" required >
                                         </div>
                                     </div>
-                                    <div class="form-group">
-                                        <label class="col-sm-5 control-label">
-Q.What happens if you go over the original timeline you provided? How do you compensate?<span class="text-danger">*</span></label>
-                                        <div class="col-sm-7">
-                                            <textarea class="form-control" rows="3" required></textarea>
+                                    
+                                     <div class="form-group">
+                                        <label class="col-sm-4 control-label">Name of Service Provider <span class="text-danger">*</span></label>
+                                        <div class="col-sm-8">
+                                            <input type="text"  class="form-control " name="c_name" required >
                                         </div>
                                     </div>
-                                  
-                                 
-                                <div class="panel-footer">
-                                        <div class="form-group no-border">
-                                            <label class="col-sm-5 control-label"></label>
-                                            <div class="col-sm-7">
-                                                <button type="submit" class="btn btn-primary">Save & Next</button>
-                                                
-                                            </div>
-                                        </div> 
+                                     <div class="form-group">
+                                        <label class="col-sm-4 control-label">How would you rate the overall experience? 5 - Excellent, 3 - Satisfactory, 1 - Poor Experience <span class="text-danger">*</span></label>
+                                        <div class="col-sm-8">
+                                            <div class="col-sm-9 mt5">
+                                            <span class="radio-inline custom-radio custom-radio-primary">
+                                <input type="radio" value="option1" id="customradio1" name="a" data-parsley-multiple="a" data-parsley-id="2060">
+                                <label for="customradio1">&nbsp;&nbsp;5</label>
+                                </span>
+                                <ul class="parsley-errors-list" id="parsley-id-multiple-a">
+                                </ul>
+                                <span class="radio-inline custom-radio custom-radio-primary">
+                                <input type="radio" value="option1" id="customradio2" name="a" data-parsley-multiple="a" data-parsley-id="5093">
+                                <label for="customradio2">&nbsp;&nbsp;4</label>
+                                </span>
+                                <ul class="parsley-errors-list" id="parsley-id-multiple-a">
+                                </ul>
+                                <span class="radio-inline custom-radio custom-radio-primary">
+                                <input type="radio" value="option1" id="customradio3" name="a" data-parsley-multiple="a" data-parsley-id="7921">
+                                <label for="customradio3">&nbsp;&nbsp;3</label>
+                                </span>
+                                <ul class="parsley-errors-list" id="parsley-id-multiple-a">
+                                </ul>
+                                <span class="radio-inline custom-radio custom-radio-primary">
+                                <input type="radio" value="option1" id="customradio4" name="a" data-parsley-multiple="a" data-parsley-id="1698">
+                                <label for="customradio4">&nbsp;&nbsp;2</label>
+                                </span>
+                                <ul class="parsley-errors-list" id="parsley-id-multiple-a">
+                                </ul>
+                                <span class="radio-inline custom-radio custom-radio-primary">
+                                <input type="radio" value="option1" id="customradio5" name="a" data-parsley-multiple="a" data-parsley-id="7281">
+                                <label for="customradio5">&nbsp;&nbsp;1</label>
+                                </span>
+                                
+                                        </div>
+                                        </div>
                                     </div>
+                                     <div class="form-group">
+                                        <label class="col-sm-4 control-label">How would you rate the overall experience? 5 - Excellent, 3 - Satisfactory, 1 - Poor Experience<span class="text-danger">*</span></label>
+                                        <div class="col-sm-8">
+                                            <div class="col-sm-9 mt5">
+                                            <span class="radio-inline custom-radio custom-radio-primary">
+                                <input type="radio" value="option1" id="customradio1" name="a" data-parsley-multiple="a" data-parsley-id="2060">
+                                <label for="customradio1">&nbsp;&nbsp;5</label>
+                                </span>
+                                <ul class="parsley-errors-list" id="parsley-id-multiple-a">
+                                </ul>
+                                <span class="radio-inline custom-radio custom-radio-primary">
+                                <input type="radio" value="option1" id="customradio2" name="a" data-parsley-multiple="a" data-parsley-id="5093">
+                                <label for="customradio2">&nbsp;&nbsp;4</label>
+                                </span>
+                                <ul class="parsley-errors-list" id="parsley-id-multiple-a">
+                                </ul>
+                                <span class="radio-inline custom-radio custom-radio-primary">
+                                <input type="radio" value="option1" id="customradio3" name="a" data-parsley-multiple="a" data-parsley-id="7921">
+                                <label for="customradio3">&nbsp;&nbsp;3</label>
+                                </span>
+                                <ul class="parsley-errors-list" id="parsley-id-multiple-a">
+                                </ul>
+                                <span class="radio-inline custom-radio custom-radio-primary">
+                                <input type="radio" value="option1" id="customradio4" name="a" data-parsley-multiple="a" data-parsley-id="1698">
+                                <label for="customradio4">&nbsp;&nbsp;2</label>
+                                </span>
+                                <ul class="parsley-errors-list" id="parsley-id-multiple-a">
+                                </ul>
+                                <span class="radio-inline custom-radio custom-radio-primary">
+                                <input type="radio" value="option1" id="customradio5" name="a" data-parsley-multiple="a" data-parsley-id="7281">
+                                <label for="customradio5">&nbsp;&nbsp;1</label>
+                                </span>
+                                
+                                        </div>
+                                        </div>
+                                    </div>
+                                    
                                 
                             </div>
-                            
-                            <!--/ panel body -->
-                        </form>
-                        <!-- END panel -->
+                                </div>
+                                <!--/ Wizard Container 1 -->
+
+                                <!-- Wizard Container 2 -->
+                                <div class="wizard-title">Step 2</div>
+                                <div class="wizard-container">
+                                  <div class="panel-body">
+                                  <div class="form-group">
+                                        <label class="col-sm-4 control-label">What did the service provider do well? <span class="text-danger">*</span></label>
+                                        <div class="col-sm-8">
+                                              <textarea name="name" class="form-control" placeholder=""></textarea>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label class="col-sm-4 control-label">Where could the service provider improve? <span class="text-danger">*</span></label>
+                                        <div class="col-sm-8">
+                                              <textarea name="name" class="form-control" placeholder=""></textarea>
+                                        </div>
+                                    </div>
+                                    
+                                       <div class="form-group">
+                                        <label class="col-sm-4 control-label">>How did they handle problems and issues that came up during development? <span class="text-danger">*</span></label>
+                                        <div class="col-sm-8">
+                                              <textarea name="name" class="form-control" placeholder=""></textarea>
+                                        </div>
+                                    </div>
+                                    
+                                     <div class="form-group">
+                                        <label class="col-sm-4 control-label">>What did the service provider build or do for you? What was your project? <span class="text-danger">*</span></label>
+                                        <div class="col-sm-8">
+                                              <textarea name="name" class="form-control" placeholder=""></textarea>
+                                        </div>
+                                    </div>
+                                    
+                                
+                                
+                                
+                                
+                                                         </div>
+                                </div>
+                                <!--/ Wizard Container 2 -->
+
+                                
+                                
+                            </form>
+                            <!--/ END Form Wizard --> 
+                        </div>
+                        <!--/ END Panel -->
                     </div>
                 </div>
                 <!--/ END row -->
                 
+              
             </section>
             <!--/ END Template Container -->
 
@@ -841,8 +960,9 @@ Q.What happens if you go over the original timeline you provided? How do you com
         <!--/ app init script -->
 
         <!-- 3rd party plugin script : optional(per use) -->
+        <script type="text/javascript" src="plugins/parsley/js/parsley.min.js"></script>
+        <script type="text/javascript" src="plugins/steps/js/jquery.steps.min.js"></script>
         <script type="text/javascript" src="plugins/inputmask/js/inputmask.min.js"></script>
-        <script type="text/javascript" src="plugins/selectize/js/selectize.min.js"></script>
         <script type="text/javascript" src="javascript/page.js"></script>
         <!--/ 3rd party plugin script -->
         <!--/ END JAVASCRIPT SECTION -->
