@@ -26,6 +26,10 @@ CONTACT : pampersdry@gmail.com
         <!--/ END META SECTION -->
 
         <!-- START STYLESHEETS -->
+        <!-- 3rd party plugin stylesheet : optional(per use) -->
+        <link rel="stylesheet" href="plugins/selectize/css/selectize.min.css">
+        <!--/ 3rd party plugin stylesheet -->
+
         <!-- Library stylesheet : mandatory -->
         <link rel="stylesheet" href="library/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="library/jquery/css/jquery-ui.min.css">
@@ -42,7 +46,7 @@ CONTACT : pampersdry@gmail.com
         <!--/ END JAVASCRIPT SECTION -->
     </head>
     <!--/ END Head -->
-    <body data-page="component-custom-widget">
+    <body data-page="form-element">
         <!-- START Template Header -->
         <header id="header" class="navbar navbar-fixed-top">
             <!-- START navbar header -->
@@ -405,22 +409,22 @@ CONTACT : pampersdry@gmail.com
                 <!-- START Template Navigation/Menu -->
                 <ul id="nav" class="topmenu">
                     <li class="menuheader">MAIN MENU</li>
-                    <li class="active"  >
+                    <li  >
                         <a href="company_dashboard.html">
                             <span class="figure"><i class="ico-home2"></i></span>
                             <span class="text">Dashboard</span>
                             <span class="number"><span class="label label-danger">5</span></span>
                         </a>
                     </li>
-                    <li  >
+                    <li class="active" >
                         <a href="javascript:void(0);" data-toggle="submenu" data-target="#components" data-parent="#nav">
                             <span class="figure"><i class="ico-screwdriver"></i></span>
                             <span class="text">Profile</span>
                             <span class="arrow"></span>
                         </a>
                         <!-- START 2nd Level Menu -->
-                        <ul id="components" class="submenu collapse ">
-                            <li  >
+                        <ul id="components" class="submenu collapse in ">
+                            <li   >
                                 <a href="c_profile_1.html" >
                                     <span class="text">Profile Option1</span>
                                 </a>
@@ -430,6 +434,13 @@ CONTACT : pampersdry@gmail.com
                                     <span class="text">Profile Option2</span>
                                 </a>
                             </li>
+                             <li class="active" >
+                                <a href="past_clients.html">
+                                    <span class="text">Past Clients</span>
+                                </a>
+                            </li>
+                            
+                            
                             <li >
                                 <a href="c_profile_3.html">
                                     <span class="text">Profile Option3</span>
@@ -529,6 +540,14 @@ CONTACT : pampersdry@gmail.com
                         
                     </li>
                     <li >
+                        <a href="recommendation.html" >
+                            <span class="figure"><i class="ico-table22"></i></span>
+                            <span class="text">Recommendation</span>
+                            
+                        </a>
+                        
+                    </li>
+                    <li >
                         <a href="comapny_payment.html" >
                             <span class="figure"><i class="ico-table22"></i></span>
                             <span class="text">Payments</span>
@@ -556,282 +575,71 @@ CONTACT : pampersdry@gmail.com
         <section id="main" role="main">
             <!-- START Template Container -->
             <section class="container-fluid">
-                <!-- section header -->
-                <div class="section-header">
-                    <h5 class="semibold title mb15">Supplier Dashbaord</h5>
+                <!-- Page header -->
+                <div class="page-header page-header-block">
+                    <div class="page-header-section">
+                        <h4 class="title semibold">Past Client's</h4>
+                    </div>
                 </div>
-                <!--/ section header -->
+                <!--/ Page header -->
 
-                <!-- START row -->
+               
+
+              
+
+               
+
+               
+                  <!-- START row -->
                 <div class="row">
-                	<div class="col-xs-12 col-md-6 col-lg-4">
-                    	
-                        <div class="panel">
-                            <hr class="nm"><!-- horizontal line -->
-                            <!-- Panel body -->
+                    <div class="col-md-12">
+                        <!-- START panel -->
+                        <form class="panel panel-default form-horizontal form-bordered" action="">
+                            <!-- panel heading/header -->
+                            <div class="panel-heading">
+                                <h3 class="panel-title"></h3>
+                            </div>
+                            <!--/ panel heading/header -->
+                            <!-- panel body -->
                             <div class="panel-body">
-                            	<form data-parsley-validate="" action="" class=" panel-default form-horizontal form-bordered " novalidate>
-                                	<div class="panel-default">
-                                    	<h5 class="semibold title mb10 text-success">Projects which you are not accepting ?</h5>
-                                        
-                                        <div class="widget panel">
-                                            <!-- panel body -->
-                                           
-                                            <!--/ panel body -->
-                                            <table class="table">
-                                                <tbody>
-                                                    <tr>
-                                                        <td width="5%" >
-                                                            <div class="checkbox custom-checkbox nm">  
-                                                                <input type="checkbox" id="customcheckbox10" value="1" data-toggle="selectrow" data-target="tr" data-contextual="stroke" >  
-                                                                <label for="customcheckbox10" ></label>  
-                                                                 
-                                                            </div>
-                                                        </td>
-                                                        
-                                                        <td width="80%">iOS.</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td width="5%">
-                                                            <div class="checkbox custom-checkbox nm">  
-                                                                <input type="checkbox" id="customcheckbox11" value="1" data-toggle="selectrow" data-target="tr" data-contextual="stroke">  
-                                                                <label for="customcheckbox11"></label>   
-                                                            </div>
-                                                        </td>
-                                                       
-                                                        <td width="80%">Android.</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td width="5%">
-                                                            <div class="checkbox custom-checkbox nm">  
-                                                                <input type="checkbox" id="customcheckbox12" value="1" data-toggle="selectrow" data-target="tr" data-contextual="stroke">  
-                                                                <label for="customcheckbox12"></label>   
-                                                            </div>
-                                                        </td>
-                                                       
-                                                        <td width="80%">iOS and Android.</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td width="5%">
-                                                            <div class="checkbox custom-checkbox nm">  
-                                                                <input type="checkbox" id="customcheckbox13" value="1" data-toggle="selectrow" data-target="tr" data-contextual="stroke">  
-                                                                <label for="customcheckbox13"></label>   
-                                                            </div>
-                                                        </td>
-                                                       
-                                                        <td width="80%">Basic Website</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td width="5%">
-                                                            <div class="checkbox custom-checkbox nm">  
-                                                                <input type="checkbox" id="customcheckbox14" value="1" data-toggle="selectrow" data-target="tr" data-contextual="stroke">  
-                                                                <label for="customcheckbox14"></label>   
-                                                            </div>
-                                                        </td>
-                                                       
-                                                        <td width="80%">Dynamic Website</td>
-                                                    </tr>
-                                                     <tr>
-                                                        <td width="5%">
-                                                            <div class="checkbox custom-checkbox nm">  
-                                                                <input type="checkbox" id="customcheckbox15" value="1" data-toggle="selectrow" data-target="tr" data-contextual="stroke">  
-                                                                <label for="customcheckbox15"></label>   
-                                                            </div>
-                                                        </td>
-                                                       
-                                                        <td width="80%">eCommerce Website</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                            <!-- panel footer -->
-                                            <div class="panel-footer">
-                                                <div class="input-group">
-                                                    <input type="text" class="form-control" name="task" placeholder="Add new task">
-                                                    <span class="input-group-btn">
-                                                        <button class="btn btn-default" type="button">Add</button>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                            <!--/ panel footer -->
+                                  <div class="form-group">
+                                        <label class="col-sm-4 control-label">Name <span class="text-danger">*</span></label>
+                                        <div class="col-sm-4">
+                                            <input type="text"  class="form-control " name="c_name" required >
                                         </div>
-                                    
-                                    	
-                                        
-                                	</div>
-                                	
-                            	</form>
-                            </div>
-                            <!--/ Panel body -->
-                            <hr class="nm"><!-- horizontal line -->
-                            
-                            <hr class="nm"><!-- horizontal line -->
-                            
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-md-6 col-lg-4">
-                    	<div class="table-layout widget panel">
-                            <div class="col-xs-6 widget panel panel-minimal bgcolor-inverse">
-                                <div class="panel-body">
-                                    <ul class="list-unstyled">
-                                        <li class="text-center">
-                                            <i style="font-size:46px;" class="ico-apple2"></i>
-                                            <!--<img class="img-circle img-bordered-danger" src="image/avatar/avatar4.jpg" alt="" width="75px" height="75px">-->
-                                            <br/>
-                                            <h5 class="semibold mb0">Nehrus</h5>
-                                            <p class="nm text-white">Build in iOS</p><br/>
-                                            <p class="nm text-white">
-                                            	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                                            </p>
-                                            <br/>
-                                            <h5 class="semibold mb0">Client</h5>
-                                            <p class="nm text-muted">Awaiting your response</p>
-                                        </li>
-                                    </ul>
-                                    
-                                </div>
-                            </div>
-                            <div class="col-xs-6 widget panel panel-minimal bgcolor-white">
-                                <div class="panel-body text-center bgcolor-white">
-                                    <ul class="list-unstyled">
-                                        <li class="text-center">
-                                            <i class="ico-dollar" style="font-size:26px;"></i>
-                                            <br>
-                                            <h5 class="semibold mb0">$7000 - 15000</h5>
-                                            <p class="nm text-muted">Budget</p>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <hr class="mt0 mb0">
-                                <div class="panel-body text-center bgcolor-white">
-                                    <ul class="list-unstyled">
-                                        <li class="text-center">
-                                            <i class="ico-calendar" style="font-size:26px;"></i>
-                                            <br>
-                                            <h5 class="semibold mb0">27 March, 2014</h5>
-                                            <p class="nm text-muted">Start Date</p>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <hr class="mt0 mb0">
-                                <div class="panel-body text-center bgcolor-white">
-                                    <ul class="list-unstyled">
-                                        <li class="text-center">
-                                            <i class="ico-calendar" style="font-size:26px;"></i>
-                                            <br>
-                                            <h5 class="semibold mb5" style="font-size:12px;">Proposals received. Awaiting your response</h5>
-                                            <p class="nm text-muted">Status</p>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="panel-body text-center bgcolor-success">
-                                    
-                                    <div class="col-sm-12">
-                                        <ul class="nav nav-section nav-justified">
-                                            <li class="text-center">
-                                                <div class="section">
-                                                    <span class="number"><span class="label label-danger">2</span></span>
-                                                    <p class="nm"><a href="" class="text-white">Message</a></p>
-                                                </div>
-                                            </li>
-                                        </ul>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-md-6 col-lg-4">
-                    	<div class="table-layout widget panel">
-                            <div class="col-xs-6 widget panel panel-minimal bgcolor-inverse">
-                                <div class="panel-body">
-                                    <ul class="list-unstyled">
-                                        <li class="text-center">
-                                            <i style="font-size:46px;" class="ico-apple2"></i>
-                                            <!--<img class="img-circle img-bordered-danger" src="image/avatar/avatar4.jpg" alt="" width="75px" height="75px">-->
-                                            <br/>
-                                            <h5 class="semibold mb0">Nehrus</h5>
-                                            <p class="nm text-white">Build in iOS</p><br/>
-                                            <p class="nm text-white">
-                                            	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                                            </p>
-                                            <br/>
-                                            <h5 class="semibold mb0">Client</h5>
-                                            <p class="nm text-muted">Awaiting your response</p>
-                                        </li>
-                                    </ul>
-                                    
-                                </div>
-                            </div>
-                            <div class="col-xs-6 widget panel panel-minimal bgcolor-white">
-                                <div class="panel-body text-center bgcolor-white">
-                                    <ul class="list-unstyled">
-                                        <li class="text-center">
-                                            <i class="ico-dollar" style="font-size:26px;"></i>
-                                            <br>
-                                            <h5 class="semibold mb0">$7000 - 15000</h5>
-                                            <p class="nm text-muted">Budget</p>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <hr class="mt0 mb0">
-                                <div class="panel-body text-center bgcolor-white">
-                                    <ul class="list-unstyled">
-                                        <li class="text-center">
-                                            <i class="ico-calendar" style="font-size:26px;"></i>
-                                            <br>
-                                            <h5 class="semibold mb0">27 March, 2014</h5>
-                                            <p class="nm text-muted">Start Date</p>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <hr class="mt0 mb0">
-                                <div class="panel-body text-center bgcolor-white">
-                                    <ul class="list-unstyled">
-                                        <li class="text-center">
-                                            <i class="ico-calendar" style="font-size:26px;"></i>
-                                            <br>
-                                            <h5 class="semibold mb5" style="font-size:12px;">Proposals received. Awaiting your response</h5>
-                                            <p class="nm text-muted">Status</p>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="panel-body text-center bgcolor-success">
-                                    
-                                    <div class="col-sm-12">
-                                        <ul class="nav nav-section nav-justified">
-                                            <li class="text-center">
-                                                <div class="section">
-                                                    <span class="number"><span class="label label-danger">2</span></span>
-                                                    <p class="nm"><a href="" class="text-white">Message</a></p>
-                                                </div>
-                                            </li>
-                                        </ul>
+                                    <div class="form-group">
+                                        <label class="col-sm-4 control-label"> Project Name <span class="text-danger">*</span></label>
+                                        <div class="col-sm-4">
+                                            <input type="text"  class="form-control " name="c_name" required >
+                                        </div>
                                     </div>
-                                </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-4 control-label">Client E-mail <span class="text-danger">*</span></label>
+                                        <div class="col-sm-4">
+                                          <input type="text"  class="form-control " name="required" required >
+                                        </div>
+                                    </div>
+                                   
+                                <div class="panel-footer">
+                                        <div class="form-group no-border">
+                                            <label class="col-sm-4 control-label"></label>
+                                            <div class="col-sm-8">
+                                                <button type="submit" class="btn btn-primary">Save & Next</button>
+                                                
+                                            </div>
+                                        </div> 
+                                    </div>
+                                
                             </div>
-                        </div>
+                            
+                            <!--/ panel body -->
+                        </form>
+                        <!-- END panel -->
                     </div>
-
-                    
-                    
-                </div>
-                <div id="bs-modal-sm" class="modal fade">
-                    <div class="modal-dialog modal-sm">
-                        <div class="modal-content">
-                            <div class="modal-header text-center">
-                                <button type="button" class="close" data-dismiss="modal">×</button>
-                                <h4 class="semibold modal-title text-grey5">Enter your Project Name</h4>
-                            </div>
-                            <div class="modal-body">
-                                <input type="text" class="form-control" data-parsley-id="7405">
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Save changes</button>
-                            </div>
-                        </div><!-- /.modal-content -->
-                    </div><!-- /.modal-dialog -->
                 </div>
                 <!--/ END row -->
+                
             </section>
             <!--/ END Template Container -->
 
@@ -1034,27 +842,12 @@ CONTACT : pampersdry@gmail.com
             (function($){
                 $("html").Core({ "console": false });
             })(jQuery);
-			
-			
-			$('.btn-toggle').click(function() {
-				
-				$(this).find('.btn').toggleClass('btn-default');
-				   
-			});
-			
-			$('form').submit(function(){
-				//alert($(this["options"]).val());
-				return false;
-			});
         </script>
         <!--/ app init script -->
 
         <!-- 3rd party plugin script : optional(per use) -->
-        <script type="text/javascript" src="plugins/flot/jquery.flot.min.js"></script>
-        <script type="text/javascript" src="plugins/flot/jquery.flot.spline.min.js"></script>
-        <script type="text/javascript" src="plugins/flot/jquery.flot.categories.min.js"></script>
-        <script type="text/javascript" src="plugins/flot/jquery.flot.tooltip.min.js"></script>
-        <script type="text/javascript" src="plugins/flot/jquery.flot.resize.min.js"></script>
+        <script type="text/javascript" src="plugins/inputmask/js/inputmask.min.js"></script>
+        <script type="text/javascript" src="plugins/selectize/js/selectize.min.js"></script>
         <script type="text/javascript" src="javascript/page.js"></script>
         <!--/ 3rd party plugin script -->
         <!--/ END JAVASCRIPT SECTION -->
