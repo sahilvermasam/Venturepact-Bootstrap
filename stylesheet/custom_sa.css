@@ -113,4 +113,6 @@ td .table_cell:hover{ background:#DFF0D8 !important;}
     padding: 10px 0;}
 .plus_new{font-size: 10px!important;}
 /* new css for faq */
-
+.grand_parent:hover .child_delete{ display:block;}
+.delete_parent{ position:relative;}
+.child_delete{ position:absolute; right:0; z-index:9; display:none;}

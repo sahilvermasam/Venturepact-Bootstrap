@@ -652,7 +652,7 @@ CONTACT : pampersdry@gmail.com
                 <!-- START row -->
                 <div class="row">
                 	<div class="col-xs-12 col-md-6 col-lg-4">
-                    	<div class="table-layout widget panel">
+                    	<div class="table-layout widget panel mb0 grand_parent">
                             <div class="col-xs-6 widget panel panel-minimal bgcolor-inverse">
                                 <div class="panel-body">
                                     <ul class="list-unstyled">
@@ -670,14 +670,14 @@ CONTACT : pampersdry@gmail.com
                                     
                                 </div>
                             </div>
-                            <div class="col-xs-6 widget panel panel-minimal bgcolor-white">
-                                
+                            <div class="col-xs-6 widget panel panel-minimal bgcolor-white delete_parent">
+                            	<a href="" title="Delete Project" data-toggle="modal" data-target="#dlete_project"  class="btn child_delete"> <i class="ico-trash text-muted"></i> </a>
                                 <div class="panel-body text-center bgcolor-white">
                                     <ul class="list-unstyled">
                                         <li class="text-center">
                                             <i class="ico-warning-sign" style="font-size:26px;"></i>
                                             <br>
-                                            <h5 class="semibold mb0">Proposals received. Awaiting your response</h5>
+                                            <h5 class="semibold mb5" style="font-size:12px;">Proposals received. Awaiting your response</h5>
                                             <p class="nm text-muted">Status</p>
                                         </li>
                                     </ul>
@@ -687,7 +687,7 @@ CONTACT : pampersdry@gmail.com
                                     <ul class="list-unstyled">
                                         <li class="text-center">
                                             <span class="number"><span class="label label-danger">2</span></span>
-                                            <p class="nm"><a href="" class="text-white">Proposals</a></p>
+                                            <p class="nm"><a href="" class="text-white custom_white">Proposals</a></p>
                                         </li>
                                     </ul>
                                 </div>
@@ -699,7 +699,7 @@ CONTACT : pampersdry@gmail.com
                                             <li class="text-center">
                                                 <div class="section">
                                                     <span class="number"><span class="label label-danger">2</span></span>
-                                                    <p class="nm"><a href="" class="text-white">Message</a></p>
+                                                    <p class="nm"><a href="" class="text-white custom_white">Message</a></p>
                                                 </div>
                                             </li>
                                         </ul>
@@ -715,10 +715,10 @@ CONTACT : pampersdry@gmail.com
                             <!-- START Widget Panel -->
                             <div class="widget panel">
                                 <!-- panel body -->
-                                <div class="panel-body" style="min-height:300px;">
-                                    <ul class="list-unstyled mt15 mb15" style="margin-top:35% !important;">
+                                <div class="panel-body" style="min-height:286px;">
+                                    <ul class="list-unstyled mt15 mb15" style="margin-top:32% !important;">
                                         <li class="text-center">
-                                            <a href="" data-toggle="modal" data-target="#bs-modal-sm"><i style="font-size:46px;" class="ico-plus"></i></a>
+                                            <a href="" data-toggle="modal" data-target="#add_project"><i style="font-size:46px;" class="ico-plus"></i></a>
                                         </li>
                                         <li class="text-center">
                                             <h5 class="semibold mb0 text-grey9"><a href="">Add new project</a></h5>
@@ -732,16 +732,53 @@ CONTACT : pampersdry@gmail.com
                     </div>
                     
                 </div>
-                <div id="bs-modal-sm" class="modal fade">
-                    <div class="modal-dialog modal-sm">
+                <div id="add_project" class="modal fade">
+                    <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header text-center">
                                 <button type="button" class="close" data-dismiss="modal">×</button>
-                                <h4 class="semibold modal-title text-grey5">Enter your Project Name</h4>
+                                <h4 class="semibold modal-title text-grey5">Project Details</h4>
                             </div>
-                            <div class="modal-body">
-                                <input type="text" class="form-control" data-parsley-id="7405">
-                            </div>
+                            <form class="panel-default form-horizontal" data-parsley-validate="" action="" novalidate>
+                                <br/>
+                                
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                            <label class="col-sm-4 control-label pl0" style="font-size:12px;">Enter your Project Name<span class="text-danger">*</span></label>
+                                            <div class="col-sm-8">
+                                                <input type="text" required name="required" class="form-control "><ul class="parsley-errors-list" id="parsley-id-9793"></ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <label class="col-sm-4 control-label pl0" style="font-size:12px;">What do you need work on ?<span class="text-danger">*</span></label>
+                                        <div class="col-sm-4">
+                                            <select required="" class="form-control" name="color" data-parsley-id="0319">
+                                                <option value="">Select</option>
+                                                <option value="1">Build a new</option>
+                                                <option value="2">Add features to</option>
+                                                <option value="3">Rebuild/repair an existing</option>
+                                                <option value="4">Add security to</option>
+                                                <option value="5">Design a new</option>
+                                                <option value="6">Other work on</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <select required="" class="form-control" name="color" data-parsley-id="0319">
+                                                <option value="">Select</option>
+                                                <option value="1">iPhone/iPad app</option>
+                                                <option value="2">Android app</option>
+                                                <option value="3">Web app</option>
+                                                <option value="4">Static website</option>
+                                                <option value="5">Business application (Sharepoint, Oracle etc)</option>
+                                                <option value="1">Other software</option>
+                                                <option value="1">Google Glass app</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                                 <button type="button" class="btn btn-primary">Save changes</button>
@@ -933,6 +970,26 @@ CONTACT : pampersdry@gmail.com
                 </div>
                 <!--/ END Sidebar contact -->
             </section>
+            <div id="dlete_project" class="modal fade">
+                    <div class="modal-dialog modal-sm">
+                        <div class="modal-content">
+                            <div class="modal-header text-center">
+                                <button type="button" class="close" data-dismiss="modal">×</button>
+                                <div class="ico-shield3 mb15 mt15" style="font-size:36px;"></div>
+                                <h3 class="semibold modal-title text-success">Shield Activated</h3>
+                                <p class="text-muted">Excepteur sint occaecat cupidatat non proident.</p>
+                            </div>
+                            <div class="modal-body">
+                                <h4 class="semibold mt0">Text in a modal</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div><!-- /.modal-content -->
+                    </div><!-- /.modal-dialog -->
+                </div>
             <!--/ END Sidebar Content -->
         </aside>
         <!--/ END Template Sidebar (right) -->
