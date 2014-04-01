@@ -2828,7 +2828,7 @@ a.thumbnail.active {
 .thumbnail > .media {
   position: relative;
   overflow: hidden;
-  margin-top: 0px;
+  margin-top: 0px; 
 }
 .thumbnail > .media > img,
 .thumbnail > .media > iframe {
@@ -2892,15 +2892,16 @@ a.thumbnail.active {
   line-height: 24px;
   border-radius: 20px;
   overflow: hidden;
-  -webkit-transform: scale(0);
-  -moz-transform: scale(0);
-  -o-transform: scale(0);
-  -ms-transform: scale(0);
-  transform: scale(0);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
   -webkit-transition: -webkit-transform 300ms ease;
   -moz-transition: -moz-transform 300ms ease;
   -o-transition: -o-transform 300ms ease;
   transition: -webkit-transform 300ms ease,-moz-transform 300ms ease,-o-transform 300ms ease,transform 300ms ease;
+  
 }
 .thumbnail > .media > .overlay > .toolbar > .btn + .btn {
   -webkit-transition: -webkit-transform 250ms ease;
@@ -2976,7 +2977,7 @@ a.thumbnail.active {
 }
 /* overlay */
 .thumbnail-album > .media > .overlay {
-  border-radius: 3px 3px 0px 0px;
+  border-radius: 3px 3px 0px 0px; opacity:1; 
 }
 /*
  * meta
