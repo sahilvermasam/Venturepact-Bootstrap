@@ -121,3 +121,78 @@ td .table_cell:hover{ background:#DFF0D8 !important;}
 .grand_parent:hover .child_delete{ display:block;}
 .delete_parent{ position:relative;}
 .child_delete{ position:absolute; right:0; z-index:9; display:none;}
+/*Fb Scrollbar css start {SAhil}*/
+#scrollbox3 {
+    overflow: auto;
+    width:320px;
+    height: 310px;
+    padding: 0px !important;
+}
+
+.track3 {
+    width: 10px;
+    background: rgba(0, 0, 0, 0);
+    margin-right: 2px;
+    border-radius: 10px;
+    -webkit-transition: background 250ms linear;
+    transition: background 250ms linear;
+}
+
+.track3:hover,
+.track3.dragging {
+    background: #d9d9d9; 
+    background: rgba(0, 0, 0, 0.15);
+}
+
+.handle3 {
+    width: 7px;
+    right: 0;
+    background: #999;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 7px;
+    -webkit-transition: width 250ms;
+    transition: width 250ms;
+}
+
+.track3:hover .handle3,
+.track3.dragging .handle3 {
+    width: 10px;
+}
+.client_dashboard_scoller {
+    overflow: auto;
+    width:150px;
+    height: 90px;
+    padding: 0px !important;
+}
+
+.track3 {
+    width: 10px;
+    background: rgba(0, 0, 0, 0);
+    margin-right: 2px;
+    border-radius: 10px;
+    -webkit-transition: background 250ms linear;
+    transition: background 250ms linear;
+}
+
+.track3:hover,
+.track3.dragging {
+    background: #d9d9d9; 
+    background: rgba(0, 0, 0, 0.15);
+}
+
+.handle3 {
+    width: 7px;
+    right: 0;
+    background: #999;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 7px;
+    -webkit-transition: width 250ms;
+    transition: width 250ms;
+}
+
+.track3:hover .handle3,
+.track3.dragging .handle3 {
+    width: 10px;
+}
+/*Fb Scrollbar css end {SAhil}*/
+.w30{width:30% !important; }

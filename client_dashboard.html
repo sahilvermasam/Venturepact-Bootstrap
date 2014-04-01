@@ -661,7 +661,13 @@ CONTACT : pampersdry@gmail.com
                                             <!--<img class="img-circle img-bordered-danger" src="image/avatar/avatar4.jpg" alt="" width="75px" height="75px">-->
                                             <br/>
                                             <h5 class="semibold mb0">Nehrus</h5>
-                                            <p class="nm text-white">Build in iOS</p><br/>
+                                            <div class="client_dashboard_scoller">
+                                            	<p class="nm text-white">Build in iOS</p><br/>
+                                                <p class="nm text-white">Build in iOS</p><br/>
+                                                <p class="nm text-white">Build in iOS</p><br/>
+                                                <p class="nm text-white">Build in iOS</p><br/>
+                                                <p class="nm text-white">Build in iOS</p><br/>
+                                            </div>
                                             <br/>
                                             <h5 class="semibold mb0">Client</h5>
                                             <p class="nm text-muted">Awaiting your response</p>
@@ -1002,12 +1008,20 @@ CONTACT : pampersdry@gmail.com
         <script type="text/javascript" src="library/jquery/js/jquery-migrate.min.js"></script>
         <script type="text/javascript" src="library/bootstrap/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="library/core/js/core.min.js"></script>
+        <script type="text/javascript" src="javascript/scroller.js"></script>
         <!--/ Library script -->
 
         <!-- app init script -->
         <script type="text/javascript">
             (function($){
                 $("html").Core({ "console": false });
+				
+				$('.client_dashboard_scoller').enscroll({
+					showOnHover: true,
+					verticalTrackClass: 'track3',
+					verticalHandleClass: 'handle3'
+				});
+				
             })(jQuery);
         </script>
         <!--/ app init script -->
