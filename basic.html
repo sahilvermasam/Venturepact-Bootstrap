@@ -416,14 +416,14 @@ CONTACT : pampersdry@gmail.com
                     <li class="active open">
                         <a href="javascript:void(0);" data-toggle="submenu" data-target="#Scope" data-parent="#nav">
                             <span class="figure"><i class="ico-lightbulb"></i></span>
-                            <span class="text">Scope</span>
+                            <span class="text">Project Scope</span>
                             <span class="arrow"></span>
                         </a>
                         <!-- START 2nd Level Menu -->
                         <ul id="Scope" class="submenu collapse in">
                             <li class="active">
                                 <a href="basic.html">
-                                    <span class="text">Basic</span>
+                                    <span class="text">Basics</span>
                                 </a>
                             </li>
                             <li>
@@ -542,7 +542,7 @@ CONTACT : pampersdry@gmail.com
                         <ul id="Scope2" class="submenu collapse">
                             <li class="active">
                                 <a href="basic.html" data-toggle="submenu" data-target="#scope" data-parent="#project1">
-                                    <span class="text">Basic</span>
+                                    <span class="text">Basics</span>
                                 </a>
                             </li>
                             <li>
@@ -643,9 +643,13 @@ CONTACT : pampersdry@gmail.com
             <!-- START Template Container -->
             <section class="container-fluid">
                 <!-- Page Header -->
-                <div class="page-header page-header-block">
+                <div class="page-header page-header-block pb0 pt5">
                     <div class="page-header-section">
-                        <h4 class="title semibold">Scope Basic <!--sandeep--></h4>
+                        <ol class="breadcrumb" style="margin-bottom: 5px; background: none repeat scroll 0% 0% transparent;">
+                            <li><a href="javascript:void(0);">Dashboard</a></li>
+                            <li><a href="javascript:void(0);">Project Scope</a></li>
+                            <li class="active">Basics</li>
+                        </ol>
                     </div>
                 </div>
                 <!--/ Page Header -->
@@ -655,7 +659,7 @@ CONTACT : pampersdry@gmail.com
                       <div class="panel panel-default">
                             <!-- panel heading/header -->
                             <div class="panel-heading">
-                                <h3 class="panel-title">Basic</h3>
+                                <h3 class="panel-title">Basics</h3>
                             </div>
                             <!--/ panel heading/header -->
                             <!-- panel body -->
@@ -663,56 +667,151 @@ CONTACT : pampersdry@gmail.com
                                 <form class=" panel-default form-horizontal form-bordered " action="" data-parsley-validate>
                                     
                                     <div class="form-group">
-                                        <label class="col-sm-3 control-label">Project name? <span class="text-danger">*</span></label>
+                                        <label class="col-sm-3 control-label">Please give your project a name. <span class="text-danger">*</span></label>
                                         <div class="col-sm-9">
-                                            <input type="text"  class="form-control " name="required" required >
+                                            <input type="text" class="form-control" placeholder="Max: 100 words" name="required" data-content="If your business problem is clearly defined, the service providers are able to get  a much better sense of your requirements and provide better estimates and quotes." data-placement="top" data-toggle="popover" data-trigger="focus" required >
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label class="col-sm-3 control-label">Please summarize your need briefly <span class="text-danger">*</span></label>
+                                        <label class="col-sm-3 control-label">Please describe your need briefly. <span class="text-danger">*</span></label>
                                         <div class="col-sm-9">
-                                           <textarea class="form-control" rows="3" required></textarea>
+                                           <textarea class="form-control" rows="3" placeholder="Max: 100 words" data-content="If your business problem is clearly defined, the service providers are able to get  a much better sense of your requirements and provide better estimates and quotes." data-placement="top" data-toggle="popover" data-trigger="focus" required></textarea>
+                                           <span class="help-block">Help text that breaks onto a new line and may extend beyond one line.</span>
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label class="col-sm-3 control-label">Q. What is the business problem that you are trying to solve? <span class="text-danger">*</span></label>
+                                        <label class="col-sm-3 control-label">What business problem are you trying to solve with this project? <span class="text-danger">*</span></label>
                                         <div class="col-sm-9">
-                                            <textarea class="form-control" rows="3" required></textarea>
+                                            <textarea class="form-control" rows="3" placeholder="Max: 100 words" data-content="If your business problem is clearly defined, the service providers are able to get  a much better sense of your requirements and provide better estimates and quotes." data-placement="top" data-toggle="popover" data-trigger="focus" required></textarea>
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label class="col-sm-3 control-label">Q. What industry does your company fall under?</label>
+                                        <label class="col-sm-3 control-label">Which of these categories best describes your project? <span class="text-danger">*</span></label>
                                         <div class="col-sm-9">
-                                            <span class="checkbox custom-checkbox ">
-                                                <input type="checkbox" name="customcheckbox1" id="customcheckbox1" />
-                                                <label for="customcheckbox1">&nbsp;&nbsp;Ecommercer.</label>
-                                            </span>
-                                            <span class="checkbox custom-checkbox">
-                                                <input type="checkbox" name="customcheckbox2" id="customcheckbox2" />
-                                                <label for="customcheckbox2">&nbsp;&nbsp;Healthcare.</label>
-                                            </span>
-                                            <span class="checkbox custom-checkbox">
-                                                <input type="checkbox" name="customcheckbox3" id="customcheckbox3" />
-                                                <label for="customcheckbox3">&nbsp;&nbsp;Other.</label>
-                                            </span>
+                                            <div class="col-sm-3 pl0 pr0">
+                                                <span class="checkbox custom-checkbox">
+                                                    <input type="checkbox" name="customcheckbox1" id="customcheckbox1"   />
+                                                    <label for="customcheckbox1" data-toggle="tooltip" data-placement="top" title="Tooltip on top">&nbsp;&nbsp;Business</label>
+                                                </span>
+                                                <span class="checkbox custom-checkbox">
+                                                    <input type="checkbox" name="customcheckbox2" id="customcheckbox2" />
+                                                    <label for="customcheckbox2" data-toggle="tooltip" data-placement="top" title="Tooltip on top">&nbsp;&nbsp;Education</label>
+                                                </span>
+                                                <span class="checkbox custom-checkbox">
+                                                    <input type="checkbox" name="customcheckbox3" id="customcheckbox3" />
+                                                    <label for="customcheckbox3" data-toggle="tooltip" data-placement="top" title="Tooltip on top">&nbsp;&nbsp;Entertainment</label>
+                                                </span>
+                                                <span class="checkbox custom-checkbox">
+                                                    <input type="checkbox" name="customcheckbox4" id="customcheckbox4" />
+                                                    <label for="customcheckbox4" data-toggle="tooltip" data-placement="top" title="Tooltip on top">&nbsp;&nbsp;Family and Kids</label>
+                                                </span>
+                                                <span class="checkbox custom-checkbox">
+                                                    <input type="checkbox" name="customcheckbox5" id="customcheckbox5" />
+                                                    <label for="customcheckbox5" data-toggle="tooltip" data-placement="top" title="Tooltip on top">&nbsp;&nbsp;Finance</label>
+                                                </span>
+                                                <span class="checkbox custom-checkbox">
+                                                    <input type="checkbox" name="customcheckbox6" id="customcheckbox6" />
+                                                    <label for="customcheckbox6" data-toggle="tooltip" data-placement="top" title="Tooltip on top">&nbsp;&nbsp;Food and Drinks</label>
+                                                </span>
+                                            </div>
+                                            <div class="col-sm-3 pl0 pr0">
+                                                <span class="checkbox custom-checkbox">
+                                                    <input type="checkbox" name="customcheckbox7" id="customcheckbox7" />
+                                                    <label for="customcheckbox7" data-toggle="tooltip" data-placement="top" title="Tooltip on top">&nbsp;&nbsp;Health and Fitness</label>
+                                                </span>
+                                                <span class="checkbox custom-checkbox">
+                                                    <input type="checkbox" name="customcheckbox8" id="customcheckbox8" />
+                                                    <label for="customcheckbox8" data-toggle="tooltip" data-placement="top" title="Tooltip on top">&nbsp;&nbsp;Lifestyle</label>
+                                                </span>
+                                                <span class="checkbox custom-checkbox">
+                                                    <input type="checkbox" name="customcheckbox9" id="customcheckbox9" />
+                                                    <label for="customcheckbox9" data-toggle="tooltip" data-placement="top" title="Tooltip on top">&nbsp;&nbsp;Music</label>
+                                                </span>
+                                                <span class="checkbox custom-checkbox">
+                                                    <input type="checkbox" name="customcheckbox10" id="customcheckbox10" />
+                                                    <label for="customcheckbox10" data-toggle="tooltip" data-placement="top" title="Tooltip on top">&nbsp;&nbsp;News</label>
+                                                </span>
+                                                <span class="checkbox custom-checkbox">
+                                                    <input type="checkbox" name="customcheckbox11" id="customcheckbox11" />
+                                                    <label for="customcheckbox11" data-toggle="tooltip" data-placement="top" title="Tooltip on top">&nbsp;&nbsp;Photo and Video</label>
+                                                </span>
+                                                <span class="checkbox custom-checkbox">
+                                                    <input type="checkbox" name="customcheckbox12" id="customcheckbox12" />
+                                                    <label for="customcheckbox12" data-toggle="tooltip" data-placement="top" title="Tooltip on top">&nbsp;&nbsp;Productivity</label>
+                                                </span>
+                                            </div>
+                                            <div class="col-sm-3 pl0 pr0">
+                                                <span class="checkbox custom-checkbox">
+                                                    <input type="checkbox" name="customcheckbox13" id="customcheckbox13" />
+                                                    <label for="customcheckbox13" data-toggle="tooltip" data-placement="top" title="Tooltip on top">&nbsp;&nbsp;Sports</label>
+                                                </span>
+                                                <span class="checkbox custom-checkbox">
+                                                    <input type="checkbox" name="customcheckbox14" id="customcheckbox14" />
+                                                    <label for="customcheckbox14" data-toggle="tooltip" data-placement="top" title="Tooltip on top">&nbsp;&nbsp;Travel</label>
+                                                </span>
+                                                <span class="checkbox custom-checkbox">
+                                                    <input type="checkbox" name="customcheckbox15" id="customcheckbox15" />
+                                                    <label for="customcheckbox15" data-toggle="tooltip" data-placement="top" title="Tooltip on top">&nbsp;&nbsp;Real Estate</label>
+                                                </span>
+                                                <span class="checkbox custom-checkbox">
+                                                    <input type="checkbox" name="customcheckbox16" id="customcheckbox16" />
+                                                    <label for="customcheckbox16" data-toggle="tooltip" data-placement="top" title="Tooltip on top">&nbsp;&nbsp;Pharmaceutical</label>
+                                                </span>
+                                                <span class="checkbox custom-checkbox">
+                                                    <input type="checkbox" name="customcheckbox17" id="customcheckbox17" />
+                                                    <label for="customcheckbox17" data-toggle="tooltip" data-placement="top" title="Tooltip on top">&nbsp;&nbsp;Automotive</label>
+                                                </span>
+                                                <span class="checkbox custom-checkbox">
+                                                    <input type="checkbox" name="customcheckbox18" id="customcheckbox18" />
+                                                    <label for="customcheckbox18" data-toggle="tooltip" data-placement="top" title="Tooltip on top">&nbsp;&nbsp;Retail</label>
+                                                </span>
+                                            </div>
+                                            <div class="col-sm-3 pl0 pr0">
+                                                <span class="checkbox custom-checkbox">
+                                                    <input type="checkbox" name="customcheckbox19" id="customcheckbox19" />
+                                                    <label for="customcheckbox19" data-toggle="tooltip" data-placement="top" title="Tooltip on top">&nbsp;&nbsp;Electronics</label>
+                                                </span>
+                                                <span class="checkbox custom-checkbox">
+                                                    <input type="checkbox" name="customcheckbox20" id="customcheckbox20" />
+                                                    <label for="customcheckbox20" data-toggle="tooltip" data-placement="top" title="Tooltip on top">&nbsp;&nbsp;Retail</label>
+                                                </span>
+                                                <span class="checkbox custom-checkbox">
+                                                    <input type="checkbox" name="customcheckbox21" id="customcheckbox21" />
+                                                    <label for="customcheckbox21" data-toggle="tooltip" data-placement="top" title="Tooltip on top">&nbsp;&nbsp;Non Profits</label>
+                                                </span>
+                                                <span class="checkbox custom-checkbox">
+                                                    <input type="checkbox" name="customcheckbox22" id="customcheckbox22" />
+                                                    <label for="customcheckbox23" data-toggle="tooltip" data-placement="top" title="Tooltip on top">&nbsp;&nbsp;Public Service and Government </label>
+                                                </span>
+                                            </div>
+                                            <div class="col-sm-12 mt5 pl0 pr0">
+                                            	<small class="help-block text-danger">Check all that apply</small>
+                                            </div>
                                         </div>
                                     </div>
                                     
                                     <div class="form-group">
-                                        <label class="col-sm-3 control-label">Q. What all do you need done? (Check all that apply)</label>
+                                        <label class="col-sm-3 control-label">What will you require for your project? <span class="text-danger">*</span></label>
                                         <div class="col-sm-9">
                                             <span class="checkbox custom-checkbox ">
-                                                <input type="checkbox" name="customcheckbox4" id="customcheckbox4" />
-                                                <label for="customcheckbox4">&nbsp;&nbsp;Ecommercer.</label>
+                                                <input type="checkbox" name="customcheckbox23" id="customcheckbox23" />
+                                                <label for="customcheckbox23" data-toggle="tooltip" data-placement="top" title="Tooltip on top">&nbsp;&nbsp;Design</label>
                                             </span>
                                             <span class="checkbox custom-checkbox">
-                                                <input type="checkbox" name="customcheckbox5" id="customcheckbox5" />
-                                                <label for="customcheckbox5">&nbsp;&nbsp;Healthcare.</label>
+                                                <input type="checkbox" name="customcheckbox24" id="customcheckbox24" />
+                                                <label for="customcheckbox24" data-toggle="tooltip" data-placement="top" title="Tooltip on top">&nbsp;&nbsp;Frontend(HTML, CSS, JS)</label>
                                             </span>
                                             <span class="checkbox custom-checkbox">
-                                                <input type="checkbox" name="customcheckbox6" id="customcheckbox6" />
-                                                <label for="customcheckbox6">&nbsp;&nbsp;Other.</label>
+                                                <input type="checkbox" name="customcheckbox25" id="customcheckbox25" />
+                                                <label for="customcheckbox25" data-toggle="tooltip" data-placement="top" title="Tooltip on top">&nbsp;&nbsp;Backend(Databases, Ruby, Python etc)</label>
                                             </span>
+                                            <span class="checkbox custom-checkbox">
+                                                <input type="checkbox" name="customcheckbox26" id="customcheckbox26" />
+                                                <label for="customcheckbox26" data-toggle="tooltip" data-placement="top" title="Tooltip on top">&nbsp;&nbsp;Testing(Functional testing, load testing)</label>
+                                            </span>
+                                            <div class="col-sm-12 mt5 pl0 pr0">
+                                            	<small class="help-block text-danger">Check all that apply</small>
+                                            </div>
                                         </div>
                                     </div>
                                     
@@ -721,8 +820,8 @@ CONTACT : pampersdry@gmail.com
                                         <div class="form-group no-border">
                                             <label class="col-sm-3 control-label"></label>
                                             <div class="col-sm-9">
-                                                <button type="submit" class="btn btn-primary">Save & Next</button>
-                                                <button type="reset" class="btn btn-danger">Reset button</button>
+                                                <button type="submit" class="btn btn-primary pull-right">Save & Next</button>
+                                                <!--<button type="reset" class="btn btn-danger">Reset button</button>-->
                                             </div>
                                         </div> 
                                     </div>
