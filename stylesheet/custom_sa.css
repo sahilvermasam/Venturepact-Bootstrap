@@ -196,3 +196,15 @@ td .table_cell:hover{ background:#DFF0D8 !important;}
 }
 /*Fb Scrollbar css end {SAhil}*/
 .w30{width:30% !important; }
+
+/* budget page css start by arti */
+.panel-title-h0 {height: 26px!important;}
+.active_success{
+	background-color: #8AC448; 
+	border-color: #82C03E; 
+	/*box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1) inset; */
+	color: #fff; text-shadow: none;
+}
+.active_success:hover, 
+.active_success:focus,{background-color: #8AC448; border-color: #82C03E; box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1) inset; color: #fff; text-shadow: none;}
+/* budget page css end by arti */
