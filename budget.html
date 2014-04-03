@@ -35,7 +35,7 @@ CONTACT : pampersdry@gmail.com
         <!-- Application stylesheet : mandatory -->
         <link rel="stylesheet" href="stylesheet/layout.css">
         <link rel="stylesheet" href="stylesheet/uielement.css">
-       
+		<link rel="stylesheet" href="stylesheet/custom_sa.css">       
         <!--/ Application stylesheet -->
         <!-- END STYLESHEETS -->
 
@@ -441,17 +441,17 @@ CONTACT : pampersdry@gmail.com
                                 </a>
                             </li>
                             <li class="active">
-                                <a href="basic.html">
+                                <a href="budget.html">
                                     <span class="text">Budget</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="basic.html">
+                                <a href="company.html">
                                     <span class="text">Company</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="basic.html">
+                                <a href="custom_question.html">
                                     <span class="text">Custom Questions</span>
                                 </a>
                             </li>
@@ -662,35 +662,69 @@ CONTACT : pampersdry@gmail.com
                             <div class="panel-body">
                             	<div class="form-group">
                                 	<div class="col-sm-12">
-                                        <!-- section header -->
-                                        <div class="section-header mb15">
-                                            <label class="control-label">Q. Do you have an absolute geographical preference? </label>
-                                            <div class="col-sm-12">
-                                                <span class="checkbox custom-checkbox pb5 pt10 ">
-                                                    <input type="checkbox" id="customcheckbox1" name="customcheckbox1">
-                                                    <label for="customcheckbox1" data-toggle="tooltip" data-placement="top" title="Tooltip on top">&nbsp;&nbsp;In my City</label>
-                                                </span>
-                                                <span class="checkbox custom-checkbox pb5" >
-                                                    <input type="checkbox" id="customcheckbox2" name="customcheckbox2">
-                                                    <label for="customcheckbox2" data-toggle="tooltip" data-placement="top" title="Tooltip on top">&nbsp;&nbsp;In my Country</label>
-                                                </span>
-                                                <span class="checkbox custom-checkbox pb5">
-                                                    <input type="checkbox" id="customcheckbox3" name="customcheckbox3">
-                                                    <label for="customcheckbox3" data-toggle="tooltip" data-placement="top" title="Tooltip on top">&nbsp;&nbsp;In my Time zone</label>
-                                                </span>
-                                                <span class="checkbox custom-checkbox pb5">
-                                                    <input type="checkbox" id="customcheckbox4" name="customcheckbox4">
-                                                    <label for="customcheckbox4" data-toggle="tooltip" data-placement="top" title="Tooltip on top">&nbsp;&nbsp;Anywhere</label>
-                                                </span>
+                                    	<label class="control-label">Q. Do you have an absolute geographical preference? </label>
+                                        <span class="checkbox custom-checkbox pb5 pt10 ">
+                                            <input type="checkbox" name="customcheckbox1" id="customcheckbox1">
+                                            <label for="customcheckbox1" data-toggle="tooltip" data-placement="top" title="Tooltip on top">&nbsp;&nbsp;In my City</label>
+                                        </span>
+                                        <span class="checkbox custom-checkbox pb5">
+                                            <input type="checkbox" name="customcheckbox2" id="customcheckbox2">
+                                            <label for="customcheckbox2" data-toggle="tooltip" data-placement="top" title="Tooltip on top">&nbsp;&nbsp;In my Country</label>
+                                        </span>
+                                        <span class="checkbox custom-checkbox pb5">
+                                            <input type="checkbox" name="customcheckbox3" id="customcheckbox3">
+                                            <label for="customcheckbox3" data-toggle="tooltip" data-placement="top" title="Tooltip on top">&nbsp;&nbsp;In my Time zone</label>
+                                        </span>
+										<div class="panel-group mb0" id="accordion1">
+                            				<div class="">
+                                                <div class="panel-heading pl0 pr0">
+                                                    <h4 class="panel-title panel-title-h0">
+                                                        <a href="#regions" id="satnam" data-toggle="collapse" class="hide">hide</a>
+                                                            <span class="checkbox custom-checkbox pb5 text-size13">
+                                                                <input type="checkbox" name="customcheckbox20" id="customcheckbox20">
+                                                                <label for="customcheckbox20" data-placement="top" data-toggle="tooltip" for="customcheckbox3"title="Tooltip on top">&nbsp;&nbsp;Regions</label>
+                                                            </span>
+                                                        
+                                                    </h4>
+                                                </div>
+                                                <div style="height: auto;" id="regions" class="panel-collapse collapse">
+                                                    <div class="panel-body">
+                                                        <div data-toggle="buttons" class="btn-group mb10 mr10"> 
+                                                            <label class="btn btn-sm btn-default active_success">
+                                                            <input type="checkbox" id="option1" name="options"> North America</label>
+                                                        </div>
+                                                        <div data-toggle="buttons" class="btn-group mb10 mr10">
+                                                            <label class="btn btn-sm btn-default">
+                                                            <input type="checkbox" id="option2" name="options"> South America </label> 
+                                                        </div>
+                                                        <div data-toggle="buttons" class="btn-group mb10 mr10">
+                                                            <label class="btn btn-sm btn-default">
+                                                            <input type="checkbox" id="option3" name="options"> Western Europe </label> 
+                                                        </div>
+														<div data-toggle="buttons" class="btn-group mb10 mr10">
+                                                            <label class="btn btn-sm btn-default">
+                                                            <input type="checkbox" id="option3" name="options"> Eastern Europe </label> 
+                                                        </div>
+                                                        <div data-toggle="buttons" class="btn-group mb10 mr10">
+                                                            <label class="btn btn-sm btn-default">
+                                                            <input type="checkbox" id="option4" name="options"> Africa </label> 
+                                                        </div>
+                                                        <div data-toggle="buttons" class="btn-group mb10 mr10">
+                                                            <label class="btn btn-sm btn-default">
+                                                            <input type="checkbox" id="option5" name="options"> Asia South </label> 
+                                                        </div> 
+                                                        <div data-toggle="buttons" class="btn-group mb10 mr10">
+                                                            <label class="btn btn-sm btn-default">
+                                                            <input type="checkbox" id="option6" name="options"> Asia Central </label> 
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div class="col-sm-12 mt5">
-                                            	<small class="help-block text-danger mb0 mt0">Check all that apply</small>
-                                            </div>
-                                        </div>
-                                        <!--/ section header -->
-                                        <!-- panel group -->
-                                        <!--/ panel group -->
+                        				</div>
                                     </div>
+                                    <div class="col-sm-12">
+										<small class="help-block text-danger">Check all that apply</small>
+									</div>
                                 </div>
                             </div>
                         </form>
@@ -701,7 +735,7 @@ CONTACT : pampersdry@gmail.com
                         <div class="panel panel-default">
                             <!-- panel heading/header -->
                             <div class="panel-heading">
-                            	<h3 class="panel-title"><i class="ico-tshirt mr5"></i> T-Shirt Order Form</h3>
+                            	<h3 class="panel-title">Product Budget</h3>
                             </div>
                             <!--/ panel heading/header -->
                             <!-- START Form Wizard -->         
@@ -730,6 +764,9 @@ CONTACT : pampersdry@gmail.com
                                                     <label for="customcheckbox7" data-toggle="tooltip" data-placement="top" title="Tooltip on top">&nbsp;&nbsp;Option 3.</label>
                                                 </span>
                                             </div>
+                                        </div>
+                                        <div class="col-sm-12 mt5 ml15">
+                                            <small class="help-block text-danger">Check all that apply</small>
                                         </div>
                                     </div>
                                 </div>
@@ -787,7 +824,7 @@ CONTACT : pampersdry@gmail.com
                         <form data-parsley-validate="" action="" class="panel-default" novalidate>
                             <ul class="nav nav-tabs">
                                 <li class="active"><a data-toggle="tab" href="#weekly_budget">Weekly Budget</a></li>
-                                <li class=""><a data-toggle="tab" href="#comments">Total Budget</a></li>
+                                <li class=""><a data-toggle="tab" href="#total_budget">Total Budget</a></li>
                             </ul>
 							<div class="tab-content panel">
                                 <div id="weekly_budget" class="tab-pane pb0 active">
@@ -1322,6 +1359,9 @@ CONTACT : pampersdry@gmail.com
         <script type="text/javascript">
             (function($){
                 $("html").Core({ "console": false });
+		$("#customcheckbox20").on('click',function(){
+			$('#satnam').click();
+		})
             })(jQuery);
         </script>
         <!--/ app init script -->
